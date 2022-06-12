@@ -1,0 +1,39 @@
+[2022-06-07 09:54:33,997] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_ft_balance_f manual__2022-06-07T09:54:31.294719+00:00 [queued]>
+[2022-06-07 09:54:34,006] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_ft_balance_f manual__2022-06-07T09:54:31.294719+00:00 [queued]>
+[2022-06-07 09:54:34,006] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-07 09:54:34,006] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-07 09:54:34,006] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-07 09:54:34,018] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): SEND_DS_ft_balance_f> on 2022-06-07 09:54:31.294719+00:00
+[2022-06-07 09:54:34,022] {standard_task_runner.py:52} INFO - Started process 582 to run task
+[2022-06-07 09:54:34,025] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'CSV_TO_DS', 'SEND_DS_ft_balance_f', 'manual__2022-06-07T09:54:31.294719+00:00', '--job-id', '96', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_ds.py', '--cfg-path', '/tmp/tmpb5p4sk0w', '--error-file', '/tmp/tmprf7oh6q_']
+[2022-06-07 09:54:34,026] {standard_task_runner.py:80} INFO - Job 96: Subtask SEND_DS_ft_balance_f
+[2022-06-07 09:54:34,095] {task_command.py:370} INFO - Running <TaskInstance: CSV_TO_DS.SEND_DS_ft_balance_f manual__2022-06-07T09:54:31.294719+00:00 [running]> on host 33a1fdf44d41
+[2022-06-07 09:54:34,179] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=CSV_TO_DS
+AIRFLOW_CTX_TASK_ID=SEND_DS_ft_balance_f
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-07T09:54:31.294719+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-07T09:54:31.294719+00:00
+[2022-06-07 09:54:34,187] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-06-07 09:54:34,195] {csv_to_ds.py:45} INFO - Table ft_balance_f read in pandas success.
+[2022-06-07 09:54:34,196] {csv_to_ds.py:46} INFO -                        currency_rk  balance_out
+ON_DATE    ACCOUNT_RK                          
+31.12.2017 36237725             35     38318.13
+           24656                35     80533.62
+           18849846             34     63891.96
+           1972647              34     87732.10
+           34157174             34     97806.90
+[2022-06-07 09:54:34,216] {csv_to_ds.py:52} INFO - (psycopg2.errors.UndefinedColumn) column "ON_DATE" of relation "ft_balance_f" does not exist
+LINE 1: INSERT INTO ds.ft_balance_f ("ON_DATE", "ACCOUNT_RK", curren...
+                                     ^
+
+[SQL: INSERT INTO ds.ft_balance_f ("ON_DATE", "ACCOUNT_RK", currency_rk, balance_out) VALUES (%(ON_DATE)s, %(ACCOUNT_RK)s, %(currency_rk)s, %(balance_out)s)]
+[parameters: ({'ON_DATE': '31.12.2017', 'ACCOUNT_RK': 36237725, 'currency_rk': 35, 'balance_out': 38318.13}, {'ON_DATE': '31.12.2017', 'ACCOUNT_RK': 24656, 'currency_rk': 35, 'balance_out': 80533.62}, {'ON_DATE': '31.12.2017', 'ACCOUNT_RK': 18849846, 'currency_rk': 34, 'balance_out': 63891.96}, {'ON_DATE': '31.12.2017', 'ACCOUNT_RK': 1972647, 'currency_rk': 34, 'balance_out': 87732.1}, {'ON_DATE': '31.12.2017', 'ACCOUNT_RK': 34157174, 'currency_rk': 34, 'balance_out': 97806.9}, {'ON_DATE': '31.12.2017', 'ACCOUNT_RK': 48829156, 'currency_rk': 34, 'balance_out': 87620.47}, {'ON_DATE': '31.12.2017', 'ACCOUNT_RK': 13905, 'currency_rk': 34, 'balance_out': 29554.0}, {'ON_DATE': '31.12.2017', 'ACCOUNT_RK': 17244, 'currency_rk': 34, 'balance_out': 25852.49}  ... displaying 10 of 112 total bound parameter sets ...  {'ON_DATE': '31.12.2017', 'ACCOUNT_RK': 18007, 'currency_rk': 34, 'balance_out': 58966.57}, {'ON_DATE': '31.12.2017', 'ACCOUNT_RK': 44195, 'currency_rk': 44, 'balance_out': 3818.77})]
+(Background on this error at: http://sqlalche.me/e/14/f405)
+[2022-06-07 09:54:34,216] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-07 09:54:34,226] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=CSV_TO_DS, task_id=SEND_DS_ft_balance_f, execution_date=20220607T095431, start_date=20220607T095433, end_date=20220607T095434
+[2022-06-07 09:54:34,238] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-07 09:54:34,268] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

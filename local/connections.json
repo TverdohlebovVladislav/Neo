@@ -1,0 +1,5 @@
+{
+  "postgres": "postgresql://airflow:airflow@postgres:5432/postgres",
+  "postgres_ds": "postgresql://airflow:airflow@postgres:5432/postgres/ds",
+  "postgres_logs": "postgresql://airflow:airflow@postgres:5432/postgres/logs"
+}

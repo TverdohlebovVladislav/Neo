@@ -1,0 +1,35 @@
+[2022-06-07 21:55:26,163] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_ft_balance_f manual__2022-06-07T21:55:23.170694+00:00 [queued]>
+[2022-06-07 21:55:26,172] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_ft_balance_f manual__2022-06-07T21:55:23.170694+00:00 [queued]>
+[2022-06-07 21:55:26,173] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-07 21:55:26,173] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-07 21:55:26,173] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-07 21:55:26,185] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): SEND_DS_ft_balance_f> on 2022-06-07 21:55:23.170694+00:00
+[2022-06-07 21:55:26,189] {standard_task_runner.py:52} INFO - Started process 3789 to run task
+[2022-06-07 21:55:26,192] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'CSV_TO_DS', 'SEND_DS_ft_balance_f', 'manual__2022-06-07T21:55:23.170694+00:00', '--job-id', '113', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_ds.py', '--cfg-path', '/tmp/tmp1kz7hofr', '--error-file', '/tmp/tmpurkjotw1']
+[2022-06-07 21:55:26,193] {standard_task_runner.py:80} INFO - Job 113: Subtask SEND_DS_ft_balance_f
+[2022-06-07 21:55:26,247] {task_command.py:370} INFO - Running <TaskInstance: CSV_TO_DS.SEND_DS_ft_balance_f manual__2022-06-07T21:55:23.170694+00:00 [running]> on host 33a1fdf44d41
+[2022-06-07 21:55:26,329] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=CSV_TO_DS
+AIRFLOW_CTX_TASK_ID=SEND_DS_ft_balance_f
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-07T21:55:23.170694+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-07T21:55:23.170694+00:00
+[2022-06-07 21:55:26,338] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-06-07 21:55:26,346] {csv_to_ds.py:45} INFO - <class 'str'>
+[2022-06-07 21:55:26,346] {csv_to_ds.py:46} INFO - on_date
+[2022-06-07 21:55:26,346] {csv_to_ds.py:50} INFO - lower() takes no arguments (1 given)
+[2022-06-07 21:55:26,359] {csv_to_ds.py:59} INFO - (psycopg2.errors.DatetimeFieldOverflow) date/time field value out of range: "31.12.2017"
+LINE 1: ...te, account_rk, currency_rk, balance_out) VALUES ('31.12.201...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+
+[SQL: INSERT INTO ds.ft_balance_f (on_date, account_rk, currency_rk, balance_out) VALUES (%(on_date)s, %(account_rk)s, %(currency_rk)s, %(balance_out)s)]
+[parameters: ({'on_date': '31.12.2017', 'account_rk': 36237725, 'currency_rk': 35, 'balance_out': 38318.13}, {'on_date': '31.12.2017', 'account_rk': 24656, 'currency_rk': 35, 'balance_out': 80533.62}, {'on_date': '31.12.2017', 'account_rk': 18849846, 'currency_rk': 34, 'balance_out': 63891.96}, {'on_date': '31.12.2017', 'account_rk': 1972647, 'currency_rk': 34, 'balance_out': 87732.1}, {'on_date': '31.12.2017', 'account_rk': 34157174, 'currency_rk': 34, 'balance_out': 97806.9}, {'on_date': '31.12.2017', 'account_rk': 48829156, 'currency_rk': 34, 'balance_out': 87620.47}, {'on_date': '31.12.2017', 'account_rk': 13905, 'currency_rk': 34, 'balance_out': 29554.0}, {'on_date': '31.12.2017', 'account_rk': 17244, 'currency_rk': 34, 'balance_out': 25852.49}  ... displaying 10 of 112 total bound parameter sets ...  {'on_date': '31.12.2017', 'account_rk': 18007, 'currency_rk': 34, 'balance_out': 58966.57}, {'on_date': '31.12.2017', 'account_rk': 44195, 'currency_rk': 44, 'balance_out': 3818.77})]
+(Background on this error at: http://sqlalche.me/e/14/9h9h)
+[2022-06-07 21:55:26,359] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-07 21:55:26,371] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=CSV_TO_DS, task_id=SEND_DS_ft_balance_f, execution_date=20220607T215523, start_date=20220607T215526, end_date=20220607T215526
+[2022-06-07 21:55:26,406] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-07 21:55:26,440] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
