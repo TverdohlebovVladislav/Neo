@@ -1,6 +1,5 @@
 FROM apache/airflow:2.2.3
 
-
 USER root
 RUN apt-get update -qq && apt-get install vim -qqq
 

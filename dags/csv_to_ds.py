@@ -28,6 +28,15 @@ AIRFLOW_HOME = getenv('AIRFLOW_HOME', '/opt/airflow')
 """
 
 """
+Настройка spark соединения
+"""
+# from pyspark.sql import SparkSession 
+
+# spark = SparkSession.builder.getOrCreate()
+# df = spark.read.format("csv").option("header", "true").load(csv_path)
+
+
+"""
 Переместить в файл в CORE - Logs_SQLAlchemy_connections.py
 """
 from sqlalchemy import *
