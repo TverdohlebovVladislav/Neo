@@ -1,14 +1,6 @@
-import json
-from msilib import schema
-from airflow.models.connection import Connection
+from os import getenv
+from airflow.hooks.base import BaseHook
 
-connection_ds = Connection(
-    conn_id="ds",
-    conn_type="postgres",
-    description="Connect to DS schema",
-    host="postgres",
-    login="airflow",
-    password="airflow",
-    # schema=""
-    extra=json.dumps(dict(this_param="some val", that_param="other val*")),
-)
+DEFAULT_POSTGRES_CONN_ID = "postgres"
+AIRFLOW_HOME = getenv('AIRFLOW_HOME', '/opt/airflow')
+CONN_OBJECT = BaseHook.get_connection(DEFAULT_POSTGRES_CONN_ID)
