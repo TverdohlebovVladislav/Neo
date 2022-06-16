@@ -1,0 +1,37 @@
+[2022-06-12 21:59:21,655] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.create_schema_and_tables_logs manual__2022-06-12T21:59:20.726815+00:00 [queued]>
+[2022-06-12 21:59:21,665] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.create_schema_and_tables_logs manual__2022-06-12T21:59:20.726815+00:00 [queued]>
+[2022-06-12 21:59:21,665] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-12 21:59:21,665] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-12 21:59:21,665] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-12 21:59:21,676] {taskinstance.py:1377} INFO - Executing <Task(PostgresOperator): create_schema_and_tables_logs> on 2022-06-12 21:59:20.726815+00:00
+[2022-06-12 21:59:21,681] {standard_task_runner.py:52} INFO - Started process 2920 to run task
+[2022-06-12 21:59:21,684] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'CSV_TO_DS', 'create_schema_and_tables_logs', 'manual__2022-06-12T21:59:20.726815+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_ds.py', '--cfg-path', '/tmp/tmpgrurq8zz', '--error-file', '/tmp/tmpyde4o2qo']
+[2022-06-12 21:59:21,685] {standard_task_runner.py:80} INFO - Job 24: Subtask create_schema_and_tables_logs
+[2022-06-12 21:59:21,741] {task_command.py:370} INFO - Running <TaskInstance: CSV_TO_DS.create_schema_and_tables_logs manual__2022-06-12T21:59:20.726815+00:00 [running]> on host 0088cb39c00f
+[2022-06-12 21:59:21,811] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=CSV_TO_DS
+AIRFLOW_CTX_TASK_ID=create_schema_and_tables_logs
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-12T21:59:20.726815+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-12T21:59:20.726815+00:00
+[2022-06-12 21:59:21,820] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-06-12 21:59:21,823] {dbapi.py:213} INFO - Running statement: CREATE SCHEMA IF NOT EXISTS logs;
+
+CREATE TABLE IF NOT EXISTS logs.load_csv_to_ds (
+    ID SERIAL PRIMARY KEY,
+    TABLE_NAME VARCHAR(30),
+    CSV_PATH TEXT,
+    TIME_START_LOAD TIMESTAMP DEFAULT CURRENT_TIMESTAMP(0),
+    TIME_END_LOAD TIMESTAMP,
+    condition TEXT
+);, parameters: None
+[2022-06-12 21:59:21,824] {postgres.py:94} INFO - NOTICE:  schema "logs" already exists, skipping
+
+[2022-06-12 21:59:21,824] {postgres.py:94} INFO - NOTICE:  relation "load_csv_to_ds" already exists, skipping
+
+[2022-06-12 21:59:21,836] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=CSV_TO_DS, task_id=create_schema_and_tables_logs, execution_date=20220612T215920, start_date=20220612T215921, end_date=20220612T215921
+[2022-06-12 21:59:21,857] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-12 21:59:21,900] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
