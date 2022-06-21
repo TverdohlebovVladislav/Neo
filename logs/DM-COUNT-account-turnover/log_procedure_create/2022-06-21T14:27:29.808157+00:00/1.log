@@ -1,0 +1,79 @@
+[2022-06-21 14:27:31,770] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.log_procedure_create manual__2022-06-21T14:27:29.808157+00:00 [queued]>
+[2022-06-21 14:27:31,779] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.log_procedure_create manual__2022-06-21T14:27:29.808157+00:00 [queued]>
+[2022-06-21 14:27:31,779] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 14:27:31,779] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-21 14:27:31,779] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 14:27:31,791] {taskinstance.py:1259} INFO - Executing <Task(PostgresOperator): log_procedure_create> on 2022-06-21 14:27:29.808157+00:00
+[2022-06-21 14:27:31,795] {standard_task_runner.py:52} INFO - Started process 2220 to run task
+[2022-06-21 14:27:31,799] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'DM-COUNT-account-turnover', 'log_procedure_create', 'manual__2022-06-21T14:27:29.808157+00:00', '--job-id', '668', '--raw', '--subdir', 'DAGS_FOLDER/dm_fill_account_turnover.py', '--cfg-path', '/tmp/tmpb4ya53_u', '--error-file', '/tmp/tmpnmuohn38']
+[2022-06-21 14:27:31,799] {standard_task_runner.py:77} INFO - Job 668: Subtask log_procedure_create
+[2022-06-21 14:27:31,864] {logging_mixin.py:109} INFO - Running <TaskInstance: DM-COUNT-account-turnover.log_procedure_create manual__2022-06-21T14:27:29.808157+00:00 [running]> on host c087b85f9f15
+[2022-06-21 14:27:31,939] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=DM-COUNT-account-turnover
+AIRFLOW_CTX_TASK_ID=log_procedure_create
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-21T14:27:29.808157+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-21T14:27:29.808157+00:00
+[2022-06-21 14:27:31,947] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: ***, Password: ***, extra: {}
+[2022-06-21 14:27:31,952] {dbapi.py:225} INFO - Running statement: create or replace procedure logs.writelog (
+   i_message		varchar,
+   i_messageType	int
+)
+language plpgsql    
+as $$
+declare
+	log_NOTICE            constant int := 1;
+	log_WARNING           constant int := 2;
+	log_ERROR             constant int := 3;
+	log_DEBUG             constant int := 4;
+
+	c_splitToTable        constant int := 4000;
+	c_splitToDbmsOutput   constant int := 900;
+
+	v_logDate           timestamp;
+	v_callerType        varchar;
+	v_callerOwner       varchar;
+	v_caller            varchar;
+	v_line              numeric;
+	v_message           varchar;
+begin
+    v_logDate := now();
+    -- split to log table
+    v_message := i_message;
+	i_messageType	:= log_NOTICE;
+    while length(v_message) > 0 loop
+      insert into logs.lg_messages_dm ( 	
+		record_id,
+		date_time,
+		pid,
+		message,
+		message_type,
+		usename, 
+		datname, 
+		client_addr, 
+		application_name,
+		backend_start
+    )
+	select 	
+			nextval('logs.seq_lg_messages'),
+			now(),
+			pid,
+			substr(v_message, 1, c_splitToTable),
+			i_messageType,
+			usename, 
+			datname, 
+			client_addr, 
+			application_name,
+			backend_start
+	 from pg_stat_activity
+	where pid = pg_backend_pid();
+      v_message := substr(v_message, c_splitToTable + 1);
+    end loop;
+
+    commit;
+end;$$, parameters: None
+[2022-06-21 14:27:31,983] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=DM-COUNT-account-turnover, task_id=log_procedure_create, execution_date=20220621T142729, start_date=20220621T142731, end_date=20220621T142731
+[2022-06-21 14:27:32,011] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-21 14:27:32,110] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

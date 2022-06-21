@@ -25,6 +25,7 @@ x-airflow-common:
     - ./dags:/opt/airflow/dags
     - ./csv:/opt/airflow/csv
     - ./plugins:/opt/airflow/plugins
+    - ./logs:/opt/airflow/logs
     - ./core:/opt/airflow/core
     - ./core:/usr/local/lib/python3.7/site-packages/core/
     - ./sql:/opt/airflow/sql

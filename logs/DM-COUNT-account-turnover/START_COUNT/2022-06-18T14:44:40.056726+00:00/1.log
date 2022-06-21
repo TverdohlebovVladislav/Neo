@@ -1,0 +1,81 @@
+[2022-06-18 14:44:43,232] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.START_COUNT manual__2022-06-18T14:44:40.056726+00:00 [queued]>
+[2022-06-18 14:44:43,240] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.START_COUNT manual__2022-06-18T14:44:40.056726+00:00 [queued]>
+[2022-06-18 14:44:43,240] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:44:43,241] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-18 14:44:43,241] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 14:44:43,251] {taskinstance.py:1259} INFO - Executing <Task(PostgresOperator): START_COUNT> on 2022-06-18 14:44:40.056726+00:00
+[2022-06-18 14:44:43,255] {standard_task_runner.py:52} INFO - Started process 314 to run task
+[2022-06-18 14:44:43,258] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'DM-COUNT-account-turnover', 'START_COUNT', 'manual__2022-06-18T14:44:40.056726+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/dm_fill_account_turnover.py', '--cfg-path', '/tmp/tmpsj1238ho', '--error-file', '/tmp/tmpwfwo82g8']
+[2022-06-18 14:44:43,259] {standard_task_runner.py:77} INFO - Job 106: Subtask START_COUNT
+[2022-06-18 14:44:43,330] {logging_mixin.py:109} INFO - Running <TaskInstance: DM-COUNT-account-turnover.START_COUNT manual__2022-06-18T14:44:40.056726+00:00 [running]> on host 191dd4d3d1ba
+[2022-06-18 14:44:43,370] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=DM-COUNT-account-turnover
+AIRFLOW_CTX_TASK_ID=START_COUNT
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-18T14:44:40.056726+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-18T14:44:40.056726+00:00
+[2022-06-18 14:44:43,377] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: ***, Password: ***, extra: {}
+[2022-06-18 14:44:43,380] {dbapi.py:225} INFO - Running statement: CALL ds.fill_account_turnover_f (%(date)s::date);, parameters: {'date': '2018-01-01'}
+[2022-06-18 14:44:43,385] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 69, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 205, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 227, in _run_command
+    cur.execute(sql_statement, parameters)
+psycopg2.errors.InvalidTransactionTermination: invalid transaction termination
+CONTEXT:  PL/pgSQL function dm.writelog(character varying,integer) line 51 at COMMIT
+SQL statement "CALL dm.writelog( '[BEGIN] fill(i_OnDate => date ''' 
+         || to_char(i_OnDate, 'yyyy-mm-dd') 
+         || ''');', 1
+       )"
+PL/pgSQL function ds.fill_account_turnover_f(date) line 6 at CALL
+
+[2022-06-18 14:44:43,394] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=DM-COUNT-account-turnover, task_id=START_COUNT, execution_date=20220618T144440, start_date=20220618T144443, end_date=20220618T144443
+[2022-06-18 14:44:43,404] {standard_task_runner.py:92} ERROR - Failed to execute job 106 for task START_COUNT
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 69, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 205, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 227, in _run_command
+    cur.execute(sql_statement, parameters)
+psycopg2.errors.InvalidTransactionTermination: invalid transaction termination
+CONTEXT:  PL/pgSQL function dm.writelog(character varying,integer) line 51 at COMMIT
+SQL statement "CALL dm.writelog( '[BEGIN] fill(i_OnDate => date ''' 
+         || to_char(i_OnDate, 'yyyy-mm-dd') 
+         || ''');', 1
+       )"
+PL/pgSQL function ds.fill_account_turnover_f(date) line 6 at CALL
+
+[2022-06-18 14:44:43,432] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-06-18 14:44:43,460] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

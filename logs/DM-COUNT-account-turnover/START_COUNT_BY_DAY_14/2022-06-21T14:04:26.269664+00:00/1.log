@@ -1,0 +1,23 @@
+[2022-06-21 14:04:35,271] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.START_COUNT_BY_DAY_14 manual__2022-06-21T14:04:26.269664+00:00 [queued]>
+[2022-06-21 14:04:35,290] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.START_COUNT_BY_DAY_14 manual__2022-06-21T14:04:26.269664+00:00 [queued]>
+[2022-06-21 14:04:35,290] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 14:04:35,290] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-21 14:04:35,290] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 14:04:35,309] {taskinstance.py:1259} INFO - Executing <Task(PostgresOperator): START_COUNT_BY_DAY_14> on 2022-06-21 14:04:26.269664+00:00
+[2022-06-21 14:04:35,314] {standard_task_runner.py:52} INFO - Started process 856 to run task
+[2022-06-21 14:04:35,317] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'DM-COUNT-account-turnover', 'START_COUNT_BY_DAY_14', 'manual__2022-06-21T14:04:26.269664+00:00', '--job-id', '552', '--raw', '--subdir', 'DAGS_FOLDER/dm_fill_account_turnover.py', '--cfg-path', '/tmp/tmpci9gz7nx', '--error-file', '/tmp/tmpfvb0k5u4']
+[2022-06-21 14:04:35,318] {standard_task_runner.py:77} INFO - Job 552: Subtask START_COUNT_BY_DAY_14
+[2022-06-21 14:04:35,455] {logging_mixin.py:109} INFO - Running <TaskInstance: DM-COUNT-account-turnover.START_COUNT_BY_DAY_14 manual__2022-06-21T14:04:26.269664+00:00 [running]> on host c087b85f9f15
+[2022-06-21 14:04:35,565] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=DM-COUNT-account-turnover
+AIRFLOW_CTX_TASK_ID=START_COUNT_BY_DAY_14
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-21T14:04:26.269664+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-21T14:04:26.269664+00:00
+[2022-06-21 14:04:35,581] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: ***, Password: ***, extra: {}
+[2022-06-21 14:04:35,588] {dbapi.py:225} INFO - Running statement: CALL ds.fill_account_turnover_f (%(date)s::date);, parameters: {'date': '2018-01-14'}
+[2022-06-21 14:04:35,654] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=DM-COUNT-account-turnover, task_id=START_COUNT_BY_DAY_14, execution_date=20220621T140426, start_date=20220621T140435, end_date=20220621T140435
+[2022-06-21 14:04:35,719] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-21 14:04:35,905] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

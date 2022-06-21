@@ -1,0 +1,143 @@
+[2022-06-20 07:03:54,944] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.START_COUNT_BY_DAY_7 scheduled__2022-06-18T21:27:30.430782+00:00 [queued]>
+[2022-06-20 07:03:54,992] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.START_COUNT_BY_DAY_7 scheduled__2022-06-18T21:27:30.430782+00:00 [queued]>
+[2022-06-20 07:03:54,993] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 07:03:54,993] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-20 07:03:54,993] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 07:03:55,043] {taskinstance.py:1259} INFO - Executing <Task(PostgresOperator): START_COUNT_BY_DAY_7> on 2022-06-18 21:27:30.430782+00:00
+[2022-06-20 07:03:55,049] {standard_task_runner.py:52} INFO - Started process 163 to run task
+[2022-06-20 07:03:55,058] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'DM-COUNT-account-turnover', 'START_COUNT_BY_DAY_7', 'scheduled__2022-06-18T21:27:30.430782+00:00', '--job-id', '420', '--raw', '--subdir', 'DAGS_FOLDER/dm_fill_account_turnover.py', '--cfg-path', '/tmp/tmpjs8csv55', '--error-file', '/tmp/tmp4umxv404']
+[2022-06-20 07:03:55,059] {standard_task_runner.py:77} INFO - Job 420: Subtask START_COUNT_BY_DAY_7
+[2022-06-20 07:03:55,162] {standard_task_runner.py:92} ERROR - Failed to execute job 420 for task START_COUNT_BY_DAY_7
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 241, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "postgres" (172.19.0.3), port 5432 failed: FATAL:  sorry, too many clients already
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 288, in task_run
+    ti.init_run_context(raw=args.raw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2231, in init_run_context
+    self._set_context(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/log/logging_mixin.py", line 54, in _set_context
+    set_context(self.log, context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/log/logging_mixin.py", line 178, in set_context
+    handler.set_context(value)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/log/file_task_handler.py", line 59, in set_context
+    local_loc = self._init_file(ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/log/file_task_handler.py", line 264, in _init_file
+    relative_path = self._render_filename(ti, ti.try_number)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/log/file_task_handler.py", line 80, in _render_filename
+    context = ti.get_template_context()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1917, in get_template_context
+    'prev_data_interval_start_success': get_prev_data_interval_start_success(),
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1820, in get_prev_data_interval_start_success
+    data_interval = _get_previous_dagrun_data_interval_success()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1814, in _get_previous_dagrun_data_interval_success
+    dagrun = _get_previous_dagrun_success()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1811, in _get_previous_dagrun_success
+    return self.get_previous_dagrun(state=State.SUCCESS, session=session)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 899, in get_previous_dagrun
+    last_dagrun = dr.get_previous_dagrun(session=session, state=state)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagrun.py", line 466, in get_previous_dagrun
+    return session.query(DagRun).filter(*filters).order_by(DagRun.execution_date.desc()).first()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3429, in first
+    ret = list(self[0:1])
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3203, in __getitem__
+    return list(res)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3557, in _execute_and_instances
+    querycontext, self._connection_from_session, close_with_result=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3572, in _get_bind_args
+    mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1145, in connection
+    execution_options=execution_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1151, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 241, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "postgres" (172.19.0.3), port 5432 failed: FATAL:  sorry, too many clients already
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2022-06-20 07:03:55,267] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-06-20 07:03:55,340] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=DM-COUNT-account-turnover, task_id=START_COUNT_BY_DAY_7, execution_date=20220618T212730, start_date=20220620T070354, end_date=20220620T070355
+[2022-06-20 07:03:55,860] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

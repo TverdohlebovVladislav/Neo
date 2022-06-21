@@ -80,9 +80,10 @@ class CsvToDs():
         """
         Base = declarative_base()
         metadata = MetaData(bind=self.get_engine(), schema="logs")
-        class LogsLoadCsvToDs(Base):
-            __table__ = Table('load_csv_to_ds', metadata, autoload=self.get_engine(), schema='logs')
-        return LogsLoadCsvToDs
+        if self.get_engine().dialect.has_table(self.get_engine(), 'load_csv_to_ds', schema='logs'):
+            class LogsLoadCsvToDs(Base):
+                __table__ = Table('load_csv_to_ds', metadata, autoload=self.get_engine(), schema='logs')
+            return LogsLoadCsvToDs
 
     def send_data(self):
         """

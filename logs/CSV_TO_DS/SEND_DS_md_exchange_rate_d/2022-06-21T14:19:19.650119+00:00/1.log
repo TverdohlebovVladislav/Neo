@@ -1,0 +1,43 @@
+[2022-06-21 14:19:23,327] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_exchange_rate_d manual__2022-06-21T14:19:19.650119+00:00 [queued]>
+[2022-06-21 14:19:23,343] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_exchange_rate_d manual__2022-06-21T14:19:19.650119+00:00 [queued]>
+[2022-06-21 14:19:23,344] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 14:19:23,344] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-21 14:19:23,344] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 14:19:23,367] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): SEND_DS_md_exchange_rate_d> on 2022-06-21 14:19:19.650119+00:00
+[2022-06-21 14:19:23,375] {standard_task_runner.py:52} INFO - Started process 1649 to run task
+[2022-06-21 14:19:23,378] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'CSV_TO_DS', 'SEND_DS_md_exchange_rate_d', 'manual__2022-06-21T14:19:19.650119+00:00', '--job-id', '594', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_ds.py', '--cfg-path', '/tmp/tmpi4n6wqx2', '--error-file', '/tmp/tmpcu2jp0og']
+[2022-06-21 14:19:23,379] {standard_task_runner.py:77} INFO - Job 594: Subtask SEND_DS_md_exchange_rate_d
+[2022-06-21 14:19:23,464] {logging_mixin.py:109} INFO - Running <TaskInstance: CSV_TO_DS.SEND_DS_md_exchange_rate_d manual__2022-06-21T14:19:19.650119+00:00 [running]> on host c087b85f9f15
+[2022-06-21 14:19:23,576] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=CSV_TO_DS
+AIRFLOW_CTX_TASK_ID=SEND_DS_md_exchange_rate_d
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-21T14:19:19.650119+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-21T14:19:19.650119+00:00
+[2022-06-21 14:19:23,625] {CsvToDs.py:49} INFO -    id DATA_ACTUAL_DATE  ... REDUCED_COURCE  CODE_ISO_NUM
+0   1       2018-01-31  ...       28.37980           933
+1   2       2018-01-31  ...        7.11613           752
+2   3       2018-01-31  ...       33.05430           944
+3   4       2018-01-31  ...        8.87555           156
+4   5       2018-01-31  ...        2.74512           203
+
+[5 rows x 6 columns]
+[2022-06-21 14:19:23,645] {CsvToDs.py:58} INFO - Column data_actual_date changed date-time format
+[2022-06-21 14:19:23,647] {CsvToDs.py:58} INFO - Column data_actual_end_date changed date-time format
+[2022-06-21 14:19:23,647] {CsvToDs.py:64} INFO - Table md_exchange_rate_d read in pandas success. 
+[2022-06-21 14:19:23,656] {CsvToDs.py:65} INFO - 
+    id data_actual_date  ... reduced_cource  code_iso_num
+0   1       2018-01-31  ...       28.37980           933
+1   2       2018-01-31  ...        7.11613           752
+2   3       2018-01-31  ...       33.05430           944
+3   4       2018-01-31  ...        8.87555           156
+4   5       2018-01-31  ...        2.74512           203
+
+[5 rows x 6 columns]
+[2022-06-21 14:19:25,601] {CsvToDs.py:108} INFO -  Table md_exchange_rate_d in ds schema has updated success. 
+[2022-06-21 14:19:30,617] {python.py:175} INFO - Done. Returned value was: None
+[2022-06-21 14:19:30,632] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=CSV_TO_DS, task_id=SEND_DS_md_exchange_rate_d, execution_date=20220621T141919, start_date=20220621T141923, end_date=20220621T141930
+[2022-06-21 14:19:30,658] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-21 14:19:30,694] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

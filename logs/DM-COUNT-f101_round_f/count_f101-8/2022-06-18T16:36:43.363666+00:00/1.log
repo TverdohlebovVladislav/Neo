@@ -1,0 +1,23 @@
+[2022-06-18 16:36:47,296] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-f101_round_f.count_f101-8 manual__2022-06-18T16:36:43.363666+00:00 [queued]>
+[2022-06-18 16:36:47,319] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-f101_round_f.count_f101-8 manual__2022-06-18T16:36:43.363666+00:00 [queued]>
+[2022-06-18 16:36:47,319] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 16:36:47,319] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-18 16:36:47,319] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-18 16:36:47,342] {taskinstance.py:1259} INFO - Executing <Task(PostgresOperator): count_f101-8> on 2022-06-18 16:36:43.363666+00:00
+[2022-06-18 16:36:47,346] {standard_task_runner.py:52} INFO - Started process 5677 to run task
+[2022-06-18 16:36:47,366] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'DM-COUNT-f101_round_f', 'count_f101-8', 'manual__2022-06-18T16:36:43.363666+00:00', '--job-id', '206', '--raw', '--subdir', 'DAGS_FOLDER/f_101_round_f.py', '--cfg-path', '/tmp/tmp1i8t7tt8', '--error-file', '/tmp/tmpa_wwu9nm']
+[2022-06-18 16:36:47,367] {standard_task_runner.py:77} INFO - Job 206: Subtask count_f101-8
+[2022-06-18 16:36:47,456] {logging_mixin.py:109} INFO - Running <TaskInstance: DM-COUNT-f101_round_f.count_f101-8 manual__2022-06-18T16:36:43.363666+00:00 [running]> on host 191dd4d3d1ba
+[2022-06-18 16:36:47,696] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=DM-COUNT-f101_round_f
+AIRFLOW_CTX_TASK_ID=count_f101-8
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-18T16:36:43.363666+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-18T16:36:43.363666+00:00
+[2022-06-18 16:36:47,737] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: ***, Password: ***, extra: {}
+[2022-06-18 16:36:47,755] {dbapi.py:225} INFO - Running statement: CALL dm.fill_f101_round_f (%(date)s::date);, parameters: {'date': '2018-01-8'}
+[2022-06-18 16:36:47,902] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=DM-COUNT-f101_round_f, task_id=count_f101-8, execution_date=20220618T163643, start_date=20220618T163647, end_date=20220618T163647
+[2022-06-18 16:36:48,066] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-18 16:36:48,490] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

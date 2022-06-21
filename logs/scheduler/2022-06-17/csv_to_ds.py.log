@@ -1,0 +1,488 @@
+[2022-06-17 21:30:29,978] {processor.py:163} INFO - Started process (PID=30) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:30:29,979] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:30:29,981] {logging_mixin.py:109} INFO - [2022-06-17 21:30:29,981] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:30:30,031] {logging_mixin.py:109} INFO - [2022-06-17 21:30:30,031] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:30:32,794] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:30:32,836] {logging_mixin.py:109} INFO - [2022-06-17 21:30:32,836] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:30:32,876] {logging_mixin.py:109} INFO - [2022-06-17 21:30:32,876] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:30:32,899] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 2.926 seconds
+[2022-06-17 21:31:03,470] {processor.py:163} INFO - Started process (PID=80) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:31:03,476] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:31:03,476] {logging_mixin.py:109} INFO - [2022-06-17 21:31:03,476] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:31:03,497] {logging_mixin.py:109} INFO - [2022-06-17 21:31:03,497] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:31:03,972] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:31:03,978] {logging_mixin.py:109} INFO - [2022-06-17 21:31:03,978] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:31:03,988] {logging_mixin.py:109} INFO - [2022-06-17 21:31:03,988] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:31:03,999] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.532 seconds
+[2022-06-17 21:31:34,073] {processor.py:163} INFO - Started process (PID=121) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:31:34,074] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:31:34,074] {logging_mixin.py:109} INFO - [2022-06-17 21:31:34,074] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:31:34,094] {logging_mixin.py:109} INFO - [2022-06-17 21:31:34,094] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:31:34,587] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:31:34,594] {logging_mixin.py:109} INFO - [2022-06-17 21:31:34,594] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:31:34,605] {logging_mixin.py:109} INFO - [2022-06-17 21:31:34,605] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:31:34,617] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.547 seconds
+[2022-06-17 21:32:04,693] {processor.py:163} INFO - Started process (PID=151) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:32:04,694] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:32:04,695] {logging_mixin.py:109} INFO - [2022-06-17 21:32:04,695] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:32:04,714] {logging_mixin.py:109} INFO - [2022-06-17 21:32:04,714] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:32:05,186] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:32:05,193] {logging_mixin.py:109} INFO - [2022-06-17 21:32:05,193] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:32:05,203] {logging_mixin.py:109} INFO - [2022-06-17 21:32:05,203] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:32:05,214] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.523 seconds
+[2022-06-17 21:32:35,291] {processor.py:163} INFO - Started process (PID=190) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:32:35,292] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:32:35,292] {logging_mixin.py:109} INFO - [2022-06-17 21:32:35,292] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:32:35,317] {logging_mixin.py:109} INFO - [2022-06-17 21:32:35,317] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:32:35,830] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:32:35,837] {logging_mixin.py:109} INFO - [2022-06-17 21:32:35,837] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:32:35,847] {logging_mixin.py:109} INFO - [2022-06-17 21:32:35,847] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:32:35,853] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.565 seconds
+[2022-06-17 21:33:06,429] {processor.py:163} INFO - Started process (PID=231) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:33:06,435] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:33:06,436] {logging_mixin.py:109} INFO - [2022-06-17 21:33:06,435] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:33:06,455] {logging_mixin.py:109} INFO - [2022-06-17 21:33:06,455] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:33:06,958] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:33:06,966] {logging_mixin.py:109} INFO - [2022-06-17 21:33:06,965] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:33:06,980] {logging_mixin.py:109} INFO - [2022-06-17 21:33:06,980] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:33:06,991] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.564 seconds
+[2022-06-17 21:33:37,061] {processor.py:163} INFO - Started process (PID=262) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:33:37,062] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:33:37,062] {logging_mixin.py:109} INFO - [2022-06-17 21:33:37,062] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:33:37,082] {logging_mixin.py:109} INFO - [2022-06-17 21:33:37,082] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:33:37,565] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:33:37,572] {logging_mixin.py:109} INFO - [2022-06-17 21:33:37,572] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:33:37,582] {logging_mixin.py:109} INFO - [2022-06-17 21:33:37,581] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:33:37,593] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.534 seconds
+[2022-06-17 21:34:07,657] {processor.py:163} INFO - Started process (PID=300) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:34:07,658] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:34:07,659] {logging_mixin.py:109} INFO - [2022-06-17 21:34:07,659] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:34:07,679] {logging_mixin.py:109} INFO - [2022-06-17 21:34:07,679] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:34:08,168] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:34:08,176] {logging_mixin.py:109} INFO - [2022-06-17 21:34:08,176] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:34:08,185] {logging_mixin.py:109} INFO - [2022-06-17 21:34:08,185] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:34:08,196] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.541 seconds
+[2022-06-17 21:34:38,262] {processor.py:163} INFO - Started process (PID=340) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:34:38,263] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:34:38,264] {logging_mixin.py:109} INFO - [2022-06-17 21:34:38,264] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:34:38,307] {logging_mixin.py:109} INFO - [2022-06-17 21:34:38,307] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:34:39,054] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:34:39,063] {logging_mixin.py:109} INFO - [2022-06-17 21:34:39,063] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:34:39,077] {logging_mixin.py:109} INFO - [2022-06-17 21:34:39,077] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:34:39,093] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.835 seconds
+[2022-06-17 21:35:09,406] {processor.py:163} INFO - Started process (PID=370) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:35:09,407] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:35:09,407] {logging_mixin.py:109} INFO - [2022-06-17 21:35:09,407] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:35:09,428] {logging_mixin.py:109} INFO - [2022-06-17 21:35:09,428] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:35:09,917] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:35:09,924] {logging_mixin.py:109} INFO - [2022-06-17 21:35:09,924] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:35:09,934] {logging_mixin.py:109} INFO - [2022-06-17 21:35:09,934] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:35:09,945] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.542 seconds
+[2022-06-17 21:35:40,024] {processor.py:163} INFO - Started process (PID=409) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:35:40,025] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:35:40,025] {logging_mixin.py:109} INFO - [2022-06-17 21:35:40,025] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:35:40,044] {logging_mixin.py:109} INFO - [2022-06-17 21:35:40,044] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:35:40,520] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:35:40,529] {logging_mixin.py:109} INFO - [2022-06-17 21:35:40,529] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:35:40,539] {logging_mixin.py:109} INFO - [2022-06-17 21:35:40,539] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:35:40,552] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.530 seconds
+[2022-06-17 21:36:10,624] {processor.py:163} INFO - Started process (PID=439) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:36:10,631] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:36:10,631] {logging_mixin.py:109} INFO - [2022-06-17 21:36:10,631] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:36:10,653] {logging_mixin.py:109} INFO - [2022-06-17 21:36:10,653] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:36:11,152] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:36:11,159] {logging_mixin.py:109} INFO - [2022-06-17 21:36:11,159] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:36:11,170] {logging_mixin.py:109} INFO - [2022-06-17 21:36:11,170] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:36:11,183] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.561 seconds
+[2022-06-17 21:36:42,031] {processor.py:163} INFO - Started process (PID=488) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:36:42,037] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:36:42,037] {logging_mixin.py:109} INFO - [2022-06-17 21:36:42,037] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:36:42,059] {logging_mixin.py:109} INFO - [2022-06-17 21:36:42,059] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:36:42,541] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:36:42,548] {logging_mixin.py:109} INFO - [2022-06-17 21:36:42,548] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:36:42,558] {logging_mixin.py:109} INFO - [2022-06-17 21:36:42,558] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:36:42,565] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.536 seconds
+[2022-06-17 21:37:12,632] {processor.py:163} INFO - Started process (PID=533) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:37:12,633] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:37:12,633] {logging_mixin.py:109} INFO - [2022-06-17 21:37:12,633] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:37:12,654] {logging_mixin.py:109} INFO - [2022-06-17 21:37:12,654] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:37:13,152] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:37:13,160] {logging_mixin.py:109} INFO - [2022-06-17 21:37:13,160] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:37:13,170] {logging_mixin.py:109} INFO - [2022-06-17 21:37:13,170] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:37:13,182] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.553 seconds
+[2022-06-17 21:37:43,302] {processor.py:163} INFO - Started process (PID=563) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:37:43,303] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:37:43,304] {logging_mixin.py:109} INFO - [2022-06-17 21:37:43,304] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:37:43,324] {logging_mixin.py:109} INFO - [2022-06-17 21:37:43,324] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:37:43,796] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:37:43,803] {logging_mixin.py:109} INFO - [2022-06-17 21:37:43,803] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:37:43,813] {logging_mixin.py:109} INFO - [2022-06-17 21:37:43,813] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:37:43,828] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.529 seconds
+[2022-06-17 21:38:13,911] {processor.py:163} INFO - Started process (PID=602) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:38:13,912] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:38:13,913] {logging_mixin.py:109} INFO - [2022-06-17 21:38:13,913] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:38:13,932] {logging_mixin.py:109} INFO - [2022-06-17 21:38:13,932] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:38:14,409] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:38:14,416] {logging_mixin.py:109} INFO - [2022-06-17 21:38:14,416] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:38:14,427] {logging_mixin.py:109} INFO - [2022-06-17 21:38:14,427] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:38:14,439] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.530 seconds
+[2022-06-17 21:38:44,532] {processor.py:163} INFO - Started process (PID=641) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:38:44,534] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:38:44,535] {logging_mixin.py:109} INFO - [2022-06-17 21:38:44,535] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:38:44,567] {logging_mixin.py:109} INFO - [2022-06-17 21:38:44,567] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:38:45,045] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:38:45,052] {logging_mixin.py:109} INFO - [2022-06-17 21:38:45,052] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:38:45,063] {logging_mixin.py:109} INFO - [2022-06-17 21:38:45,063] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:38:45,075] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.549 seconds
+[2022-06-17 21:39:15,150] {processor.py:163} INFO - Started process (PID=671) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:39:15,151] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:39:15,151] {logging_mixin.py:109} INFO - [2022-06-17 21:39:15,151] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:39:15,171] {logging_mixin.py:109} INFO - [2022-06-17 21:39:15,171] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:39:15,639] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:39:15,646] {logging_mixin.py:109} INFO - [2022-06-17 21:39:15,646] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:39:15,657] {logging_mixin.py:109} INFO - [2022-06-17 21:39:15,657] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:39:15,671] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.524 seconds
+[2022-06-17 21:39:45,752] {processor.py:163} INFO - Started process (PID=710) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:39:45,753] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:39:45,753] {logging_mixin.py:109} INFO - [2022-06-17 21:39:45,753] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:39:45,794] {logging_mixin.py:109} INFO - [2022-06-17 21:39:45,794] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:39:46,417] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:39:46,425] {logging_mixin.py:109} INFO - [2022-06-17 21:39:46,425] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:39:46,436] {logging_mixin.py:109} INFO - [2022-06-17 21:39:46,436] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:39:46,444] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.694 seconds
+[2022-06-17 21:40:16,908] {processor.py:163} INFO - Started process (PID=749) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:40:16,909] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:40:16,910] {logging_mixin.py:109} INFO - [2022-06-17 21:40:16,910] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:40:16,932] {logging_mixin.py:109} INFO - [2022-06-17 21:40:16,932] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:40:17,468] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:40:17,475] {logging_mixin.py:109} INFO - [2022-06-17 21:40:17,475] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:40:17,487] {logging_mixin.py:109} INFO - [2022-06-17 21:40:17,487] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:40:17,499] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.593 seconds
+[2022-06-17 21:40:47,605] {processor.py:163} INFO - Started process (PID=779) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:40:47,606] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:40:47,606] {logging_mixin.py:109} INFO - [2022-06-17 21:40:47,606] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:40:47,626] {logging_mixin.py:109} INFO - [2022-06-17 21:40:47,626] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:40:48,126] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:40:48,136] {logging_mixin.py:109} INFO - [2022-06-17 21:40:48,135] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:40:48,146] {logging_mixin.py:109} INFO - [2022-06-17 21:40:48,146] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:40:48,158] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.555 seconds
+[2022-06-17 21:41:18,247] {processor.py:163} INFO - Started process (PID=818) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:41:18,248] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:41:18,249] {logging_mixin.py:109} INFO - [2022-06-17 21:41:18,249] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:41:18,271] {logging_mixin.py:109} INFO - [2022-06-17 21:41:18,271] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:41:18,785] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:41:18,794] {logging_mixin.py:109} INFO - [2022-06-17 21:41:18,794] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:41:18,804] {logging_mixin.py:109} INFO - [2022-06-17 21:41:18,804] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:41:18,817] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.573 seconds
+[2022-06-17 21:41:48,904] {processor.py:163} INFO - Started process (PID=854) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:41:48,905] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:41:48,905] {logging_mixin.py:109} INFO - [2022-06-17 21:41:48,905] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:41:48,926] {logging_mixin.py:109} INFO - [2022-06-17 21:41:48,926] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:41:49,546] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:41:49,560] {logging_mixin.py:109} INFO - [2022-06-17 21:41:49,560] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:41:49,573] {logging_mixin.py:109} INFO - [2022-06-17 21:41:49,573] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:41:49,589] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.687 seconds
+[2022-06-17 21:42:19,690] {processor.py:163} INFO - Started process (PID=893) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:42:19,696] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:42:19,696] {logging_mixin.py:109} INFO - [2022-06-17 21:42:19,696] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:42:19,716] {logging_mixin.py:109} INFO - [2022-06-17 21:42:19,716] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:42:20,226] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:42:20,233] {logging_mixin.py:109} INFO - [2022-06-17 21:42:20,233] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:42:20,242] {logging_mixin.py:109} INFO - [2022-06-17 21:42:20,242] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:42:20,258] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.570 seconds
+[2022-06-17 21:42:50,359] {processor.py:163} INFO - Started process (PID=932) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:42:50,360] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:42:50,361] {logging_mixin.py:109} INFO - [2022-06-17 21:42:50,361] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:42:50,382] {logging_mixin.py:109} INFO - [2022-06-17 21:42:50,381] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:42:50,871] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:42:50,878] {logging_mixin.py:109} INFO - [2022-06-17 21:42:50,878] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:42:50,888] {logging_mixin.py:109} INFO - [2022-06-17 21:42:50,888] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:42:50,904] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.546 seconds
+[2022-06-17 21:43:21,490] {processor.py:163} INFO - Started process (PID=962) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:43:21,491] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:43:21,491] {logging_mixin.py:109} INFO - [2022-06-17 21:43:21,491] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:43:21,512] {logging_mixin.py:109} INFO - [2022-06-17 21:43:21,512] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:43:22,039] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:43:22,048] {logging_mixin.py:109} INFO - [2022-06-17 21:43:22,048] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:43:22,059] {logging_mixin.py:109} INFO - [2022-06-17 21:43:22,059] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:43:22,066] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.579 seconds
+[2022-06-17 21:43:52,184] {processor.py:163} INFO - Started process (PID=1001) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:43:52,185] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:43:52,185] {logging_mixin.py:109} INFO - [2022-06-17 21:43:52,185] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:43:52,206] {logging_mixin.py:109} INFO - [2022-06-17 21:43:52,205] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:43:52,729] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:43:52,736] {logging_mixin.py:109} INFO - [2022-06-17 21:43:52,736] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:43:52,747] {logging_mixin.py:109} INFO - [2022-06-17 21:43:52,747] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:43:52,759] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.577 seconds
+[2022-06-17 21:44:22,856] {processor.py:163} INFO - Started process (PID=1040) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:44:22,857] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:44:22,858] {logging_mixin.py:109} INFO - [2022-06-17 21:44:22,858] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:44:22,878] {logging_mixin.py:109} INFO - [2022-06-17 21:44:22,878] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:44:23,385] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:44:23,392] {logging_mixin.py:109} INFO - [2022-06-17 21:44:23,392] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:44:23,402] {logging_mixin.py:109} INFO - [2022-06-17 21:44:23,402] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:44:23,414] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.560 seconds
+[2022-06-17 21:44:53,954] {processor.py:163} INFO - Started process (PID=1070) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:44:53,955] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:44:53,955] {logging_mixin.py:109} INFO - [2022-06-17 21:44:53,955] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:44:53,975] {logging_mixin.py:109} INFO - [2022-06-17 21:44:53,975] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:44:54,481] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:44:54,677] {logging_mixin.py:109} INFO - [2022-06-17 21:44:54,676] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:44:54,688] {logging_mixin.py:109} INFO - [2022-06-17 21:44:54,688] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:44:54,707] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.755 seconds
+[2022-06-17 21:45:24,790] {processor.py:163} INFO - Started process (PID=1109) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:45:24,790] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:45:24,791] {logging_mixin.py:109} INFO - [2022-06-17 21:45:24,791] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:45:24,814] {logging_mixin.py:109} INFO - [2022-06-17 21:45:24,814] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:45:25,303] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:45:25,310] {logging_mixin.py:109} INFO - [2022-06-17 21:45:25,310] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:45:25,320] {logging_mixin.py:109} INFO - [2022-06-17 21:45:25,319] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:45:25,332] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.545 seconds
+[2022-06-17 21:45:55,432] {processor.py:163} INFO - Started process (PID=1149) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:45:55,433] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:45:55,433] {logging_mixin.py:109} INFO - [2022-06-17 21:45:55,433] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:45:55,456] {logging_mixin.py:109} INFO - [2022-06-17 21:45:55,456] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:45:55,853] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:45:55,861] {logging_mixin.py:109} INFO - [2022-06-17 21:45:55,861] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:45:55,873] {logging_mixin.py:109} INFO - [2022-06-17 21:45:55,872] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:45:55,885] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.456 seconds
+[2022-06-17 21:46:26,005] {processor.py:163} INFO - Started process (PID=1185) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:46:26,006] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:46:26,006] {logging_mixin.py:109} INFO - [2022-06-17 21:46:26,006] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:46:26,028] {logging_mixin.py:109} INFO - [2022-06-17 21:46:26,028] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:46:26,546] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:46:26,553] {logging_mixin.py:109} INFO - [2022-06-17 21:46:26,553] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:46:26,563] {logging_mixin.py:109} INFO - [2022-06-17 21:46:26,563] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:46:26,570] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.567 seconds
+[2022-06-17 21:46:57,152] {processor.py:163} INFO - Started process (PID=1224) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:46:57,154] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:46:57,154] {logging_mixin.py:109} INFO - [2022-06-17 21:46:57,154] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:46:57,177] {logging_mixin.py:109} INFO - [2022-06-17 21:46:57,177] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:46:57,795] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:46:57,802] {logging_mixin.py:109} INFO - [2022-06-17 21:46:57,802] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:46:57,813] {logging_mixin.py:109} INFO - [2022-06-17 21:46:57,813] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:46:57,828] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.678 seconds
+[2022-06-17 21:47:27,938] {processor.py:163} INFO - Started process (PID=1263) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:47:27,939] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:47:27,939] {logging_mixin.py:109} INFO - [2022-06-17 21:47:27,939] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:47:27,962] {logging_mixin.py:109} INFO - [2022-06-17 21:47:27,962] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:47:28,472] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:47:28,479] {logging_mixin.py:109} INFO - [2022-06-17 21:47:28,478] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:47:28,489] {logging_mixin.py:109} INFO - [2022-06-17 21:47:28,489] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:47:28,496] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.560 seconds
+[2022-06-17 21:47:58,516] {processor.py:163} INFO - Started process (PID=1293) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:47:58,517] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:47:58,518] {logging_mixin.py:109} INFO - [2022-06-17 21:47:58,518] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:47:58,539] {logging_mixin.py:109} INFO - [2022-06-17 21:47:58,539] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:47:59,069] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:47:59,077] {logging_mixin.py:109} INFO - [2022-06-17 21:47:59,077] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:47:59,088] {logging_mixin.py:109} INFO - [2022-06-17 21:47:59,088] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:47:59,099] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.586 seconds
+[2022-06-17 21:48:29,625] {processor.py:163} INFO - Started process (PID=1332) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:48:29,626] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:48:29,626] {logging_mixin.py:109} INFO - [2022-06-17 21:48:29,626] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:48:29,650] {logging_mixin.py:109} INFO - [2022-06-17 21:48:29,649] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:48:30,240] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:48:30,248] {logging_mixin.py:109} INFO - [2022-06-17 21:48:30,248] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:48:30,260] {logging_mixin.py:109} INFO - [2022-06-17 21:48:30,259] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:48:30,272] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.650 seconds
+[2022-06-17 21:49:00,373] {processor.py:163} INFO - Started process (PID=1369) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:49:00,374] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:49:00,375] {logging_mixin.py:109} INFO - [2022-06-17 21:49:00,374] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:49:00,398] {logging_mixin.py:109} INFO - [2022-06-17 21:49:00,398] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:49:01,110] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:49:01,120] {logging_mixin.py:109} INFO - [2022-06-17 21:49:01,120] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:49:01,134] {logging_mixin.py:109} INFO - [2022-06-17 21:49:01,134] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:49:01,158] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.788 seconds
+[2022-06-17 21:49:31,649] {processor.py:163} INFO - Started process (PID=1400) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:49:31,651] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:49:31,651] {logging_mixin.py:109} INFO - [2022-06-17 21:49:31,651] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:49:31,672] {logging_mixin.py:109} INFO - [2022-06-17 21:49:31,672] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:49:32,240] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:49:32,248] {logging_mixin.py:109} INFO - [2022-06-17 21:49:32,248] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:49:32,260] {logging_mixin.py:109} INFO - [2022-06-17 21:49:32,260] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:49:32,268] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.621 seconds
+[2022-06-17 21:50:02,363] {processor.py:163} INFO - Started process (PID=1439) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:50:02,364] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:50:02,364] {logging_mixin.py:109} INFO - [2022-06-17 21:50:02,364] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:50:02,387] {logging_mixin.py:109} INFO - [2022-06-17 21:50:02,387] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:50:02,977] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:50:02,985] {logging_mixin.py:109} INFO - [2022-06-17 21:50:02,985] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:50:03,012] {logging_mixin.py:109} INFO - [2022-06-17 21:50:03,012] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:50:03,025] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.665 seconds
+[2022-06-17 21:50:33,140] {processor.py:163} INFO - Started process (PID=1469) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:50:33,141] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:50:33,142] {logging_mixin.py:109} INFO - [2022-06-17 21:50:33,142] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:50:33,163] {logging_mixin.py:109} INFO - [2022-06-17 21:50:33,163] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:50:33,793] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:50:33,802] {logging_mixin.py:109} INFO - [2022-06-17 21:50:33,802] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:50:33,815] {logging_mixin.py:109} INFO - [2022-06-17 21:50:33,814] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:50:33,828] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.690 seconds
+[2022-06-17 21:51:03,935] {processor.py:163} INFO - Started process (PID=1508) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:51:03,936] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:51:03,937] {logging_mixin.py:109} INFO - [2022-06-17 21:51:03,937] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:51:03,962] {logging_mixin.py:109} INFO - [2022-06-17 21:51:03,962] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:51:04,593] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:51:04,602] {logging_mixin.py:109} INFO - [2022-06-17 21:51:04,602] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:51:04,614] {logging_mixin.py:109} INFO - [2022-06-17 21:51:04,614] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:51:04,627] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.695 seconds
+[2022-06-17 21:51:35,015] {processor.py:163} INFO - Started process (PID=1538) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:51:35,016] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:51:35,017] {logging_mixin.py:109} INFO - [2022-06-17 21:51:35,016] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:51:35,041] {logging_mixin.py:109} INFO - [2022-06-17 21:51:35,040] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:51:35,651] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:51:35,660] {logging_mixin.py:109} INFO - [2022-06-17 21:51:35,660] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:51:35,673] {logging_mixin.py:109} INFO - [2022-06-17 21:51:35,673] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:51:35,686] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.673 seconds
+[2022-06-17 21:52:05,759] {processor.py:163} INFO - Started process (PID=1577) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:52:05,760] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:52:05,761] {logging_mixin.py:109} INFO - [2022-06-17 21:52:05,761] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:52:05,782] {logging_mixin.py:109} INFO - [2022-06-17 21:52:05,782] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:52:06,381] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:52:06,389] {logging_mixin.py:109} INFO - [2022-06-17 21:52:06,389] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:52:06,401] {logging_mixin.py:109} INFO - [2022-06-17 21:52:06,401] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:52:06,414] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.657 seconds
+[2022-06-17 21:52:36,514] {processor.py:163} INFO - Started process (PID=1616) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:52:36,515] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:52:36,515] {logging_mixin.py:109} INFO - [2022-06-17 21:52:36,515] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:52:36,538] {logging_mixin.py:109} INFO - [2022-06-17 21:52:36,537] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:52:37,139] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:52:37,148] {logging_mixin.py:109} INFO - [2022-06-17 21:52:37,148] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:52:37,161] {logging_mixin.py:109} INFO - [2022-06-17 21:52:37,161] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:52:37,169] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.659 seconds
+[2022-06-17 21:53:07,275] {processor.py:163} INFO - Started process (PID=1646) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:53:07,276] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:53:07,276] {logging_mixin.py:109} INFO - [2022-06-17 21:53:07,276] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:53:07,298] {logging_mixin.py:109} INFO - [2022-06-17 21:53:07,298] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:53:07,871] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:53:07,880] {logging_mixin.py:109} INFO - [2022-06-17 21:53:07,880] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:53:07,894] {logging_mixin.py:109} INFO - [2022-06-17 21:53:07,894] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:53:07,907] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.635 seconds
+[2022-06-17 21:53:38,360] {processor.py:163} INFO - Started process (PID=1684) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:53:38,361] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:53:38,361] {logging_mixin.py:109} INFO - [2022-06-17 21:53:38,361] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:53:38,383] {logging_mixin.py:109} INFO - [2022-06-17 21:53:38,383] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:53:38,970] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:53:38,979] {logging_mixin.py:109} INFO - [2022-06-17 21:53:38,978] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:53:38,989] {logging_mixin.py:109} INFO - [2022-06-17 21:53:38,989] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:53:38,997] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.640 seconds
+[2022-06-17 21:54:09,058] {processor.py:163} INFO - Started process (PID=1714) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:54:09,059] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:54:09,060] {logging_mixin.py:109} INFO - [2022-06-17 21:54:09,060] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:54:09,086] {logging_mixin.py:109} INFO - [2022-06-17 21:54:09,086] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:54:09,728] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:54:09,739] {logging_mixin.py:109} INFO - [2022-06-17 21:54:09,738] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:54:09,756] {logging_mixin.py:109} INFO - [2022-06-17 21:54:09,756] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:54:09,771] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.716 seconds
+[2022-06-17 21:54:39,874] {processor.py:163} INFO - Started process (PID=1752) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:54:39,875] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:54:39,875] {logging_mixin.py:109} INFO - [2022-06-17 21:54:39,875] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:54:39,897] {logging_mixin.py:109} INFO - [2022-06-17 21:54:39,897] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:54:40,447] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:54:40,455] {logging_mixin.py:109} INFO - [2022-06-17 21:54:40,455] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:54:40,468] {logging_mixin.py:109} INFO - [2022-06-17 21:54:40,468] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:54:40,480] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.609 seconds
+[2022-06-17 21:55:10,585] {processor.py:163} INFO - Started process (PID=1791) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:55:10,586] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:55:10,587] {logging_mixin.py:109} INFO - [2022-06-17 21:55:10,587] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:55:10,611] {logging_mixin.py:109} INFO - [2022-06-17 21:55:10,611] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:55:11,227] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:55:11,235] {logging_mixin.py:109} INFO - [2022-06-17 21:55:11,235] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:55:11,249] {logging_mixin.py:109} INFO - [2022-06-17 21:55:11,249] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:55:11,262] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.680 seconds
+[2022-06-17 21:55:41,674] {processor.py:163} INFO - Started process (PID=1821) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:55:41,675] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:55:41,675] {logging_mixin.py:109} INFO - [2022-06-17 21:55:41,675] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:55:41,698] {logging_mixin.py:109} INFO - [2022-06-17 21:55:41,698] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:55:42,353] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:55:42,364] {logging_mixin.py:109} INFO - [2022-06-17 21:55:42,363] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:55:42,381] {logging_mixin.py:109} INFO - [2022-06-17 21:55:42,381] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:55:42,397] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.726 seconds
+[2022-06-17 21:56:12,487] {processor.py:163} INFO - Started process (PID=1860) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:56:12,488] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:56:12,488] {logging_mixin.py:109} INFO - [2022-06-17 21:56:12,488] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:56:12,509] {logging_mixin.py:109} INFO - [2022-06-17 21:56:12,509] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:56:13,109] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:56:13,117] {logging_mixin.py:109} INFO - [2022-06-17 21:56:13,117] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:56:13,131] {logging_mixin.py:109} INFO - [2022-06-17 21:56:13,131] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:56:13,144] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.660 seconds
+[2022-06-17 21:56:43,252] {processor.py:163} INFO - Started process (PID=1890) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:56:43,253] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:56:43,254] {logging_mixin.py:109} INFO - [2022-06-17 21:56:43,254] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:56:43,276] {logging_mixin.py:109} INFO - [2022-06-17 21:56:43,276] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:56:43,940] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:56:43,951] {logging_mixin.py:109} INFO - [2022-06-17 21:56:43,951] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:56:43,963] {logging_mixin.py:109} INFO - [2022-06-17 21:56:43,963] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:56:43,970] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.721 seconds
+[2022-06-17 21:57:14,071] {processor.py:163} INFO - Started process (PID=1934) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:57:14,072] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:57:14,073] {logging_mixin.py:109} INFO - [2022-06-17 21:57:14,073] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:57:14,098] {logging_mixin.py:109} INFO - [2022-06-17 21:57:14,098] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:57:14,698] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:57:14,706] {logging_mixin.py:109} INFO - [2022-06-17 21:57:14,706] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:57:14,717] {logging_mixin.py:109} INFO - [2022-06-17 21:57:14,717] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:57:14,724] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.655 seconds
+[2022-06-17 21:57:44,800] {processor.py:163} INFO - Started process (PID=1973) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:57:44,801] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:57:44,802] {logging_mixin.py:109} INFO - [2022-06-17 21:57:44,801] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:57:44,843] {logging_mixin.py:109} INFO - [2022-06-17 21:57:44,843] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:57:45,491] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:57:45,500] {logging_mixin.py:109} INFO - [2022-06-17 21:57:45,500] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:57:45,512] {logging_mixin.py:109} INFO - [2022-06-17 21:57:45,512] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:57:45,525] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.728 seconds
+[2022-06-17 21:58:15,605] {processor.py:163} INFO - Started process (PID=2003) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:58:15,606] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:58:15,607] {logging_mixin.py:109} INFO - [2022-06-17 21:58:15,607] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:58:15,631] {logging_mixin.py:109} INFO - [2022-06-17 21:58:15,631] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:58:16,432] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:58:16,443] {logging_mixin.py:109} INFO - [2022-06-17 21:58:16,443] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:58:16,460] {logging_mixin.py:109} INFO - [2022-06-17 21:58:16,460] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:58:16,470] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.868 seconds
+[2022-06-17 21:58:46,752] {processor.py:163} INFO - Started process (PID=2041) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:58:46,753] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:58:46,754] {logging_mixin.py:109} INFO - [2022-06-17 21:58:46,754] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:58:46,780] {logging_mixin.py:109} INFO - [2022-06-17 21:58:46,780] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:58:47,419] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:58:47,427] {logging_mixin.py:109} INFO - [2022-06-17 21:58:47,427] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:58:47,440] {logging_mixin.py:109} INFO - [2022-06-17 21:58:47,439] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:58:47,452] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.703 seconds
+[2022-06-17 21:59:17,512] {processor.py:163} INFO - Started process (PID=2071) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:59:17,513] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:59:17,513] {logging_mixin.py:109} INFO - [2022-06-17 21:59:17,513] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:59:17,536] {logging_mixin.py:109} INFO - [2022-06-17 21:59:17,536] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:59:18,131] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:59:18,139] {logging_mixin.py:109} INFO - [2022-06-17 21:59:18,139] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:59:18,151] {logging_mixin.py:109} INFO - [2022-06-17 21:59:18,151] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:59:18,163] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.654 seconds
+[2022-06-17 21:59:48,230] {processor.py:163} INFO - Started process (PID=2110) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:59:48,231] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 21:59:48,231] {logging_mixin.py:109} INFO - [2022-06-17 21:59:48,231] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:59:48,255] {logging_mixin.py:109} INFO - [2022-06-17 21:59:48,255] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 21:59:48,846] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 21:59:48,855] {logging_mixin.py:109} INFO - [2022-06-17 21:59:48,854] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 21:59:48,866] {logging_mixin.py:109} INFO - [2022-06-17 21:59:48,866] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 21:59:48,879] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.652 seconds
+[2022-06-17 22:00:19,447] {processor.py:163} INFO - Started process (PID=2148) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 22:00:19,448] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 22:00:19,449] {logging_mixin.py:109} INFO - [2022-06-17 22:00:19,448] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 22:00:19,470] {logging_mixin.py:109} INFO - [2022-06-17 22:00:19,470] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 22:00:19,981] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 22:00:19,988] {logging_mixin.py:109} INFO - [2022-06-17 22:00:19,988] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 22:00:19,998] {logging_mixin.py:109} INFO - [2022-06-17 22:00:19,998] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 22:00:20,011] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.566 seconds
+[2022-06-17 22:00:50,095] {processor.py:163} INFO - Started process (PID=2178) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 22:00:50,096] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 22:00:50,097] {logging_mixin.py:109} INFO - [2022-06-17 22:00:50,097] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 22:00:50,197] {logging_mixin.py:109} INFO - [2022-06-17 22:00:50,197] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 22:00:50,710] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 22:00:50,719] {logging_mixin.py:109} INFO - [2022-06-17 22:00:50,718] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 22:00:50,732] {logging_mixin.py:109} INFO - [2022-06-17 22:00:50,732] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 22:00:50,745] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.653 seconds
+[2022-06-17 22:01:20,818] {processor.py:163} INFO - Started process (PID=2217) to work on /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 22:01:20,819] {processor.py:642} INFO - Processing file /opt/airflow/dags/csv_to_ds.py for tasks to queue
+[2022-06-17 22:01:20,820] {logging_mixin.py:109} INFO - [2022-06-17 22:01:20,819] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 22:01:20,907] {logging_mixin.py:109} INFO - [2022-06-17 22:01:20,906] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-17 22:01:21,342] {processor.py:654} INFO - DAG(s) dict_keys(['CSV_TO_DS']) retrieved from /opt/airflow/dags/csv_to_ds.py
+[2022-06-17 22:01:21,349] {logging_mixin.py:109} INFO - [2022-06-17 22:01:21,349] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-17 22:01:21,359] {logging_mixin.py:109} INFO - [2022-06-17 22:01:21,359] {dag.py:2935} INFO - Setting next_dagrun for CSV_TO_DS to 2022-06-17T21:26:59.328971+00:00
+[2022-06-17 22:01:21,370] {processor.py:171} INFO - Processing /opt/airflow/dags/csv_to_ds.py took 0.555 seconds

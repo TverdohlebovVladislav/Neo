@@ -17,7 +17,7 @@ with DAG(
     description='Load csv files to detailed lay',
     schedule_interval=timedelta(days=1),
     start_date=datetime(2022, 5, 5),
-    max_active_runs=3,
+    max_active_runs=1,
     template_searchpath=f"{core.AIRFLOW_HOME}/sql/",
     catchup=False,
     tags=['csv_to_ds']

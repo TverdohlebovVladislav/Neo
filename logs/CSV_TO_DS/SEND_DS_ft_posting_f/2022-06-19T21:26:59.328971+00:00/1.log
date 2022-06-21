@@ -1,0 +1,42 @@
+[2022-06-21 06:27:59,800] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_ft_posting_f scheduled__2022-06-19T21:26:59.328971+00:00 [queued]>
+[2022-06-21 06:27:59,813] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_ft_posting_f scheduled__2022-06-19T21:26:59.328971+00:00 [queued]>
+[2022-06-21 06:27:59,814] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 06:27:59,814] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-21 06:27:59,814] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 06:27:59,833] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): SEND_DS_ft_posting_f> on 2022-06-19 21:26:59.328971+00:00
+[2022-06-21 06:27:59,840] {standard_task_runner.py:52} INFO - Started process 237 to run task
+[2022-06-21 06:27:59,849] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'CSV_TO_DS', 'SEND_DS_ft_posting_f', 'scheduled__2022-06-19T21:26:59.328971+00:00', '--job-id', '491', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_ds.py', '--cfg-path', '/tmp/tmp2__axepg', '--error-file', '/tmp/tmp4l4nssvl']
+[2022-06-21 06:27:59,850] {standard_task_runner.py:77} INFO - Job 491: Subtask SEND_DS_ft_posting_f
+[2022-06-21 06:27:59,947] {logging_mixin.py:109} INFO - Running <TaskInstance: CSV_TO_DS.SEND_DS_ft_posting_f scheduled__2022-06-19T21:26:59.328971+00:00 [running]> on host c087b85f9f15
+[2022-06-21 06:28:00,162] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=CSV_TO_DS
+AIRFLOW_CTX_TASK_ID=SEND_DS_ft_posting_f
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-19T21:26:59.328971+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-19T21:26:59.328971+00:00
+[2022-06-21 06:28:00,618] {CsvToDs.py:49} INFO -    id   OPER_DATE  ...  CREDIT_AMOUNT  DEBET_AMOUNT
+0   1  2018-01-09  ...       94333.93      18337.76
+1   2  2018-01-09  ...       68294.14      31542.06
+2   3  2018-01-09  ...        2192.96      98734.33
+3   4  2018-01-09  ...       44179.86      98544.65
+4   5  2018-01-09  ...       18843.05        889.74
+
+[5 rows x 6 columns]
+[2022-06-21 06:28:00,777] {CsvToDs.py:58} INFO - Column oper_date changed date-time format
+[2022-06-21 06:28:00,777] {CsvToDs.py:64} INFO - Table ft_posting_f read in pandas success. 
+[2022-06-21 06:28:00,816] {CsvToDs.py:65} INFO - 
+    id  oper_date  ...  credit_amount  debet_amount
+0   1 2018-01-09  ...       94333.93      18337.76
+1   2 2018-01-09  ...       68294.14      31542.06
+2   3 2018-01-09  ...        2192.96      98734.33
+3   4 2018-01-09  ...       44179.86      98544.65
+4   5 2018-01-09  ...       18843.05        889.74
+
+[5 rows x 6 columns]
+[2022-06-21 06:28:12,131] {CsvToDs.py:108} INFO -  Table ft_posting_f in ds schema has updated success. 
+[2022-06-21 06:28:17,144] {python.py:175} INFO - Done. Returned value was: None
+[2022-06-21 06:28:17,153] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=CSV_TO_DS, task_id=SEND_DS_ft_posting_f, execution_date=20220619T212659, start_date=20220621T062759, end_date=20220621T062817
+[2022-06-21 06:28:17,182] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-21 06:28:17,207] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,35 @@
+[2022-06-21 06:27:57,487] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_currency_d scheduled__2022-06-19T21:26:59.328971+00:00 [queued]>
+[2022-06-21 06:27:57,560] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_currency_d scheduled__2022-06-19T21:26:59.328971+00:00 [queued]>
+[2022-06-21 06:27:57,561] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 06:27:57,561] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-21 06:27:57,566] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-21 06:27:57,646] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): SEND_DS_md_currency_d> on 2022-06-19 21:26:59.328971+00:00
+[2022-06-21 06:27:57,721] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'CSV_TO_DS', 'SEND_DS_md_currency_d', 'scheduled__2022-06-19T21:26:59.328971+00:00', '--job-id', '479', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_ds.py', '--cfg-path', '/tmp/tmpa1mv92be', '--error-file', '/tmp/tmpy9_2ru61']
+[2022-06-21 06:27:57,727] {standard_task_runner.py:77} INFO - Job 479: Subtask SEND_DS_md_currency_d
+[2022-06-21 06:27:57,704] {standard_task_runner.py:52} INFO - Started process 221 to run task
+[2022-06-21 06:27:58,044] {logging_mixin.py:109} INFO - Running <TaskInstance: CSV_TO_DS.SEND_DS_md_currency_d scheduled__2022-06-19T21:26:59.328971+00:00 [running]> on host c087b85f9f15
+[2022-06-21 06:27:58,330] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=CSV_TO_DS
+AIRFLOW_CTX_TASK_ID=SEND_DS_md_currency_d
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-19T21:26:59.328971+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-19T21:26:59.328971+00:00
+[2022-06-21 06:27:58,725] {CsvToDs.py:58} INFO - Column data_actual_date changed date-time format
+[2022-06-21 06:27:58,755] {CsvToDs.py:58} INFO - Column data_actual_end_date changed date-time format
+[2022-06-21 06:27:58,815] {CsvToDs.py:64} INFO - Table md_currency_d read in pandas success. 
+[2022-06-21 06:27:58,925] {CsvToDs.py:65} INFO - 
+    currency_rk data_actual_date  ... currency_code code_iso_char
+0      4586704       2011-09-06  ...           000           NON
+1           50       2017-05-11  ...           356           INR
+2           51       2017-05-11  ...           484           MXN
+3           52       2017-05-11  ...           434           LYD
+4           53       2017-05-11  ...           422           LBR
+
+[5 rows x 5 columns]
+[2022-06-21 06:27:59,194] {CsvToDs.py:108} INFO -  Table md_currency_d in ds schema has updated success. 
+[2022-06-21 06:28:04,205] {python.py:175} INFO - Done. Returned value was: None
+[2022-06-21 06:28:04,225] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=CSV_TO_DS, task_id=SEND_DS_md_currency_d, execution_date=20220619T212659, start_date=20220621T062757, end_date=20220621T062804
+[2022-06-21 06:28:04,283] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-21 06:28:04,367] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
