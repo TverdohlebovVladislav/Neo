@@ -1,9 +1,13 @@
 from core.constants import *
 # from core.SQLAlchemyOperator import get_session
-from core.CsvToDs import CsvToDs
+from core.LocalDbConnection import LocalDbConnection
+from core.FromLocal import FromLocal
+from core.ToLocal import ToLocal
 
 __all__ = [
-    'CsvToDs',
+    'LocalDbConnection',
+    'FromLocal',
+    'ToLocal',
     'DEFAULT_POSTGRES_CONN_ID',
     'AIRFLOW_HOME',
     'CONN_OBJECT'

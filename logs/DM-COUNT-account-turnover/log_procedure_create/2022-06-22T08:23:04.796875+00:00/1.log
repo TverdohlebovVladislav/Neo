@@ -1,0 +1,125 @@
+[2022-06-22 08:23:08,060] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.log_procedure_create manual__2022-06-22T08:23:04.796875+00:00 [queued]>
+[2022-06-22 08:23:08,082] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.log_procedure_create manual__2022-06-22T08:23:04.796875+00:00 [queued]>
+[2022-06-22 08:23:08,082] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 08:23:08,082] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-22 08:23:08,082] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 08:23:08,096] {taskinstance.py:1259} INFO - Executing <Task(PostgresOperator): log_procedure_create> on 2022-06-22 08:23:04.796875+00:00
+[2022-06-22 08:23:08,105] {standard_task_runner.py:52} INFO - Started process 2185 to run task
+[2022-06-22 08:23:08,110] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'DM-COUNT-account-turnover', 'log_procedure_create', 'manual__2022-06-22T08:23:04.796875+00:00', '--job-id', '1022', '--raw', '--subdir', 'DAGS_FOLDER/dm_fill_account_turnover.py', '--cfg-path', '/tmp/tmpto8su9vz', '--error-file', '/tmp/tmpez_uk1cs']
+[2022-06-22 08:23:08,111] {standard_task_runner.py:77} INFO - Job 1022: Subtask log_procedure_create
+[2022-06-22 08:23:08,216] {logging_mixin.py:109} INFO - Running <TaskInstance: DM-COUNT-account-turnover.log_procedure_create manual__2022-06-22T08:23:04.796875+00:00 [running]> on host a0a302277daf
+[2022-06-22 08:23:08,319] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=DM-COUNT-account-turnover
+AIRFLOW_CTX_TASK_ID=log_procedure_create
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-22T08:23:04.796875+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-22T08:23:04.796875+00:00
+[2022-06-22 08:23:08,337] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: ***, Password: ***, extra: {}
+[2022-06-22 08:23:08,341] {dbapi.py:225} INFO - Running statement: create or replace procedure logs.writelog (
+   i_message		varchar,
+   i_messageType	int
+)
+language plpgsql    
+as $$
+declare
+	log_NOTICE            constant int := 1;
+	log_WARNING           constant int := 2;
+	log_ERROR             constant int := 3;
+	log_DEBUG             constant int := 4;
+
+	c_splitToTable        constant int := 4000;
+	c_splitToDbmsOutput   constant int := 900;
+
+	v_logDate           timestamp;
+	v_callerType        varchar;
+	v_callerOwner       varchar;
+	v_caller            varchar;
+	v_line              numeric;
+	v_message           varchar;
+begin
+    v_logDate := now();
+    -- split to log table
+    v_message := i_message;
+	i_messageType	:= log_NOTICE;
+    while length(v_message) > 0 loop
+      insert into logs.lg_messages_dm ( 	
+		record_id,
+		date_time,
+		pid,
+		message,
+		message_type,
+		usename, 
+		datname, 
+		client_addr, 
+		application_name,
+		backend_start
+    )
+	select 	
+			nextval('logs.seq_lg_messages'),
+			now(),
+			pid,
+			substr(v_message, 1, c_splitToTable),
+			i_messageType,
+			usename, 
+			datname, 
+			client_addr, 
+			application_name,
+			backend_start
+	 from pg_stat_activity
+	where pid = pg_backend_pid();
+      v_message := substr(v_message, c_splitToTable + 1);
+    end loop;
+
+    commit;
+end;$$, parameters: None
+[2022-06-22 08:23:08,343] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 69, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 205, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 229, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.InvalidSchemaName: schema "logs" does not exist
+
+[2022-06-22 08:23:08,365] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=DM-COUNT-account-turnover, task_id=log_procedure_create, execution_date=20220622T082304, start_date=20220622T082308, end_date=20220622T082308
+[2022-06-22 08:23:08,397] {standard_task_runner.py:92} ERROR - Failed to execute job 1022 for task log_procedure_create
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/postgres/operators/postgres.py", line 69, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 205, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 229, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.InvalidSchemaName: schema "logs" does not exist
+
+[2022-06-22 08:23:08,408] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-06-22 08:23:08,500] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -23,14 +23,14 @@ with DAG(
     tags=['csv_to_ds']
 ) as dag:
 
-    ft_balance_f = core.CsvToDs(
+    ft_balance_f = core.FromLocal(
         "ft_balance_f",
         f"{core.AIRFLOW_HOME}/csv/ft_balance_f.csv",
         f'{core.AIRFLOW_HOME}/sql/update_ds/ft_balance_f.sql',
         ['on_date'],
     )
 
-    ft_posting_f = core.CsvToDs(
+    ft_posting_f = core.FromLocal(
         "ft_posting_f",
         f"{core.AIRFLOW_HOME}/csv/ft_posting_f.csv",
         f'{core.AIRFLOW_HOME}/sql/update_ds/ft_posting_f.sql',
@@ -38,21 +38,21 @@ with DAG(
         True
     )
 
-    md_account_d = core.CsvToDs(
+    md_account_d = core.FromLocal(
         "md_account_d",
         f"{core.AIRFLOW_HOME}/csv/md_account_d.csv",
         f'{core.AIRFLOW_HOME}/sql/update_ds/md_account_d.sql',
         ['data_actual_date', 'data_actual_end_date']
     )
 
-    md_currency_d = core.CsvToDs(
+    md_currency_d = core.FromLocal(
         "md_currency_d",
         f"{core.AIRFLOW_HOME}/csv/md_currency_d.csv",
         f'{core.AIRFLOW_HOME}/sql/update_ds/md_currency_d.sql',
         ['data_actual_date', 'data_actual_end_date']
     )
 
-    md_exchange_rate_d = core.CsvToDs(
+    md_exchange_rate_d = core.FromLocal(
         "md_exchange_rate_d",
         f"{core.AIRFLOW_HOME}/csv/md_exchange_rate_d.csv",
         f'{core.AIRFLOW_HOME}/sql/update_ds/md_exchange_rate_d.sql',
@@ -60,7 +60,7 @@ with DAG(
         True
     )
 
-    md_ledger_account_s = core.CsvToDs(
+    md_ledger_account_s = core.FromLocal(
         "md_ledger_account_s",
         f"{core.AIRFLOW_HOME}/csv/md_ledger_account_s.csv",
         f'{core.AIRFLOW_HOME}/sql/update_ds/md_ledger_account_s.sql',
