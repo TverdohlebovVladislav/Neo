@@ -1,0 +1,35 @@
+[2022-06-22 21:27:03,379] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_ledger_account_s scheduled__2022-06-21T21:26:59.328971+00:00 [queued]>
+[2022-06-22 21:27:03,426] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_ledger_account_s scheduled__2022-06-21T21:26:59.328971+00:00 [queued]>
+[2022-06-22 21:27:03,426] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 21:27:03,426] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-22 21:27:03,426] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 21:27:03,446] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): SEND_DS_md_ledger_account_s> on 2022-06-21 21:26:59.328971+00:00
+[2022-06-22 21:27:03,458] {standard_task_runner.py:52} INFO - Started process 5434 to run task
+[2022-06-22 21:27:03,465] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'CSV_TO_DS', 'SEND_DS_md_ledger_account_s', 'scheduled__2022-06-21T21:26:59.328971+00:00', '--job-id', '1163', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_ds.py', '--cfg-path', '/tmp/tmp_b8hy5vr', '--error-file', '/tmp/tmpbun8szwi']
+[2022-06-22 21:27:03,467] {standard_task_runner.py:77} INFO - Job 1163: Subtask SEND_DS_md_ledger_account_s
+[2022-06-22 21:27:03,599] {logging_mixin.py:109} INFO - Running <TaskInstance: CSV_TO_DS.SEND_DS_md_ledger_account_s scheduled__2022-06-21T21:26:59.328971+00:00 [running]> on host bc39be91d060
+[2022-06-22 21:27:03,709] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=CSV_TO_DS
+AIRFLOW_CTX_TASK_ID=SEND_DS_md_ledger_account_s
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-21T21:26:59.328971+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-21T21:26:59.328971+00:00
+[2022-06-22 21:27:03,855] {FromLocal.py:52} INFO - Column start_date changed date-time format
+[2022-06-22 21:27:03,856] {FromLocal.py:52} INFO - Column end_date changed date-time format
+[2022-06-22 21:27:03,856] {FromLocal.py:58} INFO - Table md_ledger_account_s read in pandas success. 
+[2022-06-22 21:27:04,049] {FromLocal.py:59} INFO - 
+   chapter      chapter_name  ...  is_revaluation is_correct
+0       А  Балансовые счета  ...             NaN        NaN
+1       А  Балансовые счета  ...             NaN        NaN
+2       А  Балансовые счета  ...             NaN        NaN
+3       А  Балансовые счета  ...             NaN        NaN
+4       А  Балансовые счета  ...             NaN        NaN
+
+[5 rows x 28 columns]
+[2022-06-22 21:27:04,933] {FromLocal.py:84} INFO -  Table md_ledger_account_s in ds schema has updated success. 
+[2022-06-22 21:27:09,940] {python.py:175} INFO - Done. Returned value was: None
+[2022-06-22 21:27:09,949] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=CSV_TO_DS, task_id=SEND_DS_md_ledger_account_s, execution_date=20220621T212659, start_date=20220622T212703, end_date=20220622T212709
+[2022-06-22 21:27:09,988] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-22 21:27:10,032] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

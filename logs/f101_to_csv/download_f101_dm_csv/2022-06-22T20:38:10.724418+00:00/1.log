@@ -1,0 +1,23 @@
+[2022-06-22 20:38:12,724] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: f101_to_csv.download_f101_dm_csv manual__2022-06-22T20:38:10.724418+00:00 [queued]>
+[2022-06-22 20:38:12,732] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: f101_to_csv.download_f101_dm_csv manual__2022-06-22T20:38:10.724418+00:00 [queued]>
+[2022-06-22 20:38:12,733] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 20:38:12,733] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-22 20:38:12,733] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 20:38:12,742] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): download_f101_dm_csv> on 2022-06-22 20:38:10.724418+00:00
+[2022-06-22 20:38:12,746] {standard_task_runner.py:52} INFO - Started process 3163 to run task
+[2022-06-22 20:38:12,749] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'f101_to_csv', 'download_f101_dm_csv', 'manual__2022-06-22T20:38:10.724418+00:00', '--job-id', '1143', '--raw', '--subdir', 'DAGS_FOLDER/f101_to_local.py', '--cfg-path', '/tmp/tmpgxmrbmgj', '--error-file', '/tmp/tmpzpehwa1b']
+[2022-06-22 20:38:12,750] {standard_task_runner.py:77} INFO - Job 1143: Subtask download_f101_dm_csv
+[2022-06-22 20:38:12,793] {logging_mixin.py:109} INFO - Running <TaskInstance: f101_to_csv.download_f101_dm_csv manual__2022-06-22T20:38:10.724418+00:00 [running]> on host bc39be91d060
+[2022-06-22 20:38:12,835] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=f101_to_csv
+AIRFLOW_CTX_TASK_ID=download_f101_dm_csv
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-22T20:38:10.724418+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-22T20:38:10.724418+00:00
+[2022-06-22 20:38:12,874] {ToLocal.py:46} INFO - Table dm_f101_round_f has alredy downloaded in /opt/***/csv/dm/dm_f101_round_f.csv. 
+[2022-06-22 20:38:12,878] {python.py:175} INFO - Done. Returned value was: None
+[2022-06-22 20:38:12,887] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=f101_to_csv, task_id=download_f101_dm_csv, execution_date=20220622T203810, start_date=20220622T203812, end_date=20220622T203812
+[2022-06-22 20:38:12,923] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-22 20:38:12,961] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

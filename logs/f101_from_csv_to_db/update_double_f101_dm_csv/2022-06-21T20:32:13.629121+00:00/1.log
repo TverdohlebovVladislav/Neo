@@ -1,0 +1,24 @@
+[2022-06-22 20:32:19,299] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: f101_from_csv_to_db.update_double_f101_dm_csv scheduled__2022-06-21T20:32:13.629121+00:00 [queued]>
+[2022-06-22 20:32:19,308] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: f101_from_csv_to_db.update_double_f101_dm_csv scheduled__2022-06-21T20:32:13.629121+00:00 [queued]>
+[2022-06-22 20:32:19,308] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 20:32:19,308] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-22 20:32:19,308] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-22 20:32:19,318] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): update_double_f101_dm_csv> on 2022-06-21 20:32:13.629121+00:00
+[2022-06-22 20:32:19,323] {standard_task_runner.py:52} INFO - Started process 2897 to run task
+[2022-06-22 20:32:19,337] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'f101_from_csv_to_db', 'update_double_f101_dm_csv', 'scheduled__2022-06-21T20:32:13.629121+00:00', '--job-id', '1141', '--raw', '--subdir', 'DAGS_FOLDER/f101_from_local.py', '--cfg-path', '/tmp/tmpz1or4140', '--error-file', '/tmp/tmpjr7nx4dl']
+[2022-06-22 20:32:19,338] {standard_task_runner.py:77} INFO - Job 1141: Subtask update_double_f101_dm_csv
+[2022-06-22 20:32:19,385] {logging_mixin.py:109} INFO - Running <TaskInstance: f101_from_csv_to_db.update_double_f101_dm_csv scheduled__2022-06-21T20:32:13.629121+00:00 [running]> on host bc39be91d060
+[2022-06-22 20:32:19,434] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=f101_from_csv_to_db
+AIRFLOW_CTX_TASK_ID=update_double_f101_dm_csv
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-21T20:32:13.629121+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-21T20:32:13.629121+00:00
+[2022-06-22 20:32:19,461] {FromLocal.py:54} INFO - [Errno 2] No such file or directory: '/opt/airflow/csv/dm/dm_f101_round_f.csv'
+[2022-06-22 20:32:19,462] {FromLocal.py:80} INFO - 'NoneType' object has no attribute 'to_sql'
+[2022-06-22 20:32:24,483] {python.py:175} INFO - Done. Returned value was: None
+[2022-06-22 20:32:24,492] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=f101_from_csv_to_db, task_id=update_double_f101_dm_csv, execution_date=20220621T203213, start_date=20220622T203219, end_date=20220622T203224
+[2022-06-22 20:32:24,533] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-22 20:32:24,557] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
