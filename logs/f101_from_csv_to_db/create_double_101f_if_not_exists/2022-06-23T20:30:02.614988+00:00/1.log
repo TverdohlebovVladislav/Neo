@@ -1,0 +1,28 @@
+[2022-06-23 20:30:04,939] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: f101_from_csv_to_db.create_double_101f_if_not_exists manual__2022-06-23T20:30:02.614988+00:00 [queued]>
+[2022-06-23 20:30:04,947] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: f101_from_csv_to_db.create_double_101f_if_not_exists manual__2022-06-23T20:30:02.614988+00:00 [queued]>
+[2022-06-23 20:30:04,947] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-23 20:30:04,947] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-23 20:30:04,947] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-23 20:30:04,956] {taskinstance.py:1259} INFO - Executing <Task(PostgresOperator): create_double_101f_if_not_exists> on 2022-06-23 20:30:02.614988+00:00
+[2022-06-23 20:30:04,960] {standard_task_runner.py:52} INFO - Started process 909 to run task
+[2022-06-23 20:30:04,963] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'f101_from_csv_to_db', 'create_double_101f_if_not_exists', 'manual__2022-06-23T20:30:02.614988+00:00', '--job-id', '1241', '--raw', '--subdir', 'DAGS_FOLDER/f101_from_local.py', '--cfg-path', '/tmp/tmpbvk_1a9d', '--error-file', '/tmp/tmplb0ehssi']
+[2022-06-23 20:30:04,964] {standard_task_runner.py:77} INFO - Job 1241: Subtask create_double_101f_if_not_exists
+[2022-06-23 20:30:05,012] {logging_mixin.py:109} INFO - Running <TaskInstance: f101_from_csv_to_db.create_double_101f_if_not_exists manual__2022-06-23T20:30:02.614988+00:00 [running]> on host 1a36ba6d0ffa
+[2022-06-23 20:30:05,057] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=f101_from_csv_to_db
+AIRFLOW_CTX_TASK_ID=create_double_101f_if_not_exists
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-23T20:30:02.614988+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-23T20:30:02.614988+00:00
+[2022-06-23 20:30:05,064] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: ***, Password: ***, extra: {}
+[2022-06-23 20:30:05,068] {dbapi.py:225} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS dm.dm_f101_round_f_v2 
+            AS (SELECT * from dm.dm_f101_round_f) with no data;
+            , parameters: None
+[2022-06-23 20:30:05,068] {postgres.py:71} INFO - NOTICE:  relation "dm_f101_round_f_v2" already exists, skipping
+
+[2022-06-23 20:30:05,077] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=f101_from_csv_to_db, task_id=create_double_101f_if_not_exists, execution_date=20220623T203002, start_date=20220623T203004, end_date=20220623T203005
+[2022-06-23 20:30:05,096] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-23 20:30:05,125] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -27,20 +27,13 @@ with DAG(
         table_name='dm_f101_round_f_v2',
         csv_path=f'{AIRFLOW_HOME}/csv/dm/dm_f101_round_f.csv',
         sql_to_update=f'{AIRFLOW_HOME}/sql/update_dm/f101_double_from_local.sql',
-        date_corr_cols=['from_date', 'to_date']
+        date_corr_cols=['from_date', 'to_date'],
+        schema='dm',
+        replace_if_exists=True
     )
 
     start_task = DummyOperator(task_id='START', dag=dag)
     end_task = DummyOperator(task_id='END', dag=dag)
-
-    create_double_f101 = PostgresOperator(
-        task_id="create_double_101f_if_not_exists", 
-        sql="""
-            CREATE TABLE IF NOT EXISTS dm.dm_f101_round_f_v2 
-            AS (SELECT * from dm.dm_f101_round_f) with no data;
-            """, 
-        postgres_conn_id=DEFAULT_POSTGRES_CONN_ID
-    )
 
     update_db_f101_dm_task = PythonOperator(
         dag=dag,
@@ -49,6 +42,5 @@ with DAG(
     )
 
     start_task >> \
-    create_double_f101 >> \
     update_db_f101_dm_task >> \
     end_task

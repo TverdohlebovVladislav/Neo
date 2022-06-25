@@ -38,3 +38,724 @@
 [2022-06-23 07:57:01,931] {logging_mixin.py:109} INFO - [2022-06-23 07:57:01,930] {dag.py:2396} INFO - Sync 1 DAGs
 [2022-06-23 07:57:01,949] {logging_mixin.py:109} INFO - [2022-06-23 07:57:01,948] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
 [2022-06-23 07:57:01,965] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 1.327 seconds
+[2022-06-23 20:13:12,715] {processor.py:163} INFO - Started process (PID=31) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:13:12,734] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:13:12,735] {logging_mixin.py:109} INFO - [2022-06-23 20:13:12,735] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:13:12,791] {logging_mixin.py:109} INFO - [2022-06-23 20:13:12,791] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:13:16,135] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:13:16,159] {logging_mixin.py:109} INFO - [2022-06-23 20:13:16,158] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:13:16,214] {logging_mixin.py:109} INFO - [2022-06-23 20:13:16,214] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:13:16,236] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 3.535 seconds
+[2022-06-23 20:13:46,710] {processor.py:163} INFO - Started process (PID=127) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:13:46,713] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:13:46,714] {logging_mixin.py:109} INFO - [2022-06-23 20:13:46,714] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:13:46,734] {logging_mixin.py:109} INFO - [2022-06-23 20:13:46,734] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:13:47,170] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:13:47,176] {logging_mixin.py:109} INFO - [2022-06-23 20:13:47,176] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:13:47,186] {logging_mixin.py:109} INFO - [2022-06-23 20:13:47,186] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:13:47,200] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.493 seconds
+[2022-06-23 20:14:17,891] {processor.py:163} INFO - Started process (PID=184) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:14:17,892] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:14:17,893] {logging_mixin.py:109} INFO - [2022-06-23 20:14:17,893] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:14:17,913] {logging_mixin.py:109} INFO - [2022-06-23 20:14:17,913] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:14:18,313] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:14:18,319] {logging_mixin.py:109} INFO - [2022-06-23 20:14:18,318] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:14:18,331] {logging_mixin.py:109} INFO - [2022-06-23 20:14:18,331] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:14:18,345] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.456 seconds
+[2022-06-23 20:14:48,486] {processor.py:163} INFO - Started process (PID=232) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:14:48,487] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:14:48,488] {logging_mixin.py:109} INFO - [2022-06-23 20:14:48,488] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:14:48,510] {logging_mixin.py:109} INFO - [2022-06-23 20:14:48,510] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:14:48,897] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:14:48,903] {logging_mixin.py:109} INFO - [2022-06-23 20:14:48,903] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:14:48,914] {logging_mixin.py:109} INFO - [2022-06-23 20:14:48,914] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:14:48,927] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.444 seconds
+[2022-06-23 20:15:18,983] {processor.py:163} INFO - Started process (PID=289) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:15:18,984] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:15:18,985] {logging_mixin.py:109} INFO - [2022-06-23 20:15:18,985] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:15:19,005] {logging_mixin.py:109} INFO - [2022-06-23 20:15:19,005] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:15:19,412] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:15:19,419] {logging_mixin.py:109} INFO - [2022-06-23 20:15:19,419] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:15:19,431] {logging_mixin.py:109} INFO - [2022-06-23 20:15:19,430] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:15:19,446] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.465 seconds
+[2022-06-23 20:15:50,001] {processor.py:163} INFO - Started process (PID=343) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:15:50,002] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:15:50,003] {logging_mixin.py:109} INFO - [2022-06-23 20:15:50,003] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:15:50,023] {logging_mixin.py:109} INFO - [2022-06-23 20:15:50,023] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:15:50,483] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:15:50,491] {logging_mixin.py:109} INFO - [2022-06-23 20:15:50,490] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:15:50,502] {logging_mixin.py:109} INFO - [2022-06-23 20:15:50,502] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:15:50,516] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.518 seconds
+[2022-06-23 20:16:20,688] {processor.py:163} INFO - Started process (PID=394) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:16:20,689] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:16:20,689] {logging_mixin.py:109} INFO - [2022-06-23 20:16:20,689] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:16:20,728] {logging_mixin.py:109} INFO - [2022-06-23 20:16:20,728] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:16:21,174] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:16:21,181] {logging_mixin.py:109} INFO - [2022-06-23 20:16:21,181] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:16:21,193] {logging_mixin.py:109} INFO - [2022-06-23 20:16:21,193] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:16:21,200] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.516 seconds
+[2022-06-23 20:16:51,532] {processor.py:163} INFO - Started process (PID=453) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:16:51,533] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:16:51,534] {logging_mixin.py:109} INFO - [2022-06-23 20:16:51,534] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:16:51,555] {logging_mixin.py:109} INFO - [2022-06-23 20:16:51,555] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:16:52,029] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:16:52,039] {logging_mixin.py:109} INFO - [2022-06-23 20:16:52,039] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:16:52,051] {logging_mixin.py:109} INFO - [2022-06-23 20:16:52,051] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:16:52,062] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.533 seconds
+[2022-06-23 20:17:22,509] {processor.py:163} INFO - Started process (PID=502) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:17:22,510] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:17:22,511] {logging_mixin.py:109} INFO - [2022-06-23 20:17:22,511] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:17:22,530] {logging_mixin.py:109} INFO - [2022-06-23 20:17:22,530] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:17:22,951] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:17:22,961] {logging_mixin.py:109} INFO - [2022-06-23 20:17:22,961] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:17:22,973] {logging_mixin.py:109} INFO - [2022-06-23 20:17:22,972] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:17:22,980] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.474 seconds
+[2022-06-23 20:17:53,149] {processor.py:163} INFO - Started process (PID=558) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:17:53,150] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:17:53,150] {logging_mixin.py:109} INFO - [2022-06-23 20:17:53,150] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:17:53,169] {logging_mixin.py:109} INFO - [2022-06-23 20:17:53,169] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:17:53,578] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:17:53,585] {logging_mixin.py:109} INFO - [2022-06-23 20:17:53,585] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:17:53,597] {logging_mixin.py:109} INFO - [2022-06-23 20:17:53,597] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:17:53,607] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.461 seconds
+[2022-06-23 20:18:23,830] {processor.py:163} INFO - Started process (PID=614) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:18:23,831] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:18:23,832] {logging_mixin.py:109} INFO - [2022-06-23 20:18:23,832] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:18:23,850] {logging_mixin.py:109} INFO - [2022-06-23 20:18:23,850] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:18:24,276] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:18:24,282] {logging_mixin.py:109} INFO - [2022-06-23 20:18:24,282] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:18:24,299] {logging_mixin.py:109} INFO - [2022-06-23 20:18:24,298] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:18:24,306] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.478 seconds
+[2022-06-23 20:18:54,558] {processor.py:163} INFO - Started process (PID=661) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:18:54,560] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:18:54,560] {logging_mixin.py:109} INFO - [2022-06-23 20:18:54,560] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:18:54,581] {logging_mixin.py:109} INFO - [2022-06-23 20:18:54,581] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:18:54,988] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:18:54,995] {logging_mixin.py:109} INFO - [2022-06-23 20:18:54,995] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:18:55,006] {logging_mixin.py:109} INFO - [2022-06-23 20:18:55,006] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:18:55,017] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.461 seconds
+[2022-06-23 20:19:25,173] {processor.py:163} INFO - Started process (PID=718) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:19:25,173] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:19:25,174] {logging_mixin.py:109} INFO - [2022-06-23 20:19:25,174] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:19:25,194] {logging_mixin.py:109} INFO - [2022-06-23 20:19:25,194] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:19:25,613] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:19:25,619] {logging_mixin.py:109} INFO - [2022-06-23 20:19:25,619] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:19:25,629] {logging_mixin.py:109} INFO - [2022-06-23 20:19:25,629] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:19:25,636] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.466 seconds
+[2022-06-23 20:19:56,232] {processor.py:163} INFO - Started process (PID=775) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:19:56,233] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:19:56,233] {logging_mixin.py:109} INFO - [2022-06-23 20:19:56,233] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:19:56,252] {logging_mixin.py:109} INFO - [2022-06-23 20:19:56,252] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:19:56,662] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:19:56,671] {logging_mixin.py:109} INFO - [2022-06-23 20:19:56,671] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:19:56,692] {logging_mixin.py:109} INFO - [2022-06-23 20:19:56,692] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:19:56,699] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.470 seconds
+[2022-06-23 20:20:27,288] {processor.py:163} INFO - Started process (PID=823) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:20:27,289] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:20:27,289] {logging_mixin.py:109} INFO - [2022-06-23 20:20:27,289] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:20:27,310] {logging_mixin.py:109} INFO - [2022-06-23 20:20:27,310] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:20:27,741] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:20:27,749] {logging_mixin.py:109} INFO - [2022-06-23 20:20:27,748] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:20:27,762] {logging_mixin.py:109} INFO - [2022-06-23 20:20:27,762] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:20:27,770] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.485 seconds
+[2022-06-23 20:20:58,227] {processor.py:163} INFO - Started process (PID=880) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:20:58,228] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:20:58,228] {logging_mixin.py:109} INFO - [2022-06-23 20:20:58,228] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:20:58,251] {logging_mixin.py:109} INFO - [2022-06-23 20:20:58,251] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:20:58,650] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:20:58,657] {logging_mixin.py:109} INFO - [2022-06-23 20:20:58,656] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:20:58,667] {logging_mixin.py:109} INFO - [2022-06-23 20:20:58,667] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:20:58,680] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.456 seconds
+[2022-06-23 20:21:28,889] {processor.py:163} INFO - Started process (PID=937) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:21:28,890] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:21:28,891] {logging_mixin.py:109} INFO - [2022-06-23 20:21:28,891] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:21:28,911] {logging_mixin.py:109} INFO - [2022-06-23 20:21:28,911] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:21:29,330] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:21:29,337] {logging_mixin.py:109} INFO - [2022-06-23 20:21:29,337] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:21:29,350] {logging_mixin.py:109} INFO - [2022-06-23 20:21:29,350] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:21:29,359] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.473 seconds
+[2022-06-23 20:21:59,434] {processor.py:163} INFO - Started process (PID=984) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:21:59,435] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:21:59,436] {logging_mixin.py:109} INFO - [2022-06-23 20:21:59,436] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:21:59,457] {logging_mixin.py:109} INFO - [2022-06-23 20:21:59,457] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:21:59,869] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:21:59,876] {logging_mixin.py:109} INFO - [2022-06-23 20:21:59,876] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:21:59,891] {logging_mixin.py:109} INFO - [2022-06-23 20:21:59,890] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:21:59,906] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.475 seconds
+[2022-06-23 20:22:30,754] {processor.py:163} INFO - Started process (PID=1041) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:22:30,758] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:22:30,758] {logging_mixin.py:109} INFO - [2022-06-23 20:22:30,758] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:22:30,777] {logging_mixin.py:109} INFO - [2022-06-23 20:22:30,777] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:22:31,164] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:22:31,170] {logging_mixin.py:109} INFO - [2022-06-23 20:22:31,170] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:22:31,182] {logging_mixin.py:109} INFO - [2022-06-23 20:22:31,182] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:22:31,195] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.444 seconds
+[2022-06-23 20:23:01,421] {processor.py:163} INFO - Started process (PID=1098) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:23:01,422] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:23:01,423] {logging_mixin.py:109} INFO - [2022-06-23 20:23:01,423] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:23:01,444] {logging_mixin.py:109} INFO - [2022-06-23 20:23:01,444] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:23:01,861] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:23:01,868] {logging_mixin.py:109} INFO - [2022-06-23 20:23:01,868] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:23:01,881] {logging_mixin.py:109} INFO - [2022-06-23 20:23:01,881] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:23:01,893] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.475 seconds
+[2022-06-23 20:23:32,152] {processor.py:163} INFO - Started process (PID=1146) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:23:32,153] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:23:32,153] {logging_mixin.py:109} INFO - [2022-06-23 20:23:32,153] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:23:32,174] {logging_mixin.py:109} INFO - [2022-06-23 20:23:32,174] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:23:32,570] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:23:32,576] {logging_mixin.py:109} INFO - [2022-06-23 20:23:32,576] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:23:32,586] {logging_mixin.py:109} INFO - [2022-06-23 20:23:32,586] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:23:32,597] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.449 seconds
+[2022-06-23 20:24:02,809] {processor.py:163} INFO - Started process (PID=1204) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:24:02,810] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:24:02,811] {logging_mixin.py:109} INFO - [2022-06-23 20:24:02,811] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:24:02,835] {logging_mixin.py:109} INFO - [2022-06-23 20:24:02,834] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:24:03,254] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:24:03,260] {logging_mixin.py:109} INFO - [2022-06-23 20:24:03,260] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:24:03,270] {logging_mixin.py:109} INFO - [2022-06-23 20:24:03,270] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:24:03,282] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.476 seconds
+[2022-06-23 20:24:33,450] {processor.py:163} INFO - Started process (PID=1252) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:24:33,451] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:24:33,452] {logging_mixin.py:109} INFO - [2022-06-23 20:24:33,451] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:24:33,471] {logging_mixin.py:109} INFO - [2022-06-23 20:24:33,471] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:24:33,858] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:24:33,865] {logging_mixin.py:109} INFO - [2022-06-23 20:24:33,865] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:24:33,875] {logging_mixin.py:109} INFO - [2022-06-23 20:24:33,875] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:24:33,888] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.441 seconds
+[2022-06-23 20:25:04,165] {processor.py:163} INFO - Started process (PID=1309) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:25:04,166] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:25:04,167] {logging_mixin.py:109} INFO - [2022-06-23 20:25:04,167] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:25:04,185] {logging_mixin.py:109} INFO - [2022-06-23 20:25:04,185] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:25:04,587] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:25:04,594] {logging_mixin.py:109} INFO - [2022-06-23 20:25:04,594] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:25:04,605] {logging_mixin.py:109} INFO - [2022-06-23 20:25:04,605] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:25:04,614] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.452 seconds
+[2022-06-23 20:25:34,908] {processor.py:163} INFO - Started process (PID=1366) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:25:34,909] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:25:34,910] {logging_mixin.py:109} INFO - [2022-06-23 20:25:34,910] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:25:34,932] {logging_mixin.py:109} INFO - [2022-06-23 20:25:34,932] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:25:35,358] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:25:35,365] {logging_mixin.py:109} INFO - [2022-06-23 20:25:35,364] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:25:35,376] {logging_mixin.py:109} INFO - [2022-06-23 20:25:35,376] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:25:35,392] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.487 seconds
+[2022-06-23 20:26:05,589] {processor.py:163} INFO - Started process (PID=1415) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:26:05,590] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:26:05,591] {logging_mixin.py:109} INFO - [2022-06-23 20:26:05,591] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:26:05,610] {logging_mixin.py:109} INFO - [2022-06-23 20:26:05,610] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:26:06,000] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:26:06,006] {logging_mixin.py:109} INFO - [2022-06-23 20:26:06,006] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:26:06,016] {logging_mixin.py:109} INFO - [2022-06-23 20:26:06,016] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:26:06,029] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.443 seconds
+[2022-06-23 20:26:36,316] {processor.py:163} INFO - Started process (PID=1472) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:26:36,317] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:26:36,318] {logging_mixin.py:109} INFO - [2022-06-23 20:26:36,318] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:26:36,349] {logging_mixin.py:109} INFO - [2022-06-23 20:26:36,349] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:26:36,774] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:26:36,785] {logging_mixin.py:109} INFO - [2022-06-23 20:26:36,785] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:26:36,797] {logging_mixin.py:109} INFO - [2022-06-23 20:26:36,797] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:26:36,808] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.495 seconds
+[2022-06-23 20:27:07,157] {processor.py:163} INFO - Started process (PID=1527) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:27:07,158] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:27:07,159] {logging_mixin.py:109} INFO - [2022-06-23 20:27:07,159] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:27:07,179] {logging_mixin.py:109} INFO - [2022-06-23 20:27:07,179] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:27:07,594] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:27:07,601] {logging_mixin.py:109} INFO - [2022-06-23 20:27:07,601] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:27:07,614] {logging_mixin.py:109} INFO - [2022-06-23 20:27:07,613] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:27:07,627] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.474 seconds
+[2022-06-23 20:27:37,661] {processor.py:163} INFO - Started process (PID=1575) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:27:37,663] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:27:37,664] {logging_mixin.py:109} INFO - [2022-06-23 20:27:37,663] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:27:37,687] {logging_mixin.py:109} INFO - [2022-06-23 20:27:37,687] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:27:38,213] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:27:38,221] {logging_mixin.py:109} INFO - [2022-06-23 20:27:38,221] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:27:38,235] {logging_mixin.py:109} INFO - [2022-06-23 20:27:38,235] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:27:38,247] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.590 seconds
+[2022-06-23 20:28:08,652] {processor.py:163} INFO - Started process (PID=1632) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:28:08,654] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:28:08,655] {logging_mixin.py:109} INFO - [2022-06-23 20:28:08,654] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:28:08,678] {logging_mixin.py:109} INFO - [2022-06-23 20:28:08,677] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:28:09,119] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:28:09,127] {logging_mixin.py:109} INFO - [2022-06-23 20:28:09,127] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:28:09,140] {logging_mixin.py:109} INFO - [2022-06-23 20:28:09,140] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:28:09,153] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.506 seconds
+[2022-06-23 20:28:39,875] {processor.py:163} INFO - Started process (PID=1689) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:28:39,876] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:28:39,877] {logging_mixin.py:109} INFO - [2022-06-23 20:28:39,876] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:28:39,897] {logging_mixin.py:109} INFO - [2022-06-23 20:28:39,897] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:28:40,317] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:28:40,328] {logging_mixin.py:109} INFO - [2022-06-23 20:28:40,328] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:28:40,341] {logging_mixin.py:109} INFO - [2022-06-23 20:28:40,341] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:28:40,352] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.480 seconds
+[2022-06-23 20:29:10,512] {processor.py:163} INFO - Started process (PID=1742) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:29:10,521] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:29:10,522] {logging_mixin.py:109} INFO - [2022-06-23 20:29:10,522] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:29:10,543] {logging_mixin.py:109} INFO - [2022-06-23 20:29:10,543] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:29:10,978] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:29:10,984] {logging_mixin.py:109} INFO - [2022-06-23 20:29:10,984] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:29:10,994] {logging_mixin.py:109} INFO - [2022-06-23 20:29:10,994] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:29:11,007] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.498 seconds
+[2022-06-23 20:29:41,098] {processor.py:163} INFO - Started process (PID=1799) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:29:41,099] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:29:41,099] {logging_mixin.py:109} INFO - [2022-06-23 20:29:41,099] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:29:41,118] {logging_mixin.py:109} INFO - [2022-06-23 20:29:41,118] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:29:41,554] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:29:41,561] {logging_mixin.py:109} INFO - [2022-06-23 20:29:41,561] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:29:41,572] {logging_mixin.py:109} INFO - [2022-06-23 20:29:41,572] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:29:41,585] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.491 seconds
+[2022-06-23 20:30:11,807] {processor.py:163} INFO - Started process (PID=1847) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:30:11,813] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:30:11,814] {logging_mixin.py:109} INFO - [2022-06-23 20:30:11,814] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:30:11,834] {logging_mixin.py:109} INFO - [2022-06-23 20:30:11,834] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:30:12,275] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:30:12,288] {logging_mixin.py:109} INFO - [2022-06-23 20:30:12,288] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:30:12,303] {logging_mixin.py:109} INFO - [2022-06-23 20:30:12,303] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:30:12,313] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.509 seconds
+[2022-06-23 20:30:42,611] {processor.py:163} INFO - Started process (PID=1904) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:30:42,612] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:30:42,612] {logging_mixin.py:109} INFO - [2022-06-23 20:30:42,612] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:30:42,631] {logging_mixin.py:109} INFO - [2022-06-23 20:30:42,631] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:30:43,018] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:30:43,024] {logging_mixin.py:109} INFO - [2022-06-23 20:30:43,024] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:30:43,036] {logging_mixin.py:109} INFO - [2022-06-23 20:30:43,036] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:30:43,054] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.446 seconds
+[2022-06-23 20:31:13,262] {processor.py:163} INFO - Started process (PID=1961) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:31:13,269] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:31:13,270] {logging_mixin.py:109} INFO - [2022-06-23 20:31:13,269] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:31:13,289] {logging_mixin.py:109} INFO - [2022-06-23 20:31:13,289] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:31:13,699] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:31:13,705] {logging_mixin.py:109} INFO - [2022-06-23 20:31:13,705] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:31:13,717] {logging_mixin.py:109} INFO - [2022-06-23 20:31:13,717] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:31:13,729] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.470 seconds
+[2022-06-23 20:31:44,203] {processor.py:163} INFO - Started process (PID=2009) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:31:44,204] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:31:44,204] {logging_mixin.py:109} INFO - [2022-06-23 20:31:44,204] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:31:44,225] {logging_mixin.py:109} INFO - [2022-06-23 20:31:44,225] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:31:44,644] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:31:44,652] {logging_mixin.py:109} INFO - [2022-06-23 20:31:44,652] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:31:44,663] {logging_mixin.py:109} INFO - [2022-06-23 20:31:44,662] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:31:44,670] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.470 seconds
+[2022-06-23 20:32:14,958] {processor.py:163} INFO - Started process (PID=2066) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:32:14,959] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:32:14,960] {logging_mixin.py:109} INFO - [2022-06-23 20:32:14,960] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:32:14,995] {logging_mixin.py:109} INFO - [2022-06-23 20:32:14,995] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:32:15,413] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:32:15,421] {logging_mixin.py:109} INFO - [2022-06-23 20:32:15,421] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:32:15,433] {logging_mixin.py:109} INFO - [2022-06-23 20:32:15,433] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:32:15,444] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.490 seconds
+[2022-06-23 20:32:45,816] {processor.py:163} INFO - Started process (PID=2123) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:32:45,817] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:32:45,818] {logging_mixin.py:109} INFO - [2022-06-23 20:32:45,818] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:32:45,842] {logging_mixin.py:109} INFO - [2022-06-23 20:32:45,842] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:32:46,274] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:32:46,281] {logging_mixin.py:109} INFO - [2022-06-23 20:32:46,281] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:32:46,292] {logging_mixin.py:109} INFO - [2022-06-23 20:32:46,292] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:32:46,299] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.486 seconds
+[2022-06-23 20:33:16,483] {processor.py:163} INFO - Started process (PID=2171) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:33:16,484] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:33:16,485] {logging_mixin.py:109} INFO - [2022-06-23 20:33:16,485] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:33:16,506] {logging_mixin.py:109} INFO - [2022-06-23 20:33:16,506] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:33:16,981] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:33:16,987] {logging_mixin.py:109} INFO - [2022-06-23 20:33:16,987] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:33:16,999] {logging_mixin.py:109} INFO - [2022-06-23 20:33:16,998] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:33:17,006] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.526 seconds
+[2022-06-23 20:33:47,215] {processor.py:163} INFO - Started process (PID=2228) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:33:47,216] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:33:47,217] {logging_mixin.py:109} INFO - [2022-06-23 20:33:47,217] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:33:47,243] {logging_mixin.py:109} INFO - [2022-06-23 20:33:47,243] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:33:47,717] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:33:47,723] {logging_mixin.py:109} INFO - [2022-06-23 20:33:47,722] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:33:47,734] {logging_mixin.py:109} INFO - [2022-06-23 20:33:47,734] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:33:47,741] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.530 seconds
+[2022-06-23 20:34:18,028] {processor.py:163} INFO - Started process (PID=2285) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:34:18,029] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:34:18,029] {logging_mixin.py:109} INFO - [2022-06-23 20:34:18,029] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:34:18,050] {logging_mixin.py:109} INFO - [2022-06-23 20:34:18,050] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:34:18,471] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:34:18,483] {logging_mixin.py:109} INFO - [2022-06-23 20:34:18,482] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:34:18,505] {logging_mixin.py:109} INFO - [2022-06-23 20:34:18,505] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:34:18,513] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.488 seconds
+[2022-06-23 20:34:48,760] {processor.py:163} INFO - Started process (PID=2333) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:34:48,761] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:34:48,762] {logging_mixin.py:109} INFO - [2022-06-23 20:34:48,762] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:34:48,797] {logging_mixin.py:109} INFO - [2022-06-23 20:34:48,797] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:34:49,263] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:34:49,270] {logging_mixin.py:109} INFO - [2022-06-23 20:34:49,269] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:34:49,281] {logging_mixin.py:109} INFO - [2022-06-23 20:34:49,281] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:34:49,288] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.532 seconds
+[2022-06-23 20:35:19,540] {processor.py:163} INFO - Started process (PID=2390) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:35:19,541] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:35:19,541] {logging_mixin.py:109} INFO - [2022-06-23 20:35:19,541] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:35:19,562] {logging_mixin.py:109} INFO - [2022-06-23 20:35:19,562] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:35:19,977] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:35:19,983] {logging_mixin.py:109} INFO - [2022-06-23 20:35:19,983] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:35:19,994] {logging_mixin.py:109} INFO - [2022-06-23 20:35:19,993] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:35:20,001] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.464 seconds
+[2022-06-23 20:35:50,255] {processor.py:163} INFO - Started process (PID=2438) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:35:50,256] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:35:50,256] {logging_mixin.py:109} INFO - [2022-06-23 20:35:50,256] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:35:50,287] {logging_mixin.py:109} INFO - [2022-06-23 20:35:50,287] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:35:50,740] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:35:50,749] {logging_mixin.py:109} INFO - [2022-06-23 20:35:50,748] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:35:50,760] {logging_mixin.py:109} INFO - [2022-06-23 20:35:50,760] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-22T20:36:06.966050+00:00
+[2022-06-23 20:35:50,768] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.516 seconds
+[2022-06-23 20:36:20,954] {processor.py:163} INFO - Started process (PID=2496) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:36:20,955] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:36:20,957] {logging_mixin.py:109} INFO - [2022-06-23 20:36:20,957] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:36:20,981] {logging_mixin.py:109} INFO - [2022-06-23 20:36:20,980] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:36:21,450] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:36:21,458] {logging_mixin.py:109} INFO - [2022-06-23 20:36:21,458] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:36:21,470] {logging_mixin.py:109} INFO - [2022-06-23 20:36:21,470] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:36:21,477] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.526 seconds
+[2022-06-23 20:36:51,726] {processor.py:163} INFO - Started process (PID=2553) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:36:51,727] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:36:51,727] {logging_mixin.py:109} INFO - [2022-06-23 20:36:51,727] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:36:51,748] {logging_mixin.py:109} INFO - [2022-06-23 20:36:51,748] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:36:52,170] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:36:52,176] {logging_mixin.py:109} INFO - [2022-06-23 20:36:52,176] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:36:52,186] {logging_mixin.py:109} INFO - [2022-06-23 20:36:52,186] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:36:52,197] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.474 seconds
+[2022-06-23 20:37:22,507] {processor.py:163} INFO - Started process (PID=2601) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:37:22,508] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:37:22,509] {logging_mixin.py:109} INFO - [2022-06-23 20:37:22,509] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:37:22,528] {logging_mixin.py:109} INFO - [2022-06-23 20:37:22,528] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:37:22,959] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:37:22,966] {logging_mixin.py:109} INFO - [2022-06-23 20:37:22,966] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:37:22,977] {logging_mixin.py:109} INFO - [2022-06-23 20:37:22,977] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:37:22,985] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.481 seconds
+[2022-06-23 20:37:53,262] {processor.py:163} INFO - Started process (PID=2659) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:37:53,263] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:37:53,264] {logging_mixin.py:109} INFO - [2022-06-23 20:37:53,264] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:37:53,284] {logging_mixin.py:109} INFO - [2022-06-23 20:37:53,284] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:37:53,696] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:37:53,703] {logging_mixin.py:109} INFO - [2022-06-23 20:37:53,702] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:37:53,714] {logging_mixin.py:109} INFO - [2022-06-23 20:37:53,714] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:37:53,721] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.462 seconds
+[2022-06-23 20:38:23,915] {processor.py:163} INFO - Started process (PID=2716) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:38:23,916] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:38:23,917] {logging_mixin.py:109} INFO - [2022-06-23 20:38:23,917] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:38:23,953] {logging_mixin.py:109} INFO - [2022-06-23 20:38:23,953] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:38:24,372] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:38:24,379] {logging_mixin.py:109} INFO - [2022-06-23 20:38:24,379] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:38:24,390] {logging_mixin.py:109} INFO - [2022-06-23 20:38:24,390] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:38:24,397] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.485 seconds
+[2022-06-23 20:38:54,617] {processor.py:163} INFO - Started process (PID=2765) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:38:54,618] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:38:54,619] {logging_mixin.py:109} INFO - [2022-06-23 20:38:54,619] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:38:54,639] {logging_mixin.py:109} INFO - [2022-06-23 20:38:54,639] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:38:55,064] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:38:55,071] {logging_mixin.py:109} INFO - [2022-06-23 20:38:55,070] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:38:55,082] {logging_mixin.py:109} INFO - [2022-06-23 20:38:55,082] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:38:55,091] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.477 seconds
+[2022-06-23 20:39:25,257] {processor.py:163} INFO - Started process (PID=2822) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:39:25,258] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:39:25,258] {logging_mixin.py:109} INFO - [2022-06-23 20:39:25,258] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:39:25,279] {logging_mixin.py:109} INFO - [2022-06-23 20:39:25,278] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:39:25,724] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:39:25,732] {logging_mixin.py:109} INFO - [2022-06-23 20:39:25,731] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:39:25,745] {logging_mixin.py:109} INFO - [2022-06-23 20:39:25,745] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:39:25,757] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.503 seconds
+[2022-06-23 20:39:56,415] {processor.py:163} INFO - Started process (PID=2879) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:39:56,416] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:39:56,417] {logging_mixin.py:109} INFO - [2022-06-23 20:39:56,417] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:39:56,437] {logging_mixin.py:109} INFO - [2022-06-23 20:39:56,437] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:39:56,848] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:39:56,854] {logging_mixin.py:109} INFO - [2022-06-23 20:39:56,854] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:39:56,864] {logging_mixin.py:109} INFO - [2022-06-23 20:39:56,864] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:39:56,876] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.464 seconds
+[2022-06-23 20:40:27,055] {processor.py:163} INFO - Started process (PID=2928) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:40:27,056] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:40:27,056] {logging_mixin.py:109} INFO - [2022-06-23 20:40:27,056] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:40:27,076] {logging_mixin.py:109} INFO - [2022-06-23 20:40:27,076] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:40:27,511] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:40:27,517] {logging_mixin.py:109} INFO - [2022-06-23 20:40:27,517] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:40:27,528] {logging_mixin.py:109} INFO - [2022-06-23 20:40:27,528] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:40:27,536] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.484 seconds
+[2022-06-23 20:40:57,798] {processor.py:163} INFO - Started process (PID=2986) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:40:57,807] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:40:57,808] {logging_mixin.py:109} INFO - [2022-06-23 20:40:57,808] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:40:57,831] {logging_mixin.py:109} INFO - [2022-06-23 20:40:57,831] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:40:58,246] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:40:58,252] {logging_mixin.py:109} INFO - [2022-06-23 20:40:58,252] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:40:58,267] {logging_mixin.py:109} INFO - [2022-06-23 20:40:58,267] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:40:58,274] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.478 seconds
+[2022-06-23 20:41:28,507] {processor.py:163} INFO - Started process (PID=3043) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:41:28,508] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:41:28,508] {logging_mixin.py:109} INFO - [2022-06-23 20:41:28,508] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:41:28,527] {logging_mixin.py:109} INFO - [2022-06-23 20:41:28,527] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:41:28,959] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:41:28,967] {logging_mixin.py:109} INFO - [2022-06-23 20:41:28,966] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:41:28,979] {logging_mixin.py:109} INFO - [2022-06-23 20:41:28,979] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:41:28,988] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.484 seconds
+[2022-06-23 20:41:59,411] {processor.py:163} INFO - Started process (PID=3091) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:41:59,412] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:41:59,412] {logging_mixin.py:109} INFO - [2022-06-23 20:41:59,412] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:41:59,434] {logging_mixin.py:109} INFO - [2022-06-23 20:41:59,434] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:41:59,880] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:41:59,886] {logging_mixin.py:109} INFO - [2022-06-23 20:41:59,885] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:41:59,896] {logging_mixin.py:109} INFO - [2022-06-23 20:41:59,896] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:41:59,903] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.496 seconds
+[2022-06-23 20:42:30,160] {processor.py:163} INFO - Started process (PID=3148) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:42:30,162] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:42:30,162] {logging_mixin.py:109} INFO - [2022-06-23 20:42:30,162] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:42:30,192] {logging_mixin.py:109} INFO - [2022-06-23 20:42:30,192] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:42:30,608] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:42:30,614] {logging_mixin.py:109} INFO - [2022-06-23 20:42:30,614] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:42:30,625] {logging_mixin.py:109} INFO - [2022-06-23 20:42:30,625] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:42:30,632] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.475 seconds
+[2022-06-23 20:43:00,888] {processor.py:163} INFO - Started process (PID=3205) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:43:00,889] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:43:00,890] {logging_mixin.py:109} INFO - [2022-06-23 20:43:00,890] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:43:00,913] {logging_mixin.py:109} INFO - [2022-06-23 20:43:00,913] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:43:01,334] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:43:01,342] {logging_mixin.py:109} INFO - [2022-06-23 20:43:01,341] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:43:01,354] {logging_mixin.py:109} INFO - [2022-06-23 20:43:01,354] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:43:01,362] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.476 seconds
+[2022-06-23 20:43:31,646] {processor.py:163} INFO - Started process (PID=3253) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:43:31,647] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:43:31,648] {logging_mixin.py:109} INFO - [2022-06-23 20:43:31,648] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:43:31,667] {logging_mixin.py:109} INFO - [2022-06-23 20:43:31,667] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:43:32,043] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:43:32,050] {logging_mixin.py:109} INFO - [2022-06-23 20:43:32,050] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:43:32,061] {logging_mixin.py:109} INFO - [2022-06-23 20:43:32,061] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:43:32,075] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.432 seconds
+[2022-06-23 20:44:02,231] {processor.py:163} INFO - Started process (PID=3310) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:44:02,232] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:44:02,233] {logging_mixin.py:109} INFO - [2022-06-23 20:44:02,233] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:44:02,324] {logging_mixin.py:109} INFO - [2022-06-23 20:44:02,324] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:44:02,643] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:44:02,650] {logging_mixin.py:109} INFO - [2022-06-23 20:44:02,650] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:44:02,662] {logging_mixin.py:109} INFO - [2022-06-23 20:44:02,661] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:44:02,671] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.442 seconds
+[2022-06-23 20:44:33,363] {processor.py:163} INFO - Started process (PID=3358) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:44:33,364] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:44:33,364] {logging_mixin.py:109} INFO - [2022-06-23 20:44:33,364] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:44:33,463] {logging_mixin.py:109} INFO - [2022-06-23 20:44:33,463] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:44:33,796] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:44:33,802] {logging_mixin.py:109} INFO - [2022-06-23 20:44:33,802] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:44:33,813] {logging_mixin.py:109} INFO - [2022-06-23 20:44:33,813] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:44:33,821] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.463 seconds
+[2022-06-23 20:45:04,565] {processor.py:163} INFO - Started process (PID=3415) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:45:04,566] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:45:04,566] {logging_mixin.py:109} INFO - [2022-06-23 20:45:04,566] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:45:04,661] {logging_mixin.py:109} INFO - [2022-06-23 20:45:04,661] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:45:04,973] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:45:04,980] {logging_mixin.py:109} INFO - [2022-06-23 20:45:04,979] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:45:04,990] {logging_mixin.py:109} INFO - [2022-06-23 20:45:04,990] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:45:05,000] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.438 seconds
+[2022-06-23 20:45:35,636] {processor.py:163} INFO - Started process (PID=3472) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:45:35,638] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:45:35,638] {logging_mixin.py:109} INFO - [2022-06-23 20:45:35,638] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:45:35,660] {logging_mixin.py:109} INFO - [2022-06-23 20:45:35,660] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:45:35,994] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:45:36,002] {logging_mixin.py:109} INFO - [2022-06-23 20:45:36,002] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:45:36,014] {logging_mixin.py:109} INFO - [2022-06-23 20:45:36,014] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:45:36,022] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.389 seconds
+[2022-06-23 20:46:06,118] {processor.py:163} INFO - Started process (PID=3520) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:46:06,119] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:46:06,120] {logging_mixin.py:109} INFO - [2022-06-23 20:46:06,120] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:46:06,151] {logging_mixin.py:109} INFO - [2022-06-23 20:46:06,151] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:46:06,496] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:46:06,504] {logging_mixin.py:109} INFO - [2022-06-23 20:46:06,503] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:46:06,516] {logging_mixin.py:109} INFO - [2022-06-23 20:46:06,516] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:46:06,524] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.409 seconds
+[2022-06-23 20:46:36,699] {processor.py:163} INFO - Started process (PID=3577) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:46:36,700] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:46:36,701] {logging_mixin.py:109} INFO - [2022-06-23 20:46:36,701] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:46:36,722] {logging_mixin.py:109} INFO - [2022-06-23 20:46:36,722] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:46:37,076] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:46:37,085] {logging_mixin.py:109} INFO - [2022-06-23 20:46:37,085] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:46:37,103] {logging_mixin.py:109} INFO - [2022-06-23 20:46:37,103] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:46:37,111] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.414 seconds
+[2022-06-23 20:47:07,249] {processor.py:163} INFO - Started process (PID=3634) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:47:07,250] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:47:07,250] {logging_mixin.py:109} INFO - [2022-06-23 20:47:07,250] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:47:07,270] {logging_mixin.py:109} INFO - [2022-06-23 20:47:07,270] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:47:07,587] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:47:07,595] {logging_mixin.py:109} INFO - [2022-06-23 20:47:07,595] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:47:07,606] {logging_mixin.py:109} INFO - [2022-06-23 20:47:07,606] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:47:07,624] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.378 seconds
+[2022-06-23 20:47:38,574] {processor.py:163} INFO - Started process (PID=3682) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:47:38,575] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:47:38,576] {logging_mixin.py:109} INFO - [2022-06-23 20:47:38,576] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:47:38,597] {logging_mixin.py:109} INFO - [2022-06-23 20:47:38,597] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:47:38,937] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:47:38,946] {logging_mixin.py:109} INFO - [2022-06-23 20:47:38,945] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:47:38,979] {logging_mixin.py:109} INFO - [2022-06-23 20:47:38,978] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:47:38,991] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.421 seconds
+[2022-06-23 20:48:09,168] {processor.py:163} INFO - Started process (PID=3739) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:48:09,169] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:48:09,170] {logging_mixin.py:109} INFO - [2022-06-23 20:48:09,170] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:48:09,192] {logging_mixin.py:109} INFO - [2022-06-23 20:48:09,191] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:48:09,510] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:48:09,517] {logging_mixin.py:109} INFO - [2022-06-23 20:48:09,517] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:48:09,528] {logging_mixin.py:109} INFO - [2022-06-23 20:48:09,528] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:48:09,537] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.372 seconds
+[2022-06-23 20:48:40,247] {processor.py:163} INFO - Started process (PID=3796) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:48:40,254] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:48:40,255] {logging_mixin.py:109} INFO - [2022-06-23 20:48:40,254] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:48:40,287] {logging_mixin.py:109} INFO - [2022-06-23 20:48:40,287] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:48:40,632] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:48:40,639] {logging_mixin.py:109} INFO - [2022-06-23 20:48:40,639] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:48:40,650] {logging_mixin.py:109} INFO - [2022-06-23 20:48:40,650] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:48:40,657] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.413 seconds
+[2022-06-23 20:49:11,319] {processor.py:163} INFO - Started process (PID=3843) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:49:11,320] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:49:11,320] {logging_mixin.py:109} INFO - [2022-06-23 20:49:11,320] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:49:11,340] {logging_mixin.py:109} INFO - [2022-06-23 20:49:11,340] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:49:11,696] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:49:11,714] {logging_mixin.py:109} INFO - [2022-06-23 20:49:11,714] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:49:11,725] {logging_mixin.py:109} INFO - [2022-06-23 20:49:11,725] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:49:11,734] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.417 seconds
+[2022-06-23 20:49:42,125] {processor.py:163} INFO - Started process (PID=3901) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:49:42,126] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:49:42,127] {logging_mixin.py:109} INFO - [2022-06-23 20:49:42,127] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:49:42,147] {logging_mixin.py:109} INFO - [2022-06-23 20:49:42,147] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:49:42,475] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:49:42,482] {logging_mixin.py:109} INFO - [2022-06-23 20:49:42,482] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:49:42,493] {logging_mixin.py:109} INFO - [2022-06-23 20:49:42,493] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:49:42,501] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.379 seconds
+[2022-06-23 20:50:13,217] {processor.py:163} INFO - Started process (PID=3958) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:50:13,218] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:50:13,218] {logging_mixin.py:109} INFO - [2022-06-23 20:50:13,218] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:50:13,239] {logging_mixin.py:109} INFO - [2022-06-23 20:50:13,239] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:50:13,558] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:50:13,565] {logging_mixin.py:109} INFO - [2022-06-23 20:50:13,565] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:50:13,577] {logging_mixin.py:109} INFO - [2022-06-23 20:50:13,577] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:50:13,585] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.371 seconds
+[2022-06-23 20:50:44,344] {processor.py:163} INFO - Started process (PID=4006) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:50:44,350] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:50:44,351] {logging_mixin.py:109} INFO - [2022-06-23 20:50:44,351] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:50:44,372] {logging_mixin.py:109} INFO - [2022-06-23 20:50:44,371] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:50:44,692] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:50:44,700] {logging_mixin.py:109} INFO - [2022-06-23 20:50:44,700] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:50:44,712] {logging_mixin.py:109} INFO - [2022-06-23 20:50:44,712] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:50:44,721] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.382 seconds
+[2022-06-23 20:51:15,362] {processor.py:163} INFO - Started process (PID=4064) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:51:15,363] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:51:15,364] {logging_mixin.py:109} INFO - [2022-06-23 20:51:15,364] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:51:15,383] {logging_mixin.py:109} INFO - [2022-06-23 20:51:15,383] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:51:15,698] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:51:15,704] {logging_mixin.py:109} INFO - [2022-06-23 20:51:15,704] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:51:15,716] {logging_mixin.py:109} INFO - [2022-06-23 20:51:15,716] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:51:15,728] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.368 seconds
+[2022-06-23 20:51:46,603] {processor.py:163} INFO - Started process (PID=4121) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:51:46,609] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:51:46,610] {logging_mixin.py:109} INFO - [2022-06-23 20:51:46,610] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:51:46,631] {logging_mixin.py:109} INFO - [2022-06-23 20:51:46,631] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:51:46,960] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:51:46,968] {logging_mixin.py:109} INFO - [2022-06-23 20:51:46,968] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:51:46,982] {logging_mixin.py:109} INFO - [2022-06-23 20:51:46,982] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:51:47,010] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.410 seconds
+[2022-06-23 20:52:17,153] {processor.py:163} INFO - Started process (PID=4169) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:52:17,154] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:52:17,154] {logging_mixin.py:109} INFO - [2022-06-23 20:52:17,154] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:52:17,176] {logging_mixin.py:109} INFO - [2022-06-23 20:52:17,176] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:52:17,508] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:52:17,516] {logging_mixin.py:109} INFO - [2022-06-23 20:52:17,515] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:52:17,528] {logging_mixin.py:109} INFO - [2022-06-23 20:52:17,528] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:52:17,541] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.391 seconds
+[2022-06-23 20:52:48,294] {processor.py:163} INFO - Started process (PID=4225) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:52:48,295] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:52:48,296] {logging_mixin.py:109} INFO - [2022-06-23 20:52:48,296] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:52:48,317] {logging_mixin.py:109} INFO - [2022-06-23 20:52:48,317] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:52:48,677] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:52:48,684] {logging_mixin.py:109} INFO - [2022-06-23 20:52:48,684] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:52:48,696] {logging_mixin.py:109} INFO - [2022-06-23 20:52:48,696] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:52:48,712] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.421 seconds
+[2022-06-23 20:53:18,909] {processor.py:163} INFO - Started process (PID=4282) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:53:18,910] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:53:18,910] {logging_mixin.py:109} INFO - [2022-06-23 20:53:18,910] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:53:18,931] {logging_mixin.py:109} INFO - [2022-06-23 20:53:18,931] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:53:19,261] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:53:19,268] {logging_mixin.py:109} INFO - [2022-06-23 20:53:19,268] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:53:19,279] {logging_mixin.py:109} INFO - [2022-06-23 20:53:19,279] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:53:19,287] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.381 seconds
+[2022-06-23 20:53:49,442] {processor.py:163} INFO - Started process (PID=4330) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:53:49,448] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:53:49,449] {logging_mixin.py:109} INFO - [2022-06-23 20:53:49,449] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:53:49,473] {logging_mixin.py:109} INFO - [2022-06-23 20:53:49,473] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:53:49,806] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:53:49,814] {logging_mixin.py:109} INFO - [2022-06-23 20:53:49,814] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:53:49,849] {logging_mixin.py:109} INFO - [2022-06-23 20:53:49,849] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:53:49,857] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.418 seconds
+[2022-06-23 20:54:20,187] {processor.py:163} INFO - Started process (PID=4393) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:54:20,187] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:54:20,188] {logging_mixin.py:109} INFO - [2022-06-23 20:54:20,188] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:54:20,208] {logging_mixin.py:109} INFO - [2022-06-23 20:54:20,208] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:54:20,542] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:54:20,549] {logging_mixin.py:109} INFO - [2022-06-23 20:54:20,549] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:54:20,560] {logging_mixin.py:109} INFO - [2022-06-23 20:54:20,560] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:54:20,568] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.384 seconds
+[2022-06-23 20:54:50,650] {processor.py:163} INFO - Started process (PID=4450) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:54:50,651] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:54:50,652] {logging_mixin.py:109} INFO - [2022-06-23 20:54:50,652] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:54:50,672] {logging_mixin.py:109} INFO - [2022-06-23 20:54:50,672] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:54:51,006] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:54:51,014] {logging_mixin.py:109} INFO - [2022-06-23 20:54:51,013] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:54:51,025] {logging_mixin.py:109} INFO - [2022-06-23 20:54:51,025] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:54:51,035] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.388 seconds
+[2022-06-23 20:55:21,286] {processor.py:163} INFO - Started process (PID=4492) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:55:21,287] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:55:21,288] {logging_mixin.py:109} INFO - [2022-06-23 20:55:21,287] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:55:21,308] {logging_mixin.py:109} INFO - [2022-06-23 20:55:21,308] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:55:21,627] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:55:21,634] {logging_mixin.py:109} INFO - [2022-06-23 20:55:21,633] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:55:21,646] {logging_mixin.py:109} INFO - [2022-06-23 20:55:21,645] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:55:21,655] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.372 seconds
+[2022-06-23 20:55:51,765] {processor.py:163} INFO - Started process (PID=4549) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:55:51,771] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:55:51,772] {logging_mixin.py:109} INFO - [2022-06-23 20:55:51,772] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:55:51,791] {logging_mixin.py:109} INFO - [2022-06-23 20:55:51,791] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:55:52,116] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:55:52,122] {logging_mixin.py:109} INFO - [2022-06-23 20:55:52,122] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:55:52,134] {logging_mixin.py:109} INFO - [2022-06-23 20:55:52,134] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:55:52,142] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.380 seconds
+[2022-06-23 20:56:22,676] {processor.py:163} INFO - Started process (PID=4607) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:56:22,677] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:56:22,678] {logging_mixin.py:109} INFO - [2022-06-23 20:56:22,678] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:56:22,699] {logging_mixin.py:109} INFO - [2022-06-23 20:56:22,699] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:56:23,057] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:56:23,066] {logging_mixin.py:109} INFO - [2022-06-23 20:56:23,066] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:56:23,083] {logging_mixin.py:109} INFO - [2022-06-23 20:56:23,083] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:56:23,095] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.422 seconds
+[2022-06-23 20:56:53,338] {processor.py:163} INFO - Started process (PID=4655) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:56:53,344] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:56:53,344] {logging_mixin.py:109} INFO - [2022-06-23 20:56:53,344] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:56:53,369] {logging_mixin.py:109} INFO - [2022-06-23 20:56:53,369] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:56:53,701] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:56:53,710] {logging_mixin.py:109} INFO - [2022-06-23 20:56:53,710] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:56:53,726] {logging_mixin.py:109} INFO - [2022-06-23 20:56:53,725] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:56:53,739] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.404 seconds
+[2022-06-23 20:57:23,937] {processor.py:163} INFO - Started process (PID=4711) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:57:23,938] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:57:23,939] {logging_mixin.py:109} INFO - [2022-06-23 20:57:23,938] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:57:23,964] {logging_mixin.py:109} INFO - [2022-06-23 20:57:23,963] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:57:24,307] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:57:24,317] {logging_mixin.py:109} INFO - [2022-06-23 20:57:24,317] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:57:24,329] {logging_mixin.py:109} INFO - [2022-06-23 20:57:24,329] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:57:24,339] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.406 seconds
+[2022-06-23 20:57:54,790] {processor.py:163} INFO - Started process (PID=4768) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:57:54,791] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:57:54,792] {logging_mixin.py:109} INFO - [2022-06-23 20:57:54,792] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:57:54,812] {logging_mixin.py:109} INFO - [2022-06-23 20:57:54,812] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:57:55,171] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:57:55,179] {logging_mixin.py:109} INFO - [2022-06-23 20:57:55,178] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:57:55,191] {logging_mixin.py:109} INFO - [2022-06-23 20:57:55,190] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:57:55,199] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.412 seconds
+[2022-06-23 20:58:25,730] {processor.py:163} INFO - Started process (PID=4816) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:58:25,731] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:58:25,731] {logging_mixin.py:109} INFO - [2022-06-23 20:58:25,731] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:58:25,752] {logging_mixin.py:109} INFO - [2022-06-23 20:58:25,752] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:58:26,076] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:58:26,083] {logging_mixin.py:109} INFO - [2022-06-23 20:58:26,083] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:58:26,095] {logging_mixin.py:109} INFO - [2022-06-23 20:58:26,095] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:58:26,104] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.377 seconds
+[2022-06-23 20:58:56,254] {processor.py:163} INFO - Started process (PID=4873) to work on /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:58:56,260] {processor.py:642} INFO - Processing file /opt/airflow/dags/f101_to_local.py for tasks to queue
+[2022-06-23 20:58:56,261] {logging_mixin.py:109} INFO - [2022-06-23 20:58:56,261] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:58:56,281] {logging_mixin.py:109} INFO - [2022-06-23 20:58:56,281] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-23 20:58:56,613] {processor.py:654} INFO - DAG(s) dict_keys(['f101_to_csv']) retrieved from /opt/airflow/dags/f101_to_local.py
+[2022-06-23 20:58:56,620] {logging_mixin.py:109} INFO - [2022-06-23 20:58:56,620] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-23 20:58:56,632] {logging_mixin.py:109} INFO - [2022-06-23 20:58:56,632] {dag.py:2935} INFO - Setting next_dagrun for f101_to_csv to 2022-06-23T20:36:06.966050+00:00
+[2022-06-23 20:58:56,650] {processor.py:171} INFO - Processing /opt/airflow/dags/f101_to_local.py took 0.398 seconds
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

@@ -13,13 +13,24 @@ class FromLocal(LocalDbConnection):
     DS schema in database
     """
 
-    def __init__(self, table_name: str, csv_path: str, sql_to_update: str, date_corr_cols: list = None, save_index = False) -> None:
+    def __init__(
+        self, 
+        table_name: str, 
+        csv_path: str, 
+        sql_to_update: str, 
+        schema: str = 'temp',
+        date_corr_cols: list = None, 
+        save_index: bool = False,
+        replace_if_exists: bool = False
+        ) -> None:
         """
         table_name - name of table in DB
         csv_path - path to csv which will upload
         date_corr_cols - the columns with date in str type in csv
         sql_to_update_ds - path to sql file, wich update ds schema from temp schema
         save_index - determines whether the index from csv will be saved or not
+        replace_if_exists - replace data if it esists in a table,
+        schema - schema which data will upload if replace_if_exists set on True
         """
         super().__init__(
             table_name = table_name,
@@ -29,6 +40,8 @@ class FromLocal(LocalDbConnection):
         self.save_index = save_index
         self.sql_to_update_ds = sql_to_update
         self.date_corr_cols = date_corr_cols
+        self.replace_if_exists = replace_if_exists
+        self.schema = schema
 
 
     def get_df(self) -> pd.DataFrame:
@@ -72,15 +85,18 @@ class FromLocal(LocalDbConnection):
 
         df = self.get_df()
         try:
-            df.to_sql(self.table_name, self.engine, schema="temp", if_exists="replace", index=False)
-            with open(self.sql_to_update_ds) as file:
-                sql = file.read()
-            conn.execute(sql)
+            if self.replace_if_exists:
+                df.to_sql(self.table_name, self.engine, schema=self.schema, if_exists="replace", index=False)
+            else:
+                df.to_sql(self.table_name, self.engine, schema="temp", if_exists="replace", index=False)
+                with open(self.sql_to_update_ds) as file:
+                    sql = file.read()
+                conn.execute(sql)
         except Exception as e:
             logging.info(e)
             self.condition += str(e)
         else:
-            inf = f" Table {self.table_name} in ds schema has updated success. "
+            inf = f" Table {self.table_name} in has updated success. "
             logging.info(inf)
             self.condition += inf
         time.sleep(5)
