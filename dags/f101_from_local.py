@@ -1,11 +1,9 @@
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.dummy import DummyOperator
-from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.operators.python import PythonOperator
 from core.constants import AIRFLOW_HOME
 from core import FromLocal
-from core import DEFAULT_POSTGRES_CONN_ID
 
 with DAG(
     'f101_from_csv_to_db',

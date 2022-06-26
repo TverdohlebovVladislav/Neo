@@ -1,0 +1,49 @@
+[2022-06-26 21:17:27,036] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_account_d scheduled__2022-06-25T19:41:58.423963+00:00 [queued]>
+[2022-06-26 21:17:27,089] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_account_d scheduled__2022-06-25T19:41:58.423963+00:00 [queued]>
+[2022-06-26 21:17:27,090] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 21:17:27,090] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-06-26 21:17:27,090] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-26 21:17:27,205] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): SEND_DS_md_account_d> on 2022-06-25 19:41:58.423963+00:00
+[2022-06-26 21:17:27,233] {standard_task_runner.py:52} INFO - Started process 202 to run task
+[2022-06-26 21:17:27,252] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'CSV_TO_DS', 'SEND_DS_md_account_d', 'scheduled__2022-06-25T19:41:58.423963+00:00', '--job-id', '1459', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_ds.py', '--cfg-path', '/tmp/tmpp0fktsfd', '--error-file', '/tmp/tmp_4wuf3sz']
+[2022-06-26 21:17:27,253] {standard_task_runner.py:77} INFO - Job 1459: Subtask SEND_DS_md_account_d
+[2022-06-26 21:17:27,934] {logging_mixin.py:109} INFO - Running <TaskInstance: CSV_TO_DS.SEND_DS_md_account_d scheduled__2022-06-25T19:41:58.423963+00:00 [running]> on host 8dd6b2950340
+[2022-06-26 21:17:28,135] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=CSV_TO_DS
+AIRFLOW_CTX_TASK_ID=SEND_DS_md_account_d
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-25T19:41:58.423963+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-25T19:41:58.423963+00:00
+[2022-06-26 21:17:28,432] {FromLocal.py:71} INFO - Table md_account_d read in pandas success. 
+[2022-06-26 21:17:28,559] {FromLocal.py:72} INFO - 
+   data_actual_date data_actual_end_date  ...  currency_rk currency_code
+0       2018-01-01           2018-01-31  ...           35           840
+1       2018-01-01           2018-01-31  ...           35           840
+2       2018-01-01           2018-01-31  ...           34           643
+3       2018-01-01           2018-01-31  ...           34           643
+4       2018-01-01           2018-01-31  ...           34           643
+
+[5 rows x 7 columns]
+[2022-06-26 21:17:29,203] {FromLocal.py:96} INFO - (psycopg2.errors.DatatypeMismatch) column "data_actual_date" is of type date but expression is of type text
+LINE 2:     SELECT DISTINCT ON (DATA_ACTUAL_DATE, ACCOUNT_RK)*
+                                                             ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO ds.md_account_d
+    SELECT DISTINCT ON (DATA_ACTUAL_DATE, ACCOUNT_RK)*
+    FROM temp.md_account_d        
+ON CONFLICT (DATA_ACTUAL_DATE, ACCOUNT_RK)
+DO UPDATE 
+	SET 
+		DATA_ACTUAL_END_DATE = excluded.DATA_ACTUAL_END_DATE,
+		ACCOUNT_NUMBER = excluded.ACCOUNT_NUMBER,
+		CHAR_TYPE = excluded.CHAR_TYPE,
+		CURRENCY_RK = excluded.CURRENCY_RK,
+		CURRENCY_CODE = excluded.CURRENCY_CODE;]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+[2022-06-26 21:17:34,217] {python.py:175} INFO - Done. Returned value was: None
+[2022-06-26 21:17:36,286] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=CSV_TO_DS, task_id=SEND_DS_md_account_d, execution_date=20220625T194158, start_date=20220626T211727, end_date=20220626T211736
+[2022-06-26 21:17:36,562] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-06-26 21:17:36,904] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
