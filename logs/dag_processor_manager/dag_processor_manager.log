@@ -41868,3 +41868,237 @@ File Path                                      PID    Runtime      # DAGs    # E
 ================================================================================
 [2022-06-26 21:35:13,427] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
 [2022-06-26 21:35:13,427] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:30:13.427677+00:00
+[2022-06-26 21:35:23,532] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:35:23,532] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:30:23.532507+00:00
+[2022-06-26 21:35:33,866] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:35:33,866] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:30:33.866653+00:00
+[2022-06-26 21:35:40,531] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.52s           2022-06-26T21:35:33
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.51s           2022-06-26T21:35:33
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.57s           2022-06-26T21:35:35
+/opt/airflow/dags/csv_to_ds.py                                          1           0  0.74s           2022-06-26T21:35:37
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.63s           2022-06-26T21:35:35
+================================================================================
+[2022-06-26 21:35:44,203] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:35:44,203] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:30:44.203843+00:00
+[2022-06-26 21:35:54,231] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:35:54,232] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:30:54.231893+00:00
+[2022-06-26 21:36:04,757] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:36:04,757] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:31:04.757935+00:00
+[2022-06-26 21:36:10,872] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.48s           2022-06-26T21:36:03
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.48s           2022-06-26T21:36:03
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.46s           2022-06-26T21:36:06
+/opt/airflow/dags/csv_to_ds.py                                          1           0  0.63s           2022-06-26T21:36:07
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.46s           2022-06-26T21:36:06
+================================================================================
+[2022-06-26 21:36:14,894] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:36:14,894] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:31:14.894709+00:00
+[2022-06-26 21:36:24,928] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:36:24,929] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:31:24.929421+00:00
+[2022-06-26 21:36:35,521] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:36:35,522] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:31:35.521982+00:00
+[2022-06-26 21:36:41,041] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.51s           2022-06-26T21:36:34
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.50s           2022-06-26T21:36:34
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.47s           2022-06-26T21:36:37
+/opt/airflow/dags/csv_to_ds.py                                          1           0  0.64s           2022-06-26T21:36:38
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.46s           2022-06-26T21:36:37
+================================================================================
+[2022-06-26 21:36:45,715] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:36:45,715] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:31:45.715675+00:00
+[2022-06-26 21:36:55,754] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:36:55,755] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:31:55.755397+00:00
+[2022-06-26 21:37:01,112] {manager.py:663} INFO - Searching for files in /opt/airflow/dags
+[2022-06-26 21:37:01,113] {manager.py:666} INFO - There are 5 files in /opt/airflow/dags
+[2022-06-26 21:37:06,132] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:37:06,133] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:32:06.133253+00:00
+[2022-06-26 21:37:11,238] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.50s           2022-06-26T21:37:05
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.50s           2022-06-26T21:37:05
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.47s           2022-06-26T21:37:07
+/opt/airflow/dags/csv_to_ds.py                                          1           0  0.61s           2022-06-26T21:37:10
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.47s           2022-06-26T21:37:07
+================================================================================
+[2022-06-26 21:37:16,254] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:37:16,254] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:32:16.254929+00:00
+[2022-06-26 21:37:26,304] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:37:26,304] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:32:26.304786+00:00
+[2022-06-26 21:37:36,730] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:37:36,731] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:32:36.731542+00:00
+[2022-06-26 21:37:41,946] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.47s           2022-06-26T21:37:35
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.48s           2022-06-26T21:37:35
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.46s           2022-06-26T21:37:38
+/opt/airflow/dags/csv_to_ds.py                                          1           0  0.73s           2022-06-26T21:37:41
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.47s           2022-06-26T21:37:38
+================================================================================
+[2022-06-26 21:37:46,970] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:37:46,971] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:32:46.971219+00:00
+[2022-06-26 21:37:57,004] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:37:57,004] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:32:57.004252+00:00
+[2022-06-26 21:38:07,540] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:38:07,540] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:33:07.540325+00:00
+[2022-06-26 21:38:12,043] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.50s           2022-06-26T21:38:06
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.51s           2022-06-26T21:38:06
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.47s           2022-06-26T21:38:09
+/opt/airflow/dags/csv_to_ds.py                  2343  0.00s             1           0  0.73s           2022-06-26T21:37:41
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.47s           2022-06-26T21:38:09
+================================================================================
+[2022-06-26 21:38:17,644] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:38:17,644] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:33:17.644538+00:00
+[2022-06-26 21:38:27,695] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:38:27,695] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:33:27.695683+00:00
+[2022-06-26 21:38:38,261] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:38:38,262] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:33:38.262288+00:00
+[2022-06-26 21:38:42,770] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.52s           2022-06-26T21:38:37
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.53s           2022-06-26T21:38:37
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.49s           2022-06-26T21:38:39
+/opt/airflow/dags/csv_to_ds.py                  2400  0.00s             1           0  0.59s           2022-06-26T21:38:12
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.48s           2022-06-26T21:38:39
+================================================================================
+[2022-06-26 21:38:48,405] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:38:48,405] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:33:48.405511+00:00
+[2022-06-26 21:38:58,451] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:38:58,452] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:33:58.452613+00:00
+[2022-06-26 21:39:09,003] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:39:09,004] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:34:09.004806+00:00
+[2022-06-26 21:39:13,035] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.50s           2022-06-26T21:39:07
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.48s           2022-06-26T21:39:07
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.47s           2022-06-26T21:39:10
+/opt/airflow/dags/csv_to_ds.py                                          1           0  0.62s           2022-06-26T21:38:43
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.47s           2022-06-26T21:39:10
+================================================================================
+[2022-06-26 21:39:19,048] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:39:19,048] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:34:19.048622+00:00
+[2022-06-26 21:39:29,084] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:39:29,084] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:34:29.084412+00:00
+[2022-06-26 21:39:39,650] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:39:39,650] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:34:39.650469+00:00
+[2022-06-26 21:39:43,154] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.51s           2022-06-26T21:39:38
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.49s           2022-06-26T21:39:38
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.49s           2022-06-26T21:39:41
+/opt/airflow/dags/csv_to_ds.py                                          1           0  0.65s           2022-06-26T21:39:14
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.49s           2022-06-26T21:39:41
+================================================================================
+[2022-06-26 21:39:49,763] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:39:49,763] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:34:49.763590+00:00
+[2022-06-26 21:39:59,847] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:39:59,848] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:34:59.848148+00:00
+[2022-06-26 21:40:10,410] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:40:10,411] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:35:10.411180+00:00
+[2022-06-26 21:40:13,438] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.51s           2022-06-26T21:40:09
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.51s           2022-06-26T21:40:09
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.50s           2022-06-26T21:40:11
+/opt/airflow/dags/csv_to_ds.py                                          1           0  0.59s           2022-06-26T21:39:44
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.50s           2022-06-26T21:40:11
+================================================================================
+[2022-06-26 21:40:20,458] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:40:20,458] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:35:20.458459+00:00
+[2022-06-26 21:40:30,525] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:40:30,525] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:35:30.525871+00:00
+[2022-06-26 21:40:41,116] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:40:41,117] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:35:41.117106+00:00
+[2022-06-26 21:40:43,604] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.49s           2022-06-26T21:40:40
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.49s           2022-06-26T21:40:40
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.48s           2022-06-26T21:40:42
+/opt/airflow/dags/csv_to_ds.py                                          1           0  0.62s           2022-06-26T21:40:15
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.47s           2022-06-26T21:40:42
+================================================================================
+[2022-06-26 21:40:51,270] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:40:51,271] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:35:51.271311+00:00
+[2022-06-26 21:41:01,305] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:41:01,305] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:36:01.305389+00:00
+[2022-06-26 21:41:11,918] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:41:11,918] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:36:11.918858+00:00
+[2022-06-26 21:41:14,447] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.54s           2022-06-26T21:41:10
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.58s           2022-06-26T21:41:10
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.51s           2022-06-26T21:41:13
+/opt/airflow/dags/csv_to_ds.py                                          1           0  0.64s           2022-06-26T21:40:46
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.51s           2022-06-26T21:41:13
+================================================================================
+[2022-06-26 21:41:22,111] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:41:22,111] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:36:22.111316+00:00
+[2022-06-26 21:41:32,163] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:41:32,164] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:36:32.164197+00:00
+[2022-06-26 21:41:42,709] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-06-26 21:41:42,709] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-06-26 21:36:42.709594+00:00
+[2022-06-26 21:41:45,271] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/f101_to_local.py                                      1           0  0.50s           2022-06-26T21:41:41
+/opt/airflow/dags/f101_from_local.py                                    1           0  0.49s           2022-06-26T21:41:41
+/opt/airflow/dags/f_101_round_f.py                                      1           0  0.53s           2022-06-26T21:41:44
+/opt/airflow/dags/csv_to_ds.py                                          1           0  0.64s           2022-06-26T21:41:17
+/opt/airflow/dags/dm_fill_account_turnover.py                           1           0  0.53s           2022-06-26T21:41:44
+================================================================================

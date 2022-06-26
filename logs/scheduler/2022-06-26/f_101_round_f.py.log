@@ -284,3 +284,107 @@
 [2022-06-26 21:35:04,730] {logging_mixin.py:109} INFO - [2022-06-26 21:35:04,730] {dag.py:2396} INFO - Sync 1 DAGs
 [2022-06-26 21:35:04,744] {logging_mixin.py:109} INFO - [2022-06-26 21:35:04,744] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
 [2022-06-26 21:35:04,758] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.517 seconds
+[2022-06-26 21:35:34,885] {processor.py:163} INFO - Started process (PID=2062) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:35:34,886] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:35:34,887] {logging_mixin.py:109} INFO - [2022-06-26 21:35:34,887] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:35:34,909] {logging_mixin.py:109} INFO - [2022-06-26 21:35:34,909] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:35:35,392] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:35:35,404] {logging_mixin.py:109} INFO - [2022-06-26 21:35:35,403] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:35:35,417] {logging_mixin.py:109} INFO - [2022-06-26 21:35:35,417] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:35:35,436] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.554 seconds
+[2022-06-26 21:36:05,774] {processor.py:163} INFO - Started process (PID=2112) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:36:05,775] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:36:05,776] {logging_mixin.py:109} INFO - [2022-06-26 21:36:05,776] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:36:05,797] {logging_mixin.py:109} INFO - [2022-06-26 21:36:05,797] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:36:06,185] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:36:06,195] {logging_mixin.py:109} INFO - [2022-06-26 21:36:06,195] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:36:06,206] {logging_mixin.py:109} INFO - [2022-06-26 21:36:06,205] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:36:06,218] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.447 seconds
+[2022-06-26 21:36:36,556] {processor.py:163} INFO - Started process (PID=2169) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:36:36,557] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:36:36,558] {logging_mixin.py:109} INFO - [2022-06-26 21:36:36,558] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:36:36,576] {logging_mixin.py:109} INFO - [2022-06-26 21:36:36,576] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:36:36,965] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:36:36,982] {logging_mixin.py:109} INFO - [2022-06-26 21:36:36,982] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:36:36,996] {logging_mixin.py:109} INFO - [2022-06-26 21:36:36,996] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:36:37,005] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.452 seconds
+[2022-06-26 21:37:07,154] {processor.py:163} INFO - Started process (PID=2218) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:37:07,161] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:37:07,161] {logging_mixin.py:109} INFO - [2022-06-26 21:37:07,161] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:37:07,181] {logging_mixin.py:109} INFO - [2022-06-26 21:37:07,181] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:37:07,576] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:37:07,587] {logging_mixin.py:109} INFO - [2022-06-26 21:37:07,587] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:37:07,597] {logging_mixin.py:109} INFO - [2022-06-26 21:37:07,597] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:37:07,610] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.459 seconds
+[2022-06-26 21:37:37,753] {processor.py:163} INFO - Started process (PID=2275) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:37:37,754] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:37:37,754] {logging_mixin.py:109} INFO - [2022-06-26 21:37:37,754] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:37:37,775] {logging_mixin.py:109} INFO - [2022-06-26 21:37:37,775] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:37:38,164] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:37:38,175] {logging_mixin.py:109} INFO - [2022-06-26 21:37:38,174] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:37:38,185] {logging_mixin.py:109} INFO - [2022-06-26 21:37:38,185] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:37:38,197] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.447 seconds
+[2022-06-26 21:38:08,568] {processor.py:163} INFO - Started process (PID=2331) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:38:08,574] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:38:08,574] {logging_mixin.py:109} INFO - [2022-06-26 21:38:08,574] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:38:08,595] {logging_mixin.py:109} INFO - [2022-06-26 21:38:08,595] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:38:08,982] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:38:08,993] {logging_mixin.py:109} INFO - [2022-06-26 21:38:08,993] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:38:09,003] {logging_mixin.py:109} INFO - [2022-06-26 21:38:09,003] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:38:09,016] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.451 seconds
+[2022-06-26 21:38:39,279] {processor.py:163} INFO - Started process (PID=2379) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:38:39,280] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:38:39,281] {logging_mixin.py:109} INFO - [2022-06-26 21:38:39,281] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:38:39,303] {logging_mixin.py:109} INFO - [2022-06-26 21:38:39,303] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:38:39,710] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:38:39,722] {logging_mixin.py:109} INFO - [2022-06-26 21:38:39,721] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:38:39,736] {logging_mixin.py:109} INFO - [2022-06-26 21:38:39,736] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:38:39,749] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.473 seconds
+[2022-06-26 21:39:10,023] {processor.py:163} INFO - Started process (PID=2436) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:39:10,029] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:39:10,030] {logging_mixin.py:109} INFO - [2022-06-26 21:39:10,030] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:39:10,049] {logging_mixin.py:109} INFO - [2022-06-26 21:39:10,049] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:39:10,442] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:39:10,452] {logging_mixin.py:109} INFO - [2022-06-26 21:39:10,452] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:39:10,464] {logging_mixin.py:109} INFO - [2022-06-26 21:39:10,464] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:39:10,477] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.456 seconds
+[2022-06-26 21:39:40,666] {processor.py:163} INFO - Started process (PID=2493) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:39:40,667] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:39:40,667] {logging_mixin.py:109} INFO - [2022-06-26 21:39:40,667] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:39:40,688] {logging_mixin.py:109} INFO - [2022-06-26 21:39:40,688] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:39:41,110] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:39:41,121] {logging_mixin.py:109} INFO - [2022-06-26 21:39:41,120] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:39:41,131] {logging_mixin.py:109} INFO - [2022-06-26 21:39:41,131] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:39:41,138] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.475 seconds
+[2022-06-26 21:40:11,432] {processor.py:163} INFO - Started process (PID=2542) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:40:11,434] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:40:11,435] {logging_mixin.py:109} INFO - [2022-06-26 21:40:11,435] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:40:11,466] {logging_mixin.py:109} INFO - [2022-06-26 21:40:11,465] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:40:11,875] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:40:11,887] {logging_mixin.py:109} INFO - [2022-06-26 21:40:11,887] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:40:11,898] {logging_mixin.py:109} INFO - [2022-06-26 21:40:11,898] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:40:11,911] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.482 seconds
+[2022-06-26 21:40:42,140] {processor.py:163} INFO - Started process (PID=2600) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:40:42,141] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:40:42,141] {logging_mixin.py:109} INFO - [2022-06-26 21:40:42,141] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:40:42,161] {logging_mixin.py:109} INFO - [2022-06-26 21:40:42,161] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:40:42,574] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:40:42,584] {logging_mixin.py:109} INFO - [2022-06-26 21:40:42,584] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:40:42,595] {logging_mixin.py:109} INFO - [2022-06-26 21:40:42,594] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:40:42,602] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.465 seconds
+[2022-06-26 21:41:12,937] {processor.py:163} INFO - Started process (PID=2658) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:41:12,938] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:41:12,938] {logging_mixin.py:109} INFO - [2022-06-26 21:41:12,938] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:41:12,959] {logging_mixin.py:109} INFO - [2022-06-26 21:41:12,959] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:41:13,399] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:41:13,411] {logging_mixin.py:109} INFO - [2022-06-26 21:41:13,410] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:41:13,422] {logging_mixin.py:109} INFO - [2022-06-26 21:41:13,422] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:41:13,430] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.496 seconds
+[2022-06-26 21:41:43,752] {processor.py:163} INFO - Started process (PID=2706) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:41:43,753] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-06-26 21:41:43,753] {logging_mixin.py:109} INFO - [2022-06-26 21:41:43,753] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:41:43,799] {logging_mixin.py:109} INFO - [2022-06-26 21:41:43,799] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-06-26 21:41:44,211] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-f101_round_f']) retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-06-26 21:41:44,221] {logging_mixin.py:109} INFO - [2022-06-26 21:41:44,221] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-06-26 21:41:44,234] {logging_mixin.py:109} INFO - [2022-06-26 21:41:44,234] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-f101_round_f to 2022-06-26T19:47:05.358363+00:00
+[2022-06-26 21:41:44,260] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.516 seconds

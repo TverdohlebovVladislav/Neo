@@ -19,7 +19,10 @@ def download_csv(sql: str) -> None:
         df.to_csv('result.csv', sep=';')
     except DataError:
         print('\tThe date format isn\'t correct! Try again!')
-        
+    else:
+        print(df)
+        print('\tSave to csv complated succesfull!')
+
 
 def main():
     repeat = True
@@ -36,6 +39,6 @@ def main():
         )
         date = input('\tInput date in format like YYYY-MM-DD: ')
         download_csv(f'SELECT * from get_max_min_credit_debit_from_date(\'{date}\'::date);')
-        repeat = bool(input('Do you want to continiue? (1 - Yes, 0 - No): '))
+        repeat = bool(input('Do you want to continiue? (Yes - enter any character, No - press enter): '))
 
 main()
