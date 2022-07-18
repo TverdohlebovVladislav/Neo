@@ -1,0 +1,35 @@
+[2022-07-17 09:23:25,625] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: f101_from_csv_to_db.update_double_f101_dm_csv scheduled__2022-06-26T21:17:36.960177+00:00 [queued]>
+[2022-07-17 09:23:25,635] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: f101_from_csv_to_db.update_double_f101_dm_csv scheduled__2022-06-26T21:17:36.960177+00:00 [queued]>
+[2022-07-17 09:23:25,635] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-17 09:23:25,635] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-07-17 09:23:25,635] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-17 09:23:25,793] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): update_double_f101_dm_csv> on 2022-06-26 21:17:36.960177+00:00
+[2022-07-17 09:23:25,801] {standard_task_runner.py:52} INFO - Started process 85 to run task
+[2022-07-17 09:23:25,825] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'f101_from_csv_to_db', 'update_double_f101_dm_csv', 'scheduled__2022-06-26T21:17:36.960177+00:00', '--job-id', '1517', '--raw', '--subdir', 'DAGS_FOLDER/f101_from_local.py', '--cfg-path', '/tmp/tmpdy1jb0qp', '--error-file', '/tmp/tmp1dbqciz9']
+[2022-07-17 09:23:25,842] {standard_task_runner.py:77} INFO - Job 1517: Subtask update_double_f101_dm_csv
+[2022-07-17 09:23:26,272] {logging_mixin.py:109} INFO - Running <TaskInstance: f101_from_csv_to_db.update_double_f101_dm_csv scheduled__2022-06-26T21:17:36.960177+00:00 [running]> on host a04da3f4ff4b
+[2022-07-17 09:23:27,005] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=f101_from_csv_to_db
+AIRFLOW_CTX_TASK_ID=update_double_f101_dm_csv
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T21:17:36.960177+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-26T21:17:36.960177+00:00
+[2022-07-17 09:23:28,014] {FromLocal.py:65} INFO - Column from_date changed date-time format
+[2022-07-17 09:23:28,020] {FromLocal.py:65} INFO - Column to_date changed date-time format
+[2022-07-17 09:23:28,020] {FromLocal.py:71} INFO - Table dm_f101_round_f_v2 read in pandas success. 
+[2022-07-17 09:23:28,389] {FromLocal.py:72} INFO - 
+    from_date    to_date  ... balance_out_total  r_balance_out_total
+0 2018-01-01 2018-01-30  ...               0.0                  NaN
+1 2018-01-01 2018-01-29  ...               NaN                  NaN
+2 2018-01-01 2018-01-31  ...               0.0                  NaN
+3 2018-01-01 2018-01-31  ...               0.0                  NaN
+4 2018-01-01 2018-01-31  ...               NaN                  NaN
+
+[5 rows x 29 columns]
+[2022-07-17 09:23:29,024] {FromLocal.py:100} INFO -  Table dm_f101_round_f_v2 in has updated success. 
+[2022-07-17 09:23:34,517] {python.py:175} INFO - Done. Returned value was: None
+[2022-07-17 09:23:34,789] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=f101_from_csv_to_db, task_id=update_double_f101_dm_csv, execution_date=20220626T211736, start_date=20220717T092325, end_date=20220717T092334
+[2022-07-17 09:23:34,940] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-07-17 09:23:35,061] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

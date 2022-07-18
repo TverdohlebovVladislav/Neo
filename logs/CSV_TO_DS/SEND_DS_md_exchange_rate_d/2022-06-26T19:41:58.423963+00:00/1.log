@@ -1,0 +1,24 @@
+[2022-07-17 09:23:50,703] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_exchange_rate_d scheduled__2022-06-26T19:41:58.423963+00:00 [queued]>
+[2022-07-17 09:23:51,016] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_exchange_rate_d scheduled__2022-06-26T19:41:58.423963+00:00 [queued]>
+[2022-07-17 09:23:51,016] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-17 09:23:51,016] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-07-17 09:23:51,017] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-17 09:23:51,090] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): SEND_DS_md_exchange_rate_d> on 2022-06-26 19:41:58.423963+00:00
+[2022-07-17 09:23:51,100] {standard_task_runner.py:52} INFO - Started process 203 to run task
+[2022-07-17 09:23:51,288] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'CSV_TO_DS', 'SEND_DS_md_exchange_rate_d', 'scheduled__2022-06-26T19:41:58.423963+00:00', '--job-id', '1549', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_ds.py', '--cfg-path', '/tmp/tmpk74a3c2k', '--error-file', '/tmp/tmpowjk0_yb']
+[2022-07-17 09:23:51,293] {standard_task_runner.py:77} INFO - Job 1549: Subtask SEND_DS_md_exchange_rate_d
+[2022-07-17 09:23:52,200] {logging_mixin.py:109} INFO - Running <TaskInstance: CSV_TO_DS.SEND_DS_md_exchange_rate_d scheduled__2022-06-26T19:41:58.423963+00:00 [running]> on host a04da3f4ff4b
+[2022-07-17 09:23:52,928] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=CSV_TO_DS
+AIRFLOW_CTX_TASK_ID=SEND_DS_md_exchange_rate_d
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T19:41:58.423963+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-26T19:41:58.423963+00:00
+[2022-07-17 09:23:58,280] {FromLocal.py:67} INFO - object of type 'bool' has no len()
+[2022-07-17 09:23:58,280] {FromLocal.py:96} INFO - 'NoneType' object has no attribute 'to_sql'
+[2022-07-17 09:24:03,292] {python.py:175} INFO - Done. Returned value was: None
+[2022-07-17 09:24:03,308] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=CSV_TO_DS, task_id=SEND_DS_md_exchange_rate_d, execution_date=20220626T194158, start_date=20220717T092350, end_date=20220717T092403
+[2022-07-17 09:24:03,366] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-07-17 09:24:03,541] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

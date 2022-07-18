@@ -1,0 +1,74 @@
+[2022-07-17 09:23:25,944] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-f101_round_f.create_dm_schema_and_tables scheduled__2022-06-26T19:47:05.358363+00:00 [queued]>
+[2022-07-17 09:23:25,958] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-f101_round_f.create_dm_schema_and_tables scheduled__2022-06-26T19:47:05.358363+00:00 [queued]>
+[2022-07-17 09:23:25,959] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-17 09:23:25,959] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-07-17 09:23:25,959] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-17 09:23:26,116] {taskinstance.py:1259} INFO - Executing <Task(PostgresOperator): create_dm_schema_and_tables> on 2022-06-26 19:47:05.358363+00:00
+[2022-07-17 09:23:26,123] {standard_task_runner.py:52} INFO - Started process 91 to run task
+[2022-07-17 09:23:26,134] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'DM-COUNT-f101_round_f', 'create_dm_schema_and_tables', 'scheduled__2022-06-26T19:47:05.358363+00:00', '--job-id', '1511', '--raw', '--subdir', 'DAGS_FOLDER/f_101_round_f.py', '--cfg-path', '/tmp/tmp10i_2zht', '--error-file', '/tmp/tmpqlxq34bw']
+[2022-07-17 09:23:26,135] {standard_task_runner.py:77} INFO - Job 1511: Subtask create_dm_schema_and_tables
+[2022-07-17 09:23:26,609] {logging_mixin.py:109} INFO - Running <TaskInstance: DM-COUNT-f101_round_f.create_dm_schema_and_tables scheduled__2022-06-26T19:47:05.358363+00:00 [running]> on host a04da3f4ff4b
+[2022-07-17 09:23:27,577] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=DM-COUNT-f101_round_f
+AIRFLOW_CTX_TASK_ID=create_dm_schema_and_tables
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-26T19:47:05.358363+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-26T19:47:05.358363+00:00
+[2022-07-17 09:23:27,616] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: ***, Password: ***, extra: {}
+[2022-07-17 09:23:27,663] {dbapi.py:225} INFO - Running statement: CREATE SCHEMA IF NOT EXISTS dm;
+
+
+-- dm.dm_account_turnover_f 
+CREATE TABLE IF NOT EXISTS dm.dm_account_turnover_f (
+    on_date DATE,
+    account_rk NUMERIC,
+    credit_amount NUMERIC(23,8),
+    credit_amount_rub NUMERIC(23,8),
+    debet_amount NUMERIC(23,8),
+    debet_amount_rub NUMERIC(23,8)
+);
+
+
+-- dm.dm_f101_round_f
+CREATE TABLE IF NOT EXISTS dm.dm_f101_round_f (
+    FROM_DATE DATE,
+    TO_DATE DATE,
+    CHAPTER	VARCHAR(1),
+    LEDGER_ACCOUNT VARCHAR(5),
+    CHARACTERISTIC VARCHAR(1),
+    BALANCE_IN_RUB NUMERIC(23,8),
+    R_BALANCE_IN_RUB NUMERIC(23,8),
+    BALANCE_IN_VAL NUMERIC(23,8),
+    R_BALANCE_IN_VAL NUMERIC(23,8),
+    BALANCE_IN_TOTAL NUMERIC(23,8),
+    R_BALANCE_IN_TOTAL NUMERIC(23,8),
+    TURN_DEB_RUB NUMERIC(23,8),
+    R_TURN_DEB_RUB NUMERIC(23,8),
+    TURN_DEB_VAL NUMERIC(23,8),
+    R_TURN_DEB_VAL NUMERIC(23,8),
+    TURN_DEB_TOTAL NUMERIC(23,8),
+    R_TURN_DEB_TOTAL NUMERIC(23,8),
+    TURN_CRE_RUB NUMERIC(23,8),
+    R_TURN_CRE_RUB NUMERIC(23,8),
+    TURN_CRE_VAL NUMERIC(23,8),
+    R_TURN_CRE_VAL NUMERIC(23,8),
+    TURN_CRE_TOTAL NUMERIC(23,8),
+    R_TURN_CRE_TOTAL NUMERIC(23,8),
+    BALANCE_OUT_RUB NUMERIC(23,8),
+    R_BALANCE_OUT_RUB NUMERIC(23,8),
+    BALANCE_OUT_VAL NUMERIC(23,8),
+    R_BALANCE_OUT_VAL NUMERIC(23,8),
+    BALANCE_OUT_TOTAL NUMERIC(23,8),
+    R_BALANCE_OUT_TOTAL NUMERIC(23,8)
+);, parameters: None
+[2022-07-17 09:23:27,725] {postgres.py:71} INFO - NOTICE:  schema "dm" already exists, skipping
+
+[2022-07-17 09:23:27,726] {postgres.py:71} INFO - NOTICE:  relation "dm_account_turnover_f" already exists, skipping
+
+[2022-07-17 09:23:27,726] {postgres.py:71} INFO - NOTICE:  relation "dm_f101_round_f" already exists, skipping
+
+[2022-07-17 09:23:28,000] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=DM-COUNT-f101_round_f, task_id=create_dm_schema_and_tables, execution_date=20220626T194705, start_date=20220717T092325, end_date=20220717T092328
+[2022-07-17 09:23:28,154] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-07-17 09:23:28,469] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

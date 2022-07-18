@@ -1,0 +1,56 @@
+[2022-07-17 09:24:33,958] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.create_log_tables scheduled__2022-07-16T09:24:31.887335+00:00 [queued]>
+[2022-07-17 09:24:33,980] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: DM-COUNT-account-turnover.create_log_tables scheduled__2022-07-16T09:24:31.887335+00:00 [queued]>
+[2022-07-17 09:24:33,981] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-17 09:24:33,981] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-07-17 09:24:33,981] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-17 09:24:34,004] {taskinstance.py:1259} INFO - Executing <Task(PostgresOperator): create_log_tables> on 2022-07-16 09:24:31.887335+00:00
+[2022-07-17 09:24:34,012] {standard_task_runner.py:52} INFO - Started process 365 to run task
+[2022-07-17 09:24:34,021] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'DM-COUNT-account-turnover', 'create_log_tables', 'scheduled__2022-07-16T09:24:31.887335+00:00', '--job-id', '1595', '--raw', '--subdir', 'DAGS_FOLDER/dm_fill_account_turnover.py', '--cfg-path', '/tmp/tmpdrlk3rsl', '--error-file', '/tmp/tmp0rc46ls1']
+[2022-07-17 09:24:34,022] {standard_task_runner.py:77} INFO - Job 1595: Subtask create_log_tables
+[2022-07-17 09:24:34,206] {logging_mixin.py:109} INFO - Running <TaskInstance: DM-COUNT-account-turnover.create_log_tables scheduled__2022-07-16T09:24:31.887335+00:00 [running]> on host a04da3f4ff4b
+[2022-07-17 09:24:34,370] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=DM-COUNT-account-turnover
+AIRFLOW_CTX_TASK_ID=create_log_tables
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-16T09:24:31.887335+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-16T09:24:31.887335+00:00
+[2022-07-17 09:24:34,398] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: ***, Password: ***, extra: {}
+[2022-07-17 09:24:34,408] {dbapi.py:225} INFO - Running statement: CREATE SCHEMA IF NOT EXISTS logs;
+CREATE SEQUENCE IF NOT EXISTS logs.seq_lg_messages INCREMENT 1 START 1;
+
+
+CREATE TABLE IF NOT EXISTS logs.load_csv_to_ds (
+    ID SERIAL PRIMARY KEY,
+    TABLE_NAME VARCHAR(30),
+    CSV_PATH TEXT,
+    TIME_START_LOAD TIMESTAMP DEFAULT CURRENT_TIMESTAMP(0),
+    TIME_END_LOAD TIMESTAMP,
+    condition TEXT
+);
+
+
+CREATE TABLE IF NOT EXISTS logs.lg_messages_dm ( 	
+    record_id INT,
+    date_time TIMESTAMP,
+    pid TEXT,
+    message TEXT,
+    message_type TEXT,
+    usename TEXT, 
+    datname TEXT, 
+    client_addr TEXT, 
+    application_name TEXT,
+    backend_start TEXT
+);, parameters: None
+[2022-07-17 09:24:34,414] {postgres.py:71} INFO - NOTICE:  schema "logs" already exists, skipping
+
+[2022-07-17 09:24:34,415] {postgres.py:71} INFO - NOTICE:  relation "seq_lg_messages" already exists, skipping
+
+[2022-07-17 09:24:34,415] {postgres.py:71} INFO - NOTICE:  relation "load_csv_to_ds" already exists, skipping
+
+[2022-07-17 09:24:34,415] {postgres.py:71} INFO - NOTICE:  relation "lg_messages_dm" already exists, skipping
+
+[2022-07-17 09:24:34,435] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=DM-COUNT-account-turnover, task_id=create_log_tables, execution_date=20220716T092431, start_date=20220717T092433, end_date=20220717T092434
+[2022-07-17 09:24:34,489] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-07-17 09:24:34,611] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

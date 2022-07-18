@@ -1,0 +1,175 @@
+[2022-07-17 09:24:53,381] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_ledger_account_s scheduled__2022-07-16T09:24:30.420353+00:00 [queued]>
+[2022-07-17 09:24:53,408] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: CSV_TO_DS.SEND_DS_md_ledger_account_s scheduled__2022-07-16T09:24:30.420353+00:00 [queued]>
+[2022-07-17 09:24:53,408] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-17 09:24:53,408] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-07-17 09:24:53,408] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-17 09:24:53,451] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): SEND_DS_md_ledger_account_s> on 2022-07-16 09:24:30.420353+00:00
+[2022-07-17 09:24:53,464] {standard_task_runner.py:52} INFO - Started process 539 to run task
+[2022-07-17 09:24:53,471] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'CSV_TO_DS', 'SEND_DS_md_ledger_account_s', 'scheduled__2022-07-16T09:24:30.420353+00:00', '--job-id', '1652', '--raw', '--subdir', 'DAGS_FOLDER/csv_to_ds.py', '--cfg-path', '/tmp/tmpsg9ifaa9', '--error-file', '/tmp/tmpvlk2v2o1']
+[2022-07-17 09:24:53,472] {standard_task_runner.py:77} INFO - Job 1652: Subtask SEND_DS_md_ledger_account_s
+[2022-07-17 09:24:53,631] {logging_mixin.py:109} INFO - Running <TaskInstance: CSV_TO_DS.SEND_DS_md_ledger_account_s scheduled__2022-07-16T09:24:30.420353+00:00 [running]> on host a04da3f4ff4b
+[2022-07-17 09:24:53,801] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=CSV_TO_DS
+AIRFLOW_CTX_TASK_ID=SEND_DS_md_ledger_account_s
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-16T09:24:30.420353+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-16T09:24:30.420353+00:00
+[2022-07-17 09:24:54,086] {FromLocal.py:71} INFO - Table md_ledger_account_s read in pandas success. 
+[2022-07-17 09:24:54,206] {FromLocal.py:72} INFO - 
+   chapter      chapter_name  ...  is_revaluation is_correct
+0       А  Балансовые счета  ...             NaN        NaN
+1       А  Балансовые счета  ...             NaN        NaN
+2       А  Балансовые счета  ...             NaN        NaN
+3       А  Балансовые счета  ...             NaN        NaN
+4       А  Балансовые счета  ...             NaN        NaN
+
+[5 rows x 28 columns]
+[2022-07-17 09:24:59,258] {FromLocal.py:96} INFO - (psycopg2.errors.DatatypeMismatch) column "start_date" is of type date but expression is of type text
+LINE 2:     SELECT DISTINCT ON (LEDGER_ACCOUNT, START_DATE) *
+                                                            ^
+HINT:  You will need to rewrite or cast the expression.
+
+[SQL: INSERT INTO ds.md_ledger_account_s
+    SELECT DISTINCT ON (LEDGER_ACCOUNT, START_DATE) *
+    FROM temp.md_ledger_account_s        
+ON CONFLICT (LEDGER_ACCOUNT, START_DATE)
+DO UPDATE 
+	SET 
+		CHAPTER = excluded.CHAPTER,
+		CHAPTER_NAME = excluded.CHAPTER_NAME,
+        SECTION_NUMBER = excluded.SECTION_NUMBER,
+		SECTION_NAME = excluded.SECTION_NAME,
+        SUBSECTION_NAME = excluded.SUBSECTION_NAME,
+		LEDGER1_ACCOUNT = excluded.LEDGER1_ACCOUNT,
+        LEDGER1_ACCOUNT_NAME = excluded.LEDGER1_ACCOUNT_NAME,
+		LEDGER_ACCOUNT_NAME = excluded.LEDGER_ACCOUNT_NAME,
+        CHARACTERISTIC = excluded.CHARACTERISTIC,
+		IS_RESIDENT = excluded.IS_RESIDENT,
+        IS_RESERVE = excluded.IS_RESERVE,
+		IS_RESERVED = excluded.IS_RESERVED,
+        IS_LOAN = excluded.IS_LOAN,
+		IS_RESERVED_ASSETS = excluded.IS_RESERVED_ASSETS,
+        IS_OVERDUE = excluded.IS_OVERDUE,
+		IS_INTEREST = excluded.IS_INTEREST,
+        PAIR_ACCOUNT = excluded.PAIR_ACCOUNT,
+		END_DATE = excluded.END_DATE,
+        IS_RUB_ONLY = excluded.IS_RUB_ONLY,
+		MIN_TERM = excluded.MIN_TERM,
+        MIN_TERM_MEASURE = excluded.MIN_TERM_MEASURE,
+		MAX_TERM = excluded.MAX_TERM,
+        MAX_TERM_MEASURE = excluded.MAX_TERM_MEASURE,
+		LEDGER_ACC_FULL_NAME_TRANSLIT = excluded.LEDGER_ACC_FULL_NAME_TRANSLIT,
+        IS_REVALUATION = excluded.IS_REVALUATION,
+		IS_CORRECT = excluded.IS_CORRECT;]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+[2022-07-17 09:24:58,651] {base_job.py:230} ERROR - LocalTaskJob heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 241, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "postgres" (172.18.0.7), port 5432 failed: FATAL:  sorry, too many clients already
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 202, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2171, in merge
+    _resolve_conflict_map=_resolve_conflict_map,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2244, in _merge
+    merged = self.query(mapper.class_).get(key[1])
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 1018, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 1135, in _get_impl
+    return db_load_fn(self, primary_key_identity)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/loading.py", line 286, in load_on_pk_identity
+    return q.one()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3490, in one
+    ret = self.one_or_none()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3459, in one_or_none
+    ret = list(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3557, in _execute_and_instances
+    querycontext, self._connection_from_session, close_with_result=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3572, in _get_bind_args
+    mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1145, in connection
+    execution_options=execution_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1151, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 241, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "postgres" (172.18.0.7), port 5432 failed: FATAL:  sorry, too many clients already
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2022-07-17 09:25:04,380] {python.py:175} INFO - Done. Returned value was: None
+[2022-07-17 09:25:04,391] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=CSV_TO_DS, task_id=SEND_DS_md_ledger_account_s, execution_date=20220716T092430, start_date=20220717T092453, end_date=20220717T092504
+[2022-07-17 09:25:04,432] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-07-17 09:25:04,463] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
