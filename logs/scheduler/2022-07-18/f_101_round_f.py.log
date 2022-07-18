@@ -1,0 +1,229 @@
+[2022-07-18 13:42:24,876] {processor.py:163} INFO - Started process (PID=69) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:42:24,878] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:42:24,879] {logging_mixin.py:109} INFO - [2022-07-18 13:42:24,878] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:42:24,928] {logging_mixin.py:109} INFO - [2022-07-18 13:42:24,928] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:42:26,001] {logging_mixin.py:109} INFO - [2022-07-18 13:42:25,999] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:42:26,005] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:42:26,005] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:42:26,015] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 1.143 seconds
+[2022-07-18 13:42:56,398] {processor.py:163} INFO - Started process (PID=129) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:42:56,400] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:42:56,400] {logging_mixin.py:109} INFO - [2022-07-18 13:42:56,400] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:42:56,420] {logging_mixin.py:109} INFO - [2022-07-18 13:42:56,420] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:42:56,744] {logging_mixin.py:109} INFO - [2022-07-18 13:42:56,743] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:42:56,747] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:42:56,758] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.363 seconds
+[2022-07-18 13:43:27,141] {processor.py:163} INFO - Started process (PID=192) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:43:27,143] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:43:27,144] {logging_mixin.py:109} INFO - [2022-07-18 13:43:27,144] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:43:27,165] {logging_mixin.py:109} INFO - [2022-07-18 13:43:27,165] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:43:27,510] {logging_mixin.py:109} INFO - [2022-07-18 13:43:27,509] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:43:27,513] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:43:27,521] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.383 seconds
+[2022-07-18 13:43:57,555] {processor.py:163} INFO - Started process (PID=242) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:43:57,556] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:43:57,556] {logging_mixin.py:109} INFO - [2022-07-18 13:43:57,556] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:43:57,577] {logging_mixin.py:109} INFO - [2022-07-18 13:43:57,577] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:43:57,963] {logging_mixin.py:109} INFO - [2022-07-18 13:43:57,962] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:43:57,966] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:43:57,978] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.426 seconds
+[2022-07-18 13:44:28,016] {processor.py:163} INFO - Started process (PID=303) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:44:28,017] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:44:28,017] {logging_mixin.py:109} INFO - [2022-07-18 13:44:28,017] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:44:28,039] {logging_mixin.py:109} INFO - [2022-07-18 13:44:28,039] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:44:28,424] {logging_mixin.py:109} INFO - [2022-07-18 13:44:28,423] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:44:28,427] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:44:28,433] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.420 seconds
+[2022-07-18 13:44:59,463] {processor.py:163} INFO - Started process (PID=366) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:44:59,464] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:44:59,464] {logging_mixin.py:109} INFO - [2022-07-18 13:44:59,464] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:44:59,484] {logging_mixin.py:109} INFO - [2022-07-18 13:44:59,483] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:44:59,835] {logging_mixin.py:109} INFO - [2022-07-18 13:44:59,834] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:44:59,839] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:44:59,850] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.390 seconds
+[2022-07-18 13:45:30,847] {processor.py:163} INFO - Started process (PID=420) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:45:30,852] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:45:30,852] {logging_mixin.py:109} INFO - [2022-07-18 13:45:30,852] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:45:30,872] {logging_mixin.py:109} INFO - [2022-07-18 13:45:30,871] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:45:31,257] {logging_mixin.py:109} INFO - [2022-07-18 13:45:31,256] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:45:31,260] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:45:31,271] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.427 seconds
+[2022-07-18 13:46:02,282] {processor.py:163} INFO - Started process (PID=484) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:46:02,283] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:46:02,284] {logging_mixin.py:109} INFO - [2022-07-18 13:46:02,283] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:46:02,305] {logging_mixin.py:109} INFO - [2022-07-18 13:46:02,305] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:46:02,665] {logging_mixin.py:109} INFO - [2022-07-18 13:46:02,664] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:46:02,668] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:46:02,680] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.401 seconds
+[2022-07-18 13:46:33,679] {processor.py:163} INFO - Started process (PID=547) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:46:33,680] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:46:33,681] {logging_mixin.py:109} INFO - [2022-07-18 13:46:33,680] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:46:33,707] {logging_mixin.py:109} INFO - [2022-07-18 13:46:33,707] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:46:34,072] {logging_mixin.py:109} INFO - [2022-07-18 13:46:34,071] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:46:34,076] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:46:34,088] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.412 seconds
+[2022-07-18 13:47:04,137] {processor.py:163} INFO - Started process (PID=610) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:47:04,139] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:47:04,139] {logging_mixin.py:109} INFO - [2022-07-18 13:47:04,139] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:47:04,161] {logging_mixin.py:109} INFO - [2022-07-18 13:47:04,161] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:47:04,539] {logging_mixin.py:109} INFO - [2022-07-18 13:47:04,538] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:47:04,543] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:47:04,552] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.417 seconds
+[2022-07-18 13:47:34,573] {processor.py:163} INFO - Started process (PID=664) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:47:34,574] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:47:34,575] {logging_mixin.py:109} INFO - [2022-07-18 13:47:34,574] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:47:34,593] {logging_mixin.py:109} INFO - [2022-07-18 13:47:34,593] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:47:34,955] {logging_mixin.py:109} INFO - [2022-07-18 13:47:34,954] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:47:34,958] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:47:34,970] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.400 seconds
+[2022-07-18 13:48:04,995] {processor.py:163} INFO - Started process (PID=727) to work on /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:48:04,997] {processor.py:642} INFO - Processing file /opt/airflow/dags/f_101_round_f.py for tasks to queue
+[2022-07-18 13:48:04,997] {logging_mixin.py:109} INFO - [2022-07-18 13:48:04,997] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:48:05,017] {logging_mixin.py:109} INFO - [2022-07-18 13:48:05,017] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-18 13:48:05,374] {logging_mixin.py:109} INFO - [2022-07-18 13:48:05,373] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/f_101_round_f.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/f_101_round_f.py", line 5, in <module>
+    from core import AIRFLOW_HOME, DEFAULT_POSTGRES_CONN_ID
+  File "/usr/local/lib/python3.7/site-packages/core/__init__.py", line 6, in <module>
+    from core.Mirror import Mirror
+  File "/usr/local/lib/python3.7/site-packages/core/Mirror.py", line 2, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2022-07-18 13:48:05,377] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/f_101_round_f.py
+[2022-07-18 13:48:05,389] {processor.py:171} INFO - Processing /opt/airflow/dags/f_101_round_f.py took 0.397 seconds

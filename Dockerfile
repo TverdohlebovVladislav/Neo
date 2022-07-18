@@ -42,6 +42,7 @@ RUN cd "/tmp" && \
         
 # Create SPARK_HOME env var
 RUN export SPARK_HOME
+ENV PATH $PATH:/root/.local/bin
 ENV PATH $PATH:/usr/local/spark/bin
 
 EXPOSE 8080 5555 8793
