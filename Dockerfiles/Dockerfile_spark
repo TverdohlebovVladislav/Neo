@@ -1,0 +1,6 @@
+FROM bitnami/spark:3.1.2
+
+USER root
+RUN pip install delta-spark==1.0.0
+RUN pip install pytz
+USER 1001

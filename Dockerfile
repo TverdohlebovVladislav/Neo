@@ -6,7 +6,9 @@ USER root
 RUN apt-get update -qq && apt-get install vim -qqq
 ENV AIRFLOW_HOME=/opt/airflow
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
+# RUN pip install pyspark
+# RUN pip install delta-spark
 
 ARG SPARK_VERSION="3.1.2"
 ARG HADOOP_VERSION="3.2"
@@ -42,7 +44,6 @@ RUN cd "/tmp" && \
         
 # Create SPARK_HOME env var
 RUN export SPARK_HOME
-ENV PATH $PATH:/root/.local/bin
 ENV PATH $PATH:/usr/local/spark/bin
 
 EXPOSE 8080 5555 8793
