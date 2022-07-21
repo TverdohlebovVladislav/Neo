@@ -35,4 +35,5 @@ with DAG(
         # bash_command='"${SPARK_HOME}/bin/spark-submit" --master spark://spark:7077 ' + AIRFLOW_HOME +'/spark_scripts/mirr_md_account_d.py'
     )
 
+    # docker exec -it neo_project_spark_1 spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"   --master spark://spark:7077 /usr/local/spark/core/mirr_md_account_d.py
     start_task >> load_mirror_md_account_d >> end_task

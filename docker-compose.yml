@@ -25,10 +25,11 @@ x-airflow-common:
     - ./dags:/opt/airflow/dags
     - ./csv:/opt/airflow/csv
     - ./plugins:/opt/airflow/plugins
-    - ./logs:/opt/airflow/logs
-    - ./core:/opt/airflow/core
     - ./core:/usr/local/lib/python3.7/site-packages/core/
     - ./sql:/opt/airflow/sql
+    - ./logs:/opt/airflow/logs
+    - ./core:/opt/airflow/core
+    - ./mirrors:/opt/airflow/mirrors
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
@@ -259,6 +260,9 @@ services:
     volumes:
       - ./core:/usr/local/spark/core # Spark scripts folder (Must be the same path in airflow and Spark Cluster)
       - ./resources:/usr/local/spark/resources #Resources folder (Must be the same path in airflow and Spark Cluster)
+      - ./logs:/opt/airflow/logs
+      - ./core:/opt/airflow/core
+      - ./mirrors:/opt/airflow/mirrors
       # - ./example:/usr/local/spark/example #Resources folder (Must be the same path in airflow and Spark Cluster)
     ports:
       - "8181:8080"
@@ -273,7 +277,7 @@ services:
     environment:
       - SPARK_MODE=worker
       - SPARK_MASTER_URL=spark://spark:7077
-      - SPARK_WORKER_MEMORY=1G
+      - SPARK_WORKER_MEMORY=2G
       - SPARK_WORKER_CORES=1
       - SPARK_RPC_AUTHENTICATION_ENABLED=no
       - SPARK_RPC_ENCRYPTION_ENABLED=no
@@ -282,6 +286,9 @@ services:
     volumes:
       - ./core:/usr/local/spark/core # Spark scripts folder (Must be the same path in airflow and Spark Cluster)
       - ./resources:/usr/local/spark/resources #Resources folder (Must be the same path in airflow and Spark Cluster)
+      - ./logs:/opt/airflow/logs
+      - ./core:/opt/airflow/core
+      - ./mirrors:/opt/airflow/mirrors
       # - ./example:/usr/local/spark/example #Resources folder (Must be the same path in airflow and Spark Cluster)
 
   spark-worker-2:
@@ -293,7 +300,7 @@ services:
     environment:
       - SPARK_MODE=worker
       - SPARK_MASTER_URL=spark://spark:7077
-      - SPARK_WORKER_MEMORY=1G
+      - SPARK_WORKER_MEMORY=2G
       - SPARK_WORKER_CORES=1
       - SPARK_RPC_AUTHENTICATION_ENABLED=no
       - SPARK_RPC_ENCRYPTION_ENABLED=no
@@ -302,6 +309,9 @@ services:
     volumes:
       - ./core:/usr/local/spark/core # Spark scripts folder (Must be the same path in airflow and Spark Cluster)
       - ./resources:/usr/local/spark/resources #Resources folder (Must be the same path in airflow and Spark Cluster)
+      - ./logs:/opt/airflow/logs
+      - ./core:/opt/airflow/core
+      - ./mirrors:/opt/airflow/mirrors
       # - ./example:/usr/local/spark/example #Resources folder (Must be the same path in airflow and Spark Cluster)
 
   # spark-worker-3:
