@@ -8665,3 +8665,409 @@ ModuleNotFoundError: No module named 'airflow.providers.postgres.operators.spark
 [2022-07-22 21:05:45,741] {logging_mixin.py:109} INFO - [2022-07-22 21:05:45,740] {dag.py:2396} INFO - Sync 1 DAGs
 [2022-07-22 21:05:45,757] {logging_mixin.py:109} INFO - [2022-07-22 21:05:45,757] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
 [2022-07-22 21:05:45,774] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.356 seconds
+[2022-07-22 21:06:15,797] {processor.py:163} INFO - Started process (PID=17494) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:06:15,799] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:06:15,800] {logging_mixin.py:109} INFO - [2022-07-22 21:06:15,799] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:06:16,064] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:06:16,084] {logging_mixin.py:109} INFO - [2022-07-22 21:06:16,083] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:06:16,109] {logging_mixin.py:109} INFO - [2022-07-22 21:06:16,109] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:06:16,142] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.349 seconds
+[2022-07-22 21:06:46,415] {processor.py:163} INFO - Started process (PID=17549) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:06:46,416] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:06:46,417] {logging_mixin.py:109} INFO - [2022-07-22 21:06:46,417] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:06:46,672] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:06:46,681] {logging_mixin.py:109} INFO - [2022-07-22 21:06:46,681] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:06:46,694] {logging_mixin.py:109} INFO - [2022-07-22 21:06:46,694] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:06:46,706] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.294 seconds
+[2022-07-22 21:07:17,223] {processor.py:163} INFO - Started process (PID=17596) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:07:17,225] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:07:17,225] {logging_mixin.py:109} INFO - [2022-07-22 21:07:17,225] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:07:17,474] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:07:17,482] {logging_mixin.py:109} INFO - [2022-07-22 21:07:17,481] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:07:17,494] {logging_mixin.py:109} INFO - [2022-07-22 21:07:17,494] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:07:17,514] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.293 seconds
+[2022-07-22 21:07:47,546] {processor.py:163} INFO - Started process (PID=17649) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:07:47,547] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:07:47,548] {logging_mixin.py:109} INFO - [2022-07-22 21:07:47,547] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:07:47,914] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:07:47,921] {logging_mixin.py:109} INFO - [2022-07-22 21:07:47,921] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:07:47,936] {logging_mixin.py:109} INFO - [2022-07-22 21:07:47,936] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:07:47,954] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.411 seconds
+[2022-07-22 21:08:18,802] {processor.py:163} INFO - Started process (PID=17703) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:08:18,804] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:08:18,804] {logging_mixin.py:109} INFO - [2022-07-22 21:08:18,804] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:08:19,127] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:08:19,136] {logging_mixin.py:109} INFO - [2022-07-22 21:08:19,135] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:08:19,153] {logging_mixin.py:109} INFO - [2022-07-22 21:08:19,153] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:08:19,162] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.363 seconds
+[2022-07-22 21:08:49,478] {processor.py:163} INFO - Started process (PID=17752) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:08:49,479] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:08:49,480] {logging_mixin.py:109} INFO - [2022-07-22 21:08:49,480] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:08:49,746] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:08:49,757] {logging_mixin.py:109} INFO - [2022-07-22 21:08:49,757] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:08:49,770] {logging_mixin.py:109} INFO - [2022-07-22 21:08:49,770] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:08:49,782] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.306 seconds
+[2022-07-22 21:09:20,120] {processor.py:163} INFO - Started process (PID=17807) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:09:20,121] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:09:20,122] {logging_mixin.py:109} INFO - [2022-07-22 21:09:20,121] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:09:20,371] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:09:20,379] {logging_mixin.py:109} INFO - [2022-07-22 21:09:20,378] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:09:20,391] {logging_mixin.py:109} INFO - [2022-07-22 21:09:20,391] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:09:20,404] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.287 seconds
+[2022-07-22 21:09:51,158] {processor.py:163} INFO - Started process (PID=17854) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:09:51,159] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:09:51,160] {logging_mixin.py:109} INFO - [2022-07-22 21:09:51,160] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:09:51,467] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:09:51,475] {logging_mixin.py:109} INFO - [2022-07-22 21:09:51,475] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:09:51,489] {logging_mixin.py:109} INFO - [2022-07-22 21:09:51,489] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:09:51,503] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.348 seconds
+[2022-07-22 21:10:21,746] {processor.py:163} INFO - Started process (PID=17910) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:10:21,747] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:10:21,747] {logging_mixin.py:109} INFO - [2022-07-22 21:10:21,747] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:10:22,015] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:10:22,023] {logging_mixin.py:109} INFO - [2022-07-22 21:10:22,022] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:10:22,036] {logging_mixin.py:109} INFO - [2022-07-22 21:10:22,036] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:10:22,051] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.308 seconds
+[2022-07-22 21:10:52,438] {processor.py:163} INFO - Started process (PID=17965) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:10:52,440] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:10:52,440] {logging_mixin.py:109} INFO - [2022-07-22 21:10:52,440] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:10:52,741] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:10:52,750] {logging_mixin.py:109} INFO - [2022-07-22 21:10:52,749] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:10:52,764] {logging_mixin.py:109} INFO - [2022-07-22 21:10:52,764] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:10:52,778] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.342 seconds
+[2022-07-22 21:11:13,571] {processor.py:163} INFO - Started process (PID=17994) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:11:13,572] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:11:13,572] {logging_mixin.py:109} INFO - [2022-07-22 21:11:13,572] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:11:13,838] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:11:13,880] {logging_mixin.py:109} INFO - [2022-07-22 21:11:13,880] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:11:13,894] {logging_mixin.py:109} INFO - [2022-07-22 21:11:13,893] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:11:13,910] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.342 seconds
+[2022-07-22 21:11:24,170] {processor.py:163} INFO - Started process (PID=18017) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:11:24,171] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:11:24,172] {logging_mixin.py:109} INFO - [2022-07-22 21:11:24,171] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:11:24,430] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:11:24,435] {logging_mixin.py:109} INFO - [2022-07-22 21:11:24,433] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:11:24,449] {logging_mixin.py:109} INFO - [2022-07-22 21:11:24,449] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:11:24,462] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.295 seconds
+[2022-07-22 21:11:54,962] {processor.py:163} INFO - Started process (PID=18073) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:11:54,963] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:11:54,963] {logging_mixin.py:109} INFO - [2022-07-22 21:11:54,963] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:11:55,287] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:11:55,296] {logging_mixin.py:109} INFO - [2022-07-22 21:11:55,295] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:11:55,310] {logging_mixin.py:109} INFO - [2022-07-22 21:11:55,310] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:11:55,324] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.365 seconds
+[2022-07-22 21:12:25,625] {processor.py:163} INFO - Started process (PID=18120) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:12:25,626] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:12:25,627] {logging_mixin.py:109} INFO - [2022-07-22 21:12:25,627] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:12:25,893] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:12:25,901] {logging_mixin.py:109} INFO - [2022-07-22 21:12:25,900] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:12:25,915] {logging_mixin.py:109} INFO - [2022-07-22 21:12:25,915] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:12:25,923] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.301 seconds
+[2022-07-22 21:12:56,236] {processor.py:163} INFO - Started process (PID=18176) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:12:56,237] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:12:56,238] {logging_mixin.py:109} INFO - [2022-07-22 21:12:56,237] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:12:56,492] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:12:56,501] {logging_mixin.py:109} INFO - [2022-07-22 21:12:56,500] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:12:56,514] {logging_mixin.py:109} INFO - [2022-07-22 21:12:56,513] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:12:56,520] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.287 seconds
+[2022-07-22 21:13:26,560] {processor.py:163} INFO - Started process (PID=18233) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:13:26,562] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:13:26,562] {logging_mixin.py:109} INFO - [2022-07-22 21:13:26,562] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:13:26,828] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:13:26,836] {logging_mixin.py:109} INFO - [2022-07-22 21:13:26,835] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:13:26,858] {logging_mixin.py:109} INFO - [2022-07-22 21:13:26,858] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:13:26,865] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.308 seconds
+[2022-07-22 21:13:57,694] {processor.py:163} INFO - Started process (PID=18280) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:13:57,695] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:13:57,696] {logging_mixin.py:109} INFO - [2022-07-22 21:13:57,696] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:13:57,958] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:13:57,967] {logging_mixin.py:109} INFO - [2022-07-22 21:13:57,966] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:13:57,985] {logging_mixin.py:109} INFO - [2022-07-22 21:13:57,985] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:13:57,992] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.301 seconds
+[2022-07-22 21:14:28,295] {processor.py:163} INFO - Started process (PID=18336) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:14:28,296] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:14:28,297] {logging_mixin.py:109} INFO - [2022-07-22 21:14:28,296] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:14:28,549] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:14:28,557] {logging_mixin.py:109} INFO - [2022-07-22 21:14:28,557] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:14:28,570] {logging_mixin.py:109} INFO - [2022-07-22 21:14:28,570] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:14:28,587] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.294 seconds
+[2022-07-22 21:14:59,314] {processor.py:163} INFO - Started process (PID=18392) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:14:59,316] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:14:59,317] {logging_mixin.py:109} INFO - [2022-07-22 21:14:59,317] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:14:59,717] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:14:59,728] {logging_mixin.py:109} INFO - [2022-07-22 21:14:59,727] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:14:59,748] {logging_mixin.py:109} INFO - [2022-07-22 21:14:59,748] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:14:59,765] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.455 seconds
+[2022-07-22 21:15:30,642] {processor.py:163} INFO - Started process (PID=18439) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:15:30,643] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:15:30,644] {logging_mixin.py:109} INFO - [2022-07-22 21:15:30,644] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:15:31,030] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:15:31,048] {logging_mixin.py:109} INFO - [2022-07-22 21:15:31,047] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:15:31,067] {logging_mixin.py:109} INFO - [2022-07-22 21:15:31,066] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:15:31,082] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.445 seconds
+[2022-07-22 21:16:01,513] {processor.py:163} INFO - Started process (PID=18495) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:16:01,514] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:16:01,515] {logging_mixin.py:109} INFO - [2022-07-22 21:16:01,515] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:16:01,936] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:16:01,947] {logging_mixin.py:109} INFO - [2022-07-22 21:16:01,946] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:16:01,969] {logging_mixin.py:109} INFO - [2022-07-22 21:16:01,969] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:16:01,985] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.476 seconds
+[2022-07-22 21:16:32,723] {processor.py:163} INFO - Started process (PID=18543) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:16:32,730] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:16:32,731] {logging_mixin.py:109} INFO - [2022-07-22 21:16:32,731] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:16:33,133] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:16:33,144] {logging_mixin.py:109} INFO - [2022-07-22 21:16:33,143] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:16:33,171] {logging_mixin.py:109} INFO - [2022-07-22 21:16:33,171] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:16:33,181] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.462 seconds
+[2022-07-22 21:17:04,152] {processor.py:163} INFO - Started process (PID=18599) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:17:04,153] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:17:04,154] {logging_mixin.py:109} INFO - [2022-07-22 21:17:04,154] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:17:04,574] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:17:04,588] {logging_mixin.py:109} INFO - [2022-07-22 21:17:04,587] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:17:04,614] {logging_mixin.py:109} INFO - [2022-07-22 21:17:04,614] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:17:04,628] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.480 seconds
+[2022-07-22 21:17:35,333] {processor.py:163} INFO - Started process (PID=18646) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:17:35,339] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:17:35,339] {logging_mixin.py:109} INFO - [2022-07-22 21:17:35,339] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:17:35,684] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:17:35,695] {logging_mixin.py:109} INFO - [2022-07-22 21:17:35,694] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:17:35,713] {logging_mixin.py:109} INFO - [2022-07-22 21:17:35,713] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:17:35,728] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.399 seconds
+[2022-07-22 21:18:06,357] {processor.py:163} INFO - Started process (PID=18700) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:18:06,358] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:18:06,359] {logging_mixin.py:109} INFO - [2022-07-22 21:18:06,359] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:18:06,740] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:18:06,752] {logging_mixin.py:109} INFO - [2022-07-22 21:18:06,751] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:18:06,775] {logging_mixin.py:109} INFO - [2022-07-22 21:18:06,774] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:18:06,792] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.438 seconds
+[2022-07-22 21:18:37,427] {processor.py:163} INFO - Started process (PID=18749) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:18:37,430] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:18:37,430] {logging_mixin.py:109} INFO - [2022-07-22 21:18:37,430] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:18:37,919] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:18:37,933] {logging_mixin.py:109} INFO - [2022-07-22 21:18:37,932] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:18:37,953] {logging_mixin.py:109} INFO - [2022-07-22 21:18:37,952] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:18:37,971] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.551 seconds
+[2022-07-22 21:19:08,840] {processor.py:163} INFO - Started process (PID=18805) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:19:08,841] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:19:08,841] {logging_mixin.py:109} INFO - [2022-07-22 21:19:08,841] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:19:09,304] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:19:09,322] {logging_mixin.py:109} INFO - [2022-07-22 21:19:09,320] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:19:09,347] {logging_mixin.py:109} INFO - [2022-07-22 21:19:09,347] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:19:09,361] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.525 seconds
+[2022-07-22 21:19:40,269] {processor.py:163} INFO - Started process (PID=18852) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:19:40,271] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:19:40,272] {logging_mixin.py:109} INFO - [2022-07-22 21:19:40,272] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:19:40,840] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:19:40,852] {logging_mixin.py:109} INFO - [2022-07-22 21:19:40,851] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:19:40,876] {logging_mixin.py:109} INFO - [2022-07-22 21:19:40,875] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:19:40,893] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.630 seconds
+[2022-07-22 21:20:10,979] {processor.py:163} INFO - Started process (PID=18899) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:20:10,980] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:20:10,981] {logging_mixin.py:109} INFO - [2022-07-22 21:20:10,980] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:20:11,385] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:20:11,398] {logging_mixin.py:109} INFO - [2022-07-22 21:20:11,397] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:20:11,417] {logging_mixin.py:109} INFO - [2022-07-22 21:20:11,417] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:20:11,431] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.456 seconds
+[2022-07-22 21:20:41,462] {processor.py:163} INFO - Started process (PID=18955) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:20:41,464] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:20:41,465] {logging_mixin.py:109} INFO - [2022-07-22 21:20:41,464] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:20:41,915] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:20:41,926] {logging_mixin.py:109} INFO - [2022-07-22 21:20:41,925] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:20:41,945] {logging_mixin.py:109} INFO - [2022-07-22 21:20:41,945] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:20:41,961] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.503 seconds
+[2022-07-22 21:21:12,402] {processor.py:163} INFO - Started process (PID=19002) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:21:12,403] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:21:12,403] {logging_mixin.py:109} INFO - [2022-07-22 21:21:12,403] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:21:12,808] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:21:12,822] {logging_mixin.py:109} INFO - [2022-07-22 21:21:12,821] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:21:12,841] {logging_mixin.py:109} INFO - [2022-07-22 21:21:12,841] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:21:12,857] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.458 seconds
+[2022-07-22 21:21:43,533] {processor.py:163} INFO - Started process (PID=19058) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:21:43,535] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:21:43,535] {logging_mixin.py:109} INFO - [2022-07-22 21:21:43,535] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:21:43,959] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:21:43,970] {logging_mixin.py:109} INFO - [2022-07-22 21:21:43,969] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:21:43,994] {logging_mixin.py:109} INFO - [2022-07-22 21:21:43,993] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:21:44,011] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.483 seconds
+[2022-07-22 21:22:14,529] {processor.py:163} INFO - Started process (PID=19105) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:22:14,530] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:22:14,531] {logging_mixin.py:109} INFO - [2022-07-22 21:22:14,531] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:22:14,905] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:22:14,918] {logging_mixin.py:109} INFO - [2022-07-22 21:22:14,917] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:22:14,936] {logging_mixin.py:109} INFO - [2022-07-22 21:22:14,936] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:22:14,945] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.420 seconds
+[2022-07-22 21:22:45,651] {processor.py:163} INFO - Started process (PID=19160) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:22:45,652] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:22:45,653] {logging_mixin.py:109} INFO - [2022-07-22 21:22:45,653] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:22:46,089] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:22:46,103] {logging_mixin.py:109} INFO - [2022-07-22 21:22:46,102] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:22:46,129] {logging_mixin.py:109} INFO - [2022-07-22 21:22:46,129] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:22:46,148] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.501 seconds
+[2022-07-22 21:23:16,307] {processor.py:163} INFO - Started process (PID=19208) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:23:16,308] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:23:16,309] {logging_mixin.py:109} INFO - [2022-07-22 21:23:16,309] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:23:16,646] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:23:16,656] {logging_mixin.py:109} INFO - [2022-07-22 21:23:16,655] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:23:16,678] {logging_mixin.py:109} INFO - [2022-07-22 21:23:16,677] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:23:16,694] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.389 seconds
+[2022-07-22 21:23:47,018] {processor.py:163} INFO - Started process (PID=19264) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:23:47,019] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:23:47,019] {logging_mixin.py:109} INFO - [2022-07-22 21:23:47,019] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:23:47,369] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:23:47,379] {logging_mixin.py:109} INFO - [2022-07-22 21:23:47,378] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:23:47,395] {logging_mixin.py:109} INFO - [2022-07-22 21:23:47,395] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:23:47,414] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.400 seconds
+[2022-07-22 21:24:17,924] {processor.py:163} INFO - Started process (PID=19311) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:24:17,926] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:24:17,926] {logging_mixin.py:109} INFO - [2022-07-22 21:24:17,926] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:24:18,363] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:24:18,375] {logging_mixin.py:109} INFO - [2022-07-22 21:24:18,374] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:24:18,403] {logging_mixin.py:109} INFO - [2022-07-22 21:24:18,403] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:24:18,414] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.493 seconds
+[2022-07-22 21:24:48,666] {processor.py:163} INFO - Started process (PID=19367) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:24:48,672] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:24:48,673] {logging_mixin.py:109} INFO - [2022-07-22 21:24:48,673] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:24:49,052] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:24:49,063] {logging_mixin.py:109} INFO - [2022-07-22 21:24:49,062] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:24:49,079] {logging_mixin.py:109} INFO - [2022-07-22 21:24:49,079] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:24:49,097] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.435 seconds
+[2022-07-22 21:25:19,383] {processor.py:163} INFO - Started process (PID=19414) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:25:19,385] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:25:19,385] {logging_mixin.py:109} INFO - [2022-07-22 21:25:19,385] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:25:19,960] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:25:19,974] {logging_mixin.py:109} INFO - [2022-07-22 21:25:19,973] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:25:20,000] {logging_mixin.py:109} INFO - [2022-07-22 21:25:20,000] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:25:20,025] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.646 seconds
+[2022-07-22 21:25:50,836] {processor.py:163} INFO - Started process (PID=19461) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:25:50,838] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:25:50,839] {logging_mixin.py:109} INFO - [2022-07-22 21:25:50,839] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:25:51,346] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:25:51,365] {logging_mixin.py:109} INFO - [2022-07-22 21:25:51,364] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:25:51,390] {logging_mixin.py:109} INFO - [2022-07-22 21:25:51,390] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:25:51,420] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.590 seconds
+[2022-07-22 21:26:22,022] {processor.py:163} INFO - Started process (PID=19516) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:26:22,024] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:26:22,025] {logging_mixin.py:109} INFO - [2022-07-22 21:26:22,025] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:26:22,704] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:26:22,715] {logging_mixin.py:109} INFO - [2022-07-22 21:26:22,714] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:26:22,733] {logging_mixin.py:109} INFO - [2022-07-22 21:26:22,732] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:26:22,755] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.742 seconds
+[2022-07-22 21:26:53,233] {processor.py:163} INFO - Started process (PID=19562) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:26:53,240] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:26:53,241] {logging_mixin.py:109} INFO - [2022-07-22 21:26:53,241] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:26:53,731] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:26:53,744] {logging_mixin.py:109} INFO - [2022-07-22 21:26:53,742] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:26:53,769] {logging_mixin.py:109} INFO - [2022-07-22 21:26:53,769] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:26:53,781] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.553 seconds
+[2022-07-22 21:27:23,824] {processor.py:163} INFO - Started process (PID=19609) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:27:23,825] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:27:23,826] {logging_mixin.py:109} INFO - [2022-07-22 21:27:23,826] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:27:24,195] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:27:24,208] {logging_mixin.py:109} INFO - [2022-07-22 21:27:24,207] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:27:24,225] {logging_mixin.py:109} INFO - [2022-07-22 21:27:24,225] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:27:24,233] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.413 seconds
+[2022-07-22 21:27:55,054] {processor.py:163} INFO - Started process (PID=19665) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:27:55,056] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:27:55,057] {logging_mixin.py:109} INFO - [2022-07-22 21:27:55,057] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:27:55,474] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:27:55,486] {logging_mixin.py:109} INFO - [2022-07-22 21:27:55,485] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:27:55,511] {logging_mixin.py:109} INFO - [2022-07-22 21:27:55,511] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:27:55,529] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.480 seconds
+[2022-07-22 21:28:26,036] {processor.py:163} INFO - Started process (PID=19712) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:28:26,037] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:28:26,038] {logging_mixin.py:109} INFO - [2022-07-22 21:28:26,038] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:28:26,382] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:28:26,392] {logging_mixin.py:109} INFO - [2022-07-22 21:28:26,391] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:28:26,409] {logging_mixin.py:109} INFO - [2022-07-22 21:28:26,409] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:28:26,427] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.396 seconds
+[2022-07-22 21:28:56,974] {processor.py:163} INFO - Started process (PID=19769) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:28:56,975] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:28:56,976] {logging_mixin.py:109} INFO - [2022-07-22 21:28:56,975] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:28:57,414] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:28:57,429] {logging_mixin.py:109} INFO - [2022-07-22 21:28:57,428] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:28:57,447] {logging_mixin.py:109} INFO - [2022-07-22 21:28:57,446] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:28:57,456] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.485 seconds
+[2022-07-22 21:29:28,326] {processor.py:163} INFO - Started process (PID=19816) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:29:28,327] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:29:28,328] {logging_mixin.py:109} INFO - [2022-07-22 21:29:28,328] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:29:28,704] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:29:28,716] {logging_mixin.py:109} INFO - [2022-07-22 21:29:28,714] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:29:28,737] {logging_mixin.py:109} INFO - [2022-07-22 21:29:28,737] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:29:28,753] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.430 seconds
+[2022-07-22 21:29:59,525] {processor.py:163} INFO - Started process (PID=19864) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:29:59,527] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:29:59,528] {logging_mixin.py:109} INFO - [2022-07-22 21:29:59,528] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:30:00,058] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:30:00,082] {logging_mixin.py:109} INFO - [2022-07-22 21:30:00,081] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:30:00,106] {logging_mixin.py:109} INFO - [2022-07-22 21:30:00,106] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:00:00+00:00
+[2022-07-22 21:30:00,127] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.612 seconds
+[2022-07-22 21:30:30,152] {processor.py:163} INFO - Started process (PID=19911) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:30:30,160] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:30:30,161] {logging_mixin.py:109} INFO - [2022-07-22 21:30:30,161] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:30:31,020] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:30:31,041] {logging_mixin.py:109} INFO - [2022-07-22 21:30:31,040] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:30:31,079] {logging_mixin.py:109} INFO - [2022-07-22 21:30:31,079] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:30:00+00:00
+[2022-07-22 21:30:31,103] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.955 seconds
+[2022-07-22 21:31:01,672] {processor.py:163} INFO - Started process (PID=19967) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:31:01,681] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:31:01,682] {logging_mixin.py:109} INFO - [2022-07-22 21:31:01,682] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:31:02,519] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:31:02,538] {logging_mixin.py:109} INFO - [2022-07-22 21:31:02,537] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:31:02,571] {logging_mixin.py:109} INFO - [2022-07-22 21:31:02,570] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:30:00+00:00
+[2022-07-22 21:31:02,592] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.955 seconds
+[2022-07-22 21:31:33,417] {processor.py:163} INFO - Started process (PID=20014) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:31:33,418] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:31:33,419] {logging_mixin.py:109} INFO - [2022-07-22 21:31:33,419] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:31:33,832] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:31:33,845] {logging_mixin.py:109} INFO - [2022-07-22 21:31:33,844] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:31:33,864] {logging_mixin.py:109} INFO - [2022-07-22 21:31:33,863] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:30:00+00:00
+[2022-07-22 21:31:33,878] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.466 seconds
+[2022-07-22 21:32:04,776] {processor.py:163} INFO - Started process (PID=20062) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:32:04,777] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:32:04,777] {logging_mixin.py:109} INFO - [2022-07-22 21:32:04,777] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:32:05,106] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:32:05,116] {logging_mixin.py:109} INFO - [2022-07-22 21:32:05,116] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:32:05,133] {logging_mixin.py:109} INFO - [2022-07-22 21:32:05,133] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:30:00+00:00
+[2022-07-22 21:32:05,149] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.376 seconds
+[2022-07-22 21:32:35,693] {processor.py:163} INFO - Started process (PID=20119) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:32:35,694] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:32:35,695] {logging_mixin.py:109} INFO - [2022-07-22 21:32:35,695] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:32:36,079] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:32:36,090] {logging_mixin.py:109} INFO - [2022-07-22 21:32:36,089] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:32:36,113] {logging_mixin.py:109} INFO - [2022-07-22 21:32:36,113] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:30:00+00:00
+[2022-07-22 21:32:36,134] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.445 seconds
+[2022-07-22 21:33:06,435] {processor.py:163} INFO - Started process (PID=20166) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:33:06,436] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:33:06,437] {logging_mixin.py:109} INFO - [2022-07-22 21:33:06,436] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:33:06,751] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:33:06,762] {logging_mixin.py:109} INFO - [2022-07-22 21:33:06,761] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:33:06,778] {logging_mixin.py:109} INFO - [2022-07-22 21:33:06,778] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:30:00+00:00
+[2022-07-22 21:33:06,792] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.361 seconds
+[2022-07-22 21:33:37,399] {processor.py:163} INFO - Started process (PID=20222) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:33:37,400] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:33:37,401] {logging_mixin.py:109} INFO - [2022-07-22 21:33:37,401] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:33:37,680] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:33:37,689] {logging_mixin.py:109} INFO - [2022-07-22 21:33:37,688] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:33:37,709] {logging_mixin.py:109} INFO - [2022-07-22 21:33:37,709] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:30:00+00:00
+[2022-07-22 21:33:37,717] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.324 seconds
+[2022-07-22 21:34:07,779] {processor.py:163} INFO - Started process (PID=20269) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:34:07,780] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:34:07,780] {logging_mixin.py:109} INFO - [2022-07-22 21:34:07,780] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:34:08,035] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:34:08,044] {logging_mixin.py:109} INFO - [2022-07-22 21:34:08,044] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:34:08,058] {logging_mixin.py:109} INFO - [2022-07-22 21:34:08,058] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:30:00+00:00
+[2022-07-22 21:34:08,066] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.290 seconds
+[2022-07-22 21:34:38,573] {processor.py:163} INFO - Started process (PID=20325) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:34:38,573] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:34:38,574] {logging_mixin.py:109} INFO - [2022-07-22 21:34:38,574] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:34:38,842] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:34:38,851] {logging_mixin.py:109} INFO - [2022-07-22 21:34:38,850] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:34:38,863] {logging_mixin.py:109} INFO - [2022-07-22 21:34:38,863] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:30:00+00:00
+[2022-07-22 21:34:38,870] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.301 seconds
+[2022-07-22 21:35:09,328] {processor.py:163} INFO - Started process (PID=20381) to work on /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:35:09,329] {processor.py:642} INFO - Processing file /opt/airflow/dags/mirror_calc.py for tasks to queue
+[2022-07-22 21:35:09,329] {logging_mixin.py:109} INFO - [2022-07-22 21:35:09,329] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:35:09,584] {processor.py:654} INFO - DAG(s) dict_keys(['MIRR_MD_ACCOUNT_D']) retrieved from /opt/airflow/dags/mirror_calc.py
+[2022-07-22 21:35:09,593] {logging_mixin.py:109} INFO - [2022-07-22 21:35:09,592] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:35:09,606] {logging_mixin.py:109} INFO - [2022-07-22 21:35:09,605] {dag.py:2935} INFO - Setting next_dagrun for MIRR_MD_ACCOUNT_D to 2022-07-22T21:30:00+00:00
+[2022-07-22 21:35:09,618] {processor.py:171} INFO - Processing /opt/airflow/dags/mirror_calc.py took 0.293 seconds

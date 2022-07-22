@@ -21427,3 +21427,459 @@ ModuleNotFoundError: No module named 'constants'
 [2022-07-22 21:05:45,002] {logging_mixin.py:109} INFO - [2022-07-22 21:05:45,002] {dag.py:2396} INFO - Sync 1 DAGs
 [2022-07-22 21:05:45,016] {logging_mixin.py:109} INFO - [2022-07-22 21:05:45,016] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:05:45.016214+00:00
 [2022-07-22 21:05:45,024] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.612 seconds
+[2022-07-22 21:06:15,194] {processor.py:163} INFO - Started process (PID=17489) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:06:15,195] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:06:15,195] {logging_mixin.py:109} INFO - [2022-07-22 21:06:15,195] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:06:15,433] {logging_mixin.py:109} INFO - [2022-07-22 21:06:15,433] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:06:15,736] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:06:15,747] {logging_mixin.py:109} INFO - [2022-07-22 21:06:15,747] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:06:15,759] {logging_mixin.py:109} INFO - [2022-07-22 21:06:15,758] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:06:15.758764+00:00
+[2022-07-22 21:06:15,773] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.582 seconds
+[2022-07-22 21:06:45,833] {processor.py:163} INFO - Started process (PID=17544) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:06:45,834] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:06:45,834] {logging_mixin.py:109} INFO - [2022-07-22 21:06:45,834] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:06:46,084] {logging_mixin.py:109} INFO - [2022-07-22 21:06:46,084] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:06:46,364] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:06:46,374] {logging_mixin.py:109} INFO - [2022-07-22 21:06:46,373] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:06:46,384] {logging_mixin.py:109} INFO - [2022-07-22 21:06:46,384] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:06:46.384534+00:00
+[2022-07-22 21:06:46,397] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.567 seconds
+[2022-07-22 21:07:16,633] {processor.py:163} INFO - Started process (PID=17591) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:07:16,634] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:07:16,634] {logging_mixin.py:109} INFO - [2022-07-22 21:07:16,634] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:07:16,886] {logging_mixin.py:109} INFO - [2022-07-22 21:07:16,886] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:07:17,180] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:07:17,190] {logging_mixin.py:109} INFO - [2022-07-22 21:07:17,190] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:07:17,200] {logging_mixin.py:109} INFO - [2022-07-22 21:07:17,200] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:07:17.200421+00:00
+[2022-07-22 21:07:17,207] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.577 seconds
+[2022-07-22 21:07:47,549] {processor.py:163} INFO - Started process (PID=17650) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:07:47,550] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:07:47,550] {logging_mixin.py:109} INFO - [2022-07-22 21:07:47,550] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:07:47,852] {logging_mixin.py:109} INFO - [2022-07-22 21:07:47,852] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:07:48,159] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:07:48,170] {logging_mixin.py:109} INFO - [2022-07-22 21:07:48,170] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:07:48,181] {logging_mixin.py:109} INFO - [2022-07-22 21:07:48,181] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:07:48.181238+00:00
+[2022-07-22 21:07:48,195] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.649 seconds
+[2022-07-22 21:08:18,811] {processor.py:163} INFO - Started process (PID=17704) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:08:18,813] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:08:18,813] {logging_mixin.py:109} INFO - [2022-07-22 21:08:18,813] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:08:19,136] {logging_mixin.py:109} INFO - [2022-07-22 21:08:19,136] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:08:19,443] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:08:19,453] {logging_mixin.py:109} INFO - [2022-07-22 21:08:19,453] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:08:19,464] {logging_mixin.py:109} INFO - [2022-07-22 21:08:19,463] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:08:19.463628+00:00
+[2022-07-22 21:08:19,476] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.670 seconds
+[2022-07-22 21:08:49,796] {processor.py:163} INFO - Started process (PID=17756) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:08:49,798] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:08:49,798] {logging_mixin.py:109} INFO - [2022-07-22 21:08:49,798] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:08:50,033] {logging_mixin.py:109} INFO - [2022-07-22 21:08:50,033] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:08:50,312] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:08:50,322] {logging_mixin.py:109} INFO - [2022-07-22 21:08:50,322] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:08:50,333] {logging_mixin.py:109} INFO - [2022-07-22 21:08:50,333] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:08:50.332890+00:00
+[2022-07-22 21:08:50,340] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.547 seconds
+[2022-07-22 21:09:20,418] {processor.py:163} INFO - Started process (PID=17811) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:09:20,419] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:09:20,420] {logging_mixin.py:109} INFO - [2022-07-22 21:09:20,420] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:09:20,675] {logging_mixin.py:109} INFO - [2022-07-22 21:09:20,675] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:09:20,950] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:09:20,961] {logging_mixin.py:109} INFO - [2022-07-22 21:09:20,960] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:09:20,974] {logging_mixin.py:109} INFO - [2022-07-22 21:09:20,974] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:09:20.974118+00:00
+[2022-07-22 21:09:20,982] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.567 seconds
+[2022-07-22 21:09:51,162] {processor.py:163} INFO - Started process (PID=17855) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:09:51,163] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:09:51,163] {logging_mixin.py:109} INFO - [2022-07-22 21:09:51,163] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:09:51,473] {logging_mixin.py:109} INFO - [2022-07-22 21:09:51,473] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:09:51,803] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:09:51,816] {logging_mixin.py:109} INFO - [2022-07-22 21:09:51,815] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:09:51,828] {logging_mixin.py:109} INFO - [2022-07-22 21:09:51,828] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:09:51.827745+00:00
+[2022-07-22 21:09:51,842] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.683 seconds
+[2022-07-22 21:10:22,066] {processor.py:163} INFO - Started process (PID=17914) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:10:22,067] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:10:22,067] {logging_mixin.py:109} INFO - [2022-07-22 21:10:22,067] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:10:22,362] {logging_mixin.py:109} INFO - [2022-07-22 21:10:22,362] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:10:22,653] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:10:22,665] {logging_mixin.py:109} INFO - [2022-07-22 21:10:22,665] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:10:22,675] {logging_mixin.py:109} INFO - [2022-07-22 21:10:22,675] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:10:22.675615+00:00
+[2022-07-22 21:10:22,688] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.625 seconds
+[2022-07-22 21:10:52,799] {processor.py:163} INFO - Started process (PID=17969) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:10:52,800] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:10:52,800] {logging_mixin.py:109} INFO - [2022-07-22 21:10:52,800] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:10:53,088] {logging_mixin.py:109} INFO - [2022-07-22 21:10:53,088] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:10:53,416] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:10:53,428] {logging_mixin.py:109} INFO - [2022-07-22 21:10:53,428] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:10:53,441] {logging_mixin.py:109} INFO - [2022-07-22 21:10:53,441] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:10:53.441632+00:00
+[2022-07-22 21:10:53,456] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.660 seconds
+[2022-07-22 21:11:24,173] {processor.py:163} INFO - Started process (PID=18018) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:11:24,174] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:11:24,175] {logging_mixin.py:109} INFO - [2022-07-22 21:11:24,175] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:11:24,413] {logging_mixin.py:109} INFO - [2022-07-22 21:11:24,413] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:11:24,691] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:11:24,702] {logging_mixin.py:109} INFO - [2022-07-22 21:11:24,701] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:11:24,713] {logging_mixin.py:109} INFO - [2022-07-22 21:11:24,713] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:11:24.713546+00:00
+[2022-07-22 21:11:24,738] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.568 seconds
+[2022-07-22 21:11:54,965] {processor.py:163} INFO - Started process (PID=18074) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:11:54,966] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:11:54,966] {logging_mixin.py:109} INFO - [2022-07-22 21:11:54,966] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:11:55,237] {logging_mixin.py:109} INFO - [2022-07-22 21:11:55,237] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:11:55,578] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:11:55,591] {logging_mixin.py:109} INFO - [2022-07-22 21:11:55,591] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:11:55,608] {logging_mixin.py:109} INFO - [2022-07-22 21:11:55,608] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:11:55.608122+00:00
+[2022-07-22 21:11:55,618] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.656 seconds
+[2022-07-22 21:12:25,943] {processor.py:163} INFO - Started process (PID=18124) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:12:25,984] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:12:25,984] {logging_mixin.py:109} INFO - [2022-07-22 21:12:25,984] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:12:26,240] {logging_mixin.py:109} INFO - [2022-07-22 21:12:26,240] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:12:26,521] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:12:26,532] {logging_mixin.py:109} INFO - [2022-07-22 21:12:26,532] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:12:26,543] {logging_mixin.py:109} INFO - [2022-07-22 21:12:26,543] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:12:26.543082+00:00
+[2022-07-22 21:12:26,550] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.610 seconds
+[2022-07-22 21:12:57,293] {processor.py:163} INFO - Started process (PID=18180) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:12:57,294] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:12:57,294] {logging_mixin.py:109} INFO - [2022-07-22 21:12:57,294] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:12:57,549] {logging_mixin.py:109} INFO - [2022-07-22 21:12:57,549] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:12:57,820] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:12:57,831] {logging_mixin.py:109} INFO - [2022-07-22 21:12:57,830] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:12:57,842] {logging_mixin.py:109} INFO - [2022-07-22 21:12:57,842] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:12:57.842212+00:00
+[2022-07-22 21:12:57,856] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.566 seconds
+[2022-07-22 21:13:27,881] {processor.py:163} INFO - Started process (PID=18237) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:13:27,883] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:13:27,883] {logging_mixin.py:109} INFO - [2022-07-22 21:13:27,883] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:13:28,125] {logging_mixin.py:109} INFO - [2022-07-22 21:13:28,125] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:13:28,394] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:13:28,404] {logging_mixin.py:109} INFO - [2022-07-22 21:13:28,403] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:13:28,414] {logging_mixin.py:109} INFO - [2022-07-22 21:13:28,413] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:13:28.413741+00:00
+[2022-07-22 21:13:28,426] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.547 seconds
+[2022-07-22 21:13:58,769] {processor.py:163} INFO - Started process (PID=18284) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:13:58,770] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:13:58,770] {logging_mixin.py:109} INFO - [2022-07-22 21:13:58,770] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:13:59,003] {logging_mixin.py:109} INFO - [2022-07-22 21:13:59,002] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:13:59,275] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:13:59,285] {logging_mixin.py:109} INFO - [2022-07-22 21:13:59,284] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:13:59,295] {logging_mixin.py:109} INFO - [2022-07-22 21:13:59,295] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:13:59.295008+00:00
+[2022-07-22 21:13:59,307] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.540 seconds
+[2022-07-22 21:14:29,608] {processor.py:163} INFO - Started process (PID=18340) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:14:29,609] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:14:29,610] {logging_mixin.py:109} INFO - [2022-07-22 21:14:29,610] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:14:29,902] {logging_mixin.py:109} INFO - [2022-07-22 21:14:29,902] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:14:30,201] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:14:30,212] {logging_mixin.py:109} INFO - [2022-07-22 21:14:30,211] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:14:30,223] {logging_mixin.py:109} INFO - [2022-07-22 21:14:30,223] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:14:30.222836+00:00
+[2022-07-22 21:14:30,237] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.631 seconds
+[2022-07-22 21:15:00,326] {processor.py:163} INFO - Started process (PID=18396) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:15:00,327] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:15:00,327] {logging_mixin.py:109} INFO - [2022-07-22 21:15:00,327] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:15:00,738] {logging_mixin.py:109} INFO - [2022-07-22 21:15:00,738] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:15:01,173] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:15:01,187] {logging_mixin.py:109} INFO - [2022-07-22 21:15:01,186] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:15:01,199] {logging_mixin.py:109} INFO - [2022-07-22 21:15:01,199] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:15:01.199543+00:00
+[2022-07-22 21:15:01,208] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.887 seconds
+[2022-07-22 21:15:31,672] {processor.py:163} INFO - Started process (PID=18443) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:15:31,678] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:15:31,679] {logging_mixin.py:109} INFO - [2022-07-22 21:15:31,679] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:15:32,023] {logging_mixin.py:109} INFO - [2022-07-22 21:15:32,023] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:15:32,415] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:15:32,429] {logging_mixin.py:109} INFO - [2022-07-22 21:15:32,429] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:15:32,446] {logging_mixin.py:109} INFO - [2022-07-22 21:15:32,446] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:15:32.446006+00:00
+[2022-07-22 21:15:32,465] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.796 seconds
+[2022-07-22 21:16:02,522] {processor.py:163} INFO - Started process (PID=18499) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:16:02,523] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:16:02,524] {logging_mixin.py:109} INFO - [2022-07-22 21:16:02,524] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:16:02,923] {logging_mixin.py:109} INFO - [2022-07-22 21:16:02,923] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:16:03,300] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:16:03,313] {logging_mixin.py:109} INFO - [2022-07-22 21:16:03,312] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:16:03,328] {logging_mixin.py:109} INFO - [2022-07-22 21:16:03,328] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:16:03.328219+00:00
+[2022-07-22 21:16:03,343] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.824 seconds
+[2022-07-22 21:16:33,761] {processor.py:163} INFO - Started process (PID=18547) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:16:33,763] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:16:33,764] {logging_mixin.py:109} INFO - [2022-07-22 21:16:33,763] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:16:34,088] {logging_mixin.py:109} INFO - [2022-07-22 21:16:34,088] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:16:34,482] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:16:34,497] {logging_mixin.py:109} INFO - [2022-07-22 21:16:34,497] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:16:34,514] {logging_mixin.py:109} INFO - [2022-07-22 21:16:34,513] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:16:34.513659+00:00
+[2022-07-22 21:16:34,529] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.771 seconds
+[2022-07-22 21:17:04,651] {processor.py:163} INFO - Started process (PID=18603) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:17:04,652] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:17:04,653] {logging_mixin.py:109} INFO - [2022-07-22 21:17:04,653] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:17:05,043] {logging_mixin.py:109} INFO - [2022-07-22 21:17:05,043] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:17:05,501] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:17:05,520] {logging_mixin.py:109} INFO - [2022-07-22 21:17:05,519] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:17:05,538] {logging_mixin.py:109} INFO - [2022-07-22 21:17:05,538] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:17:05.538267+00:00
+[2022-07-22 21:17:05,555] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.908 seconds
+[2022-07-22 21:17:35,749] {processor.py:163} INFO - Started process (PID=18650) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:17:35,751] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:17:35,751] {logging_mixin.py:109} INFO - [2022-07-22 21:17:35,751] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:17:36,077] {logging_mixin.py:109} INFO - [2022-07-22 21:17:36,077] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:17:36,445] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:17:36,459] {logging_mixin.py:109} INFO - [2022-07-22 21:17:36,458] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:17:36,474] {logging_mixin.py:109} INFO - [2022-07-22 21:17:36,474] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:17:36.473808+00:00
+[2022-07-22 21:17:36,491] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.745 seconds
+[2022-07-22 21:18:06,813] {processor.py:163} INFO - Started process (PID=18706) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:18:06,814] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:18:06,815] {logging_mixin.py:109} INFO - [2022-07-22 21:18:06,814] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:18:07,215] {logging_mixin.py:109} INFO - [2022-07-22 21:18:07,215] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:18:07,653] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:18:07,672] {logging_mixin.py:109} INFO - [2022-07-22 21:18:07,672] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:18:07,689] {logging_mixin.py:109} INFO - [2022-07-22 21:18:07,689] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:18:07.689285+00:00
+[2022-07-22 21:18:07,699] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.891 seconds
+[2022-07-22 21:18:37,995] {processor.py:163} INFO - Started process (PID=18753) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:18:37,996] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:18:37,997] {logging_mixin.py:109} INFO - [2022-07-22 21:18:37,997] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:18:38,434] {logging_mixin.py:109} INFO - [2022-07-22 21:18:38,433] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:18:38,871] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:18:38,885] {logging_mixin.py:109} INFO - [2022-07-22 21:18:38,885] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:18:38,901] {logging_mixin.py:109} INFO - [2022-07-22 21:18:38,900] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:18:38.900570+00:00
+[2022-07-22 21:18:38,919] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.929 seconds
+[2022-07-22 21:19:09,384] {processor.py:163} INFO - Started process (PID=18809) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:19:09,386] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:19:09,387] {logging_mixin.py:109} INFO - [2022-07-22 21:19:09,387] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:19:09,859] {logging_mixin.py:109} INFO - [2022-07-22 21:19:09,859] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:19:10,367] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:19:10,386] {logging_mixin.py:109} INFO - [2022-07-22 21:19:10,386] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:19:10,405] {logging_mixin.py:109} INFO - [2022-07-22 21:19:10,404] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:19:10.404581+00:00
+[2022-07-22 21:19:10,419] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 1.039 seconds
+[2022-07-22 21:19:40,920] {processor.py:163} INFO - Started process (PID=18856) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:19:40,922] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:19:40,923] {logging_mixin.py:109} INFO - [2022-07-22 21:19:40,923] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:19:41,333] {logging_mixin.py:109} INFO - [2022-07-22 21:19:41,333] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:19:41,780] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:19:41,798] {logging_mixin.py:109} INFO - [2022-07-22 21:19:41,798] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:19:41,824] {logging_mixin.py:109} INFO - [2022-07-22 21:19:41,824] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:19:41.824030+00:00
+[2022-07-22 21:19:41,835] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.922 seconds
+[2022-07-22 21:20:11,984] {processor.py:163} INFO - Started process (PID=18912) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:20:11,985] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:20:11,986] {logging_mixin.py:109} INFO - [2022-07-22 21:20:11,986] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:20:12,363] {logging_mixin.py:109} INFO - [2022-07-22 21:20:12,363] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:20:12,784] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:20:12,799] {logging_mixin.py:109} INFO - [2022-07-22 21:20:12,799] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:20:12,816] {logging_mixin.py:109} INFO - [2022-07-22 21:20:12,815] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:20:12.815617+00:00
+[2022-07-22 21:20:12,830] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.850 seconds
+[2022-07-22 21:20:43,001] {processor.py:163} INFO - Started process (PID=18959) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:20:43,003] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:20:43,004] {logging_mixin.py:109} INFO - [2022-07-22 21:20:43,004] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:20:43,351] {logging_mixin.py:109} INFO - [2022-07-22 21:20:43,350] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:20:43,782] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:20:43,796] {logging_mixin.py:109} INFO - [2022-07-22 21:20:43,796] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:20:43,810] {logging_mixin.py:109} INFO - [2022-07-22 21:20:43,810] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:20:43.809981+00:00
+[2022-07-22 21:20:43,825] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.828 seconds
+[2022-07-22 21:21:13,880] {processor.py:163} INFO - Started process (PID=19013) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:21:13,881] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:21:13,882] {logging_mixin.py:109} INFO - [2022-07-22 21:21:13,882] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:21:14,312] {logging_mixin.py:109} INFO - [2022-07-22 21:21:14,312] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:21:14,813] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:21:14,832] {logging_mixin.py:109} INFO - [2022-07-22 21:21:14,831] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:21:14,849] {logging_mixin.py:109} INFO - [2022-07-22 21:21:14,849] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:21:14.848737+00:00
+[2022-07-22 21:21:14,874] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 1.000 seconds
+[2022-07-22 21:21:45,031] {processor.py:163} INFO - Started process (PID=19062) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:21:45,038] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:21:45,038] {logging_mixin.py:109} INFO - [2022-07-22 21:21:45,038] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:21:45,489] {logging_mixin.py:109} INFO - [2022-07-22 21:21:45,489] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:21:45,949] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:21:45,964] {logging_mixin.py:109} INFO - [2022-07-22 21:21:45,963] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:21:45,976] {logging_mixin.py:109} INFO - [2022-07-22 21:21:45,976] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:21:45.976187+00:00
+[2022-07-22 21:21:45,993] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.965 seconds
+[2022-07-22 21:22:16,545] {processor.py:163} INFO - Started process (PID=19109) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:22:16,546] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:22:16,547] {logging_mixin.py:109} INFO - [2022-07-22 21:22:16,547] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:22:16,887] {logging_mixin.py:109} INFO - [2022-07-22 21:22:16,887] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:22:17,328] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:22:17,342] {logging_mixin.py:109} INFO - [2022-07-22 21:22:17,342] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:22:17,354] {logging_mixin.py:109} INFO - [2022-07-22 21:22:17,354] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:22:17.354438+00:00
+[2022-07-22 21:22:17,371] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.829 seconds
+[2022-07-22 21:22:47,659] {processor.py:163} INFO - Started process (PID=19164) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:22:47,666] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:22:47,666] {logging_mixin.py:109} INFO - [2022-07-22 21:22:47,666] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:22:48,080] {logging_mixin.py:109} INFO - [2022-07-22 21:22:48,080] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:22:48,579] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:22:48,596] {logging_mixin.py:109} INFO - [2022-07-22 21:22:48,595] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:22:48,611] {logging_mixin.py:109} INFO - [2022-07-22 21:22:48,611] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:22:48.610856+00:00
+[2022-07-22 21:22:48,633] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.977 seconds
+[2022-07-22 21:23:18,728] {processor.py:163} INFO - Started process (PID=19212) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:23:18,729] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:23:18,730] {logging_mixin.py:109} INFO - [2022-07-22 21:23:18,730] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:23:19,068] {logging_mixin.py:109} INFO - [2022-07-22 21:23:19,067] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:23:19,537] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:23:19,552] {logging_mixin.py:109} INFO - [2022-07-22 21:23:19,552] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:23:19,566] {logging_mixin.py:109} INFO - [2022-07-22 21:23:19,566] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:23:19.566545+00:00
+[2022-07-22 21:23:19,586] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.862 seconds
+[2022-07-22 21:23:50,047] {processor.py:163} INFO - Started process (PID=19268) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:23:50,049] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:23:50,050] {logging_mixin.py:109} INFO - [2022-07-22 21:23:50,050] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:23:50,412] {logging_mixin.py:109} INFO - [2022-07-22 21:23:50,412] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:23:50,853] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:23:50,870] {logging_mixin.py:109} INFO - [2022-07-22 21:23:50,869] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:23:50,886] {logging_mixin.py:109} INFO - [2022-07-22 21:23:50,886] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:23:50.886353+00:00
+[2022-07-22 21:23:50,898] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.856 seconds
+[2022-07-22 21:24:21,198] {processor.py:163} INFO - Started process (PID=19315) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:24:21,199] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:24:21,200] {logging_mixin.py:109} INFO - [2022-07-22 21:24:21,199] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:24:21,578] {logging_mixin.py:109} INFO - [2022-07-22 21:24:21,577] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:24:22,015] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:24:22,032] {logging_mixin.py:109} INFO - [2022-07-22 21:24:22,031] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:24:22,048] {logging_mixin.py:109} INFO - [2022-07-22 21:24:22,048] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:24:22.048182+00:00
+[2022-07-22 21:24:22,067] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.873 seconds
+[2022-07-22 21:24:52,130] {processor.py:163} INFO - Started process (PID=19371) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:24:52,132] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:24:52,133] {logging_mixin.py:109} INFO - [2022-07-22 21:24:52,133] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:24:52,483] {logging_mixin.py:109} INFO - [2022-07-22 21:24:52,483] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:24:52,900] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:24:52,916] {logging_mixin.py:109} INFO - [2022-07-22 21:24:52,915] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:24:52,934] {logging_mixin.py:109} INFO - [2022-07-22 21:24:52,934] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:24:52.934381+00:00
+[2022-07-22 21:24:52,946] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.820 seconds
+[2022-07-22 21:25:23,057] {processor.py:163} INFO - Started process (PID=19418) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:25:23,058] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:25:23,059] {logging_mixin.py:109} INFO - [2022-07-22 21:25:23,059] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:25:23,452] {logging_mixin.py:109} INFO - [2022-07-22 21:25:23,452] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:25:23,946] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:25:23,976] {logging_mixin.py:109} INFO - [2022-07-22 21:25:23,976] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:25:24,011] {logging_mixin.py:109} INFO - [2022-07-22 21:25:24,011] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:25:24.011400+00:00
+[2022-07-22 21:25:24,031] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.978 seconds
+[2022-07-22 21:25:54,475] {processor.py:163} INFO - Started process (PID=19473) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:25:54,479] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:25:54,480] {logging_mixin.py:109} INFO - [2022-07-22 21:25:54,480] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:25:55,241] {logging_mixin.py:109} INFO - [2022-07-22 21:25:55,241] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:25:55,870] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:25:55,909] {logging_mixin.py:109} INFO - [2022-07-22 21:25:55,909] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:25:55,942] {logging_mixin.py:109} INFO - [2022-07-22 21:25:55,941] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:25:55.941203+00:00
+[2022-07-22 21:25:55,957] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 1.501 seconds
+[2022-07-22 21:26:26,219] {processor.py:163} INFO - Started process (PID=19520) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:26:26,220] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:26:26,222] {logging_mixin.py:109} INFO - [2022-07-22 21:26:26,221] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:26:26,854] {logging_mixin.py:109} INFO - [2022-07-22 21:26:26,853] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:26:27,526] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:26:27,546] {logging_mixin.py:109} INFO - [2022-07-22 21:26:27,545] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:26:27,569] {logging_mixin.py:109} INFO - [2022-07-22 21:26:27,569] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:26:27.568982+00:00
+[2022-07-22 21:26:27,600] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 1.386 seconds
+[2022-07-22 21:26:57,831] {processor.py:163} INFO - Started process (PID=19566) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:26:57,833] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:26:57,834] {logging_mixin.py:109} INFO - [2022-07-22 21:26:57,834] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:26:58,371] {logging_mixin.py:109} INFO - [2022-07-22 21:26:58,371] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:26:58,974] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:26:58,993] {logging_mixin.py:109} INFO - [2022-07-22 21:26:58,992] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:26:59,013] {logging_mixin.py:109} INFO - [2022-07-22 21:26:59,012] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:26:59.012705+00:00
+[2022-07-22 21:26:59,032] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 1.208 seconds
+[2022-07-22 21:27:29,298] {processor.py:163} INFO - Started process (PID=19622) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:27:29,300] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:27:29,300] {logging_mixin.py:109} INFO - [2022-07-22 21:27:29,300] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:27:29,698] {logging_mixin.py:109} INFO - [2022-07-22 21:27:29,698] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:27:30,169] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:27:30,187] {logging_mixin.py:109} INFO - [2022-07-22 21:27:30,186] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:27:30,208] {logging_mixin.py:109} INFO - [2022-07-22 21:27:30,208] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:27:30.207986+00:00
+[2022-07-22 21:27:30,231] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.937 seconds
+[2022-07-22 21:28:00,580] {processor.py:163} INFO - Started process (PID=19669) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:28:00,587] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:28:00,588] {logging_mixin.py:109} INFO - [2022-07-22 21:28:00,587] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:28:00,918] {logging_mixin.py:109} INFO - [2022-07-22 21:28:00,917] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:28:01,279] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:28:01,294] {logging_mixin.py:109} INFO - [2022-07-22 21:28:01,294] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:28:01,308] {logging_mixin.py:109} INFO - [2022-07-22 21:28:01,308] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:28:01.307813+00:00
+[2022-07-22 21:28:01,321] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.747 seconds
+[2022-07-22 21:28:31,475] {processor.py:163} INFO - Started process (PID=19725) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:28:31,476] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:28:31,477] {logging_mixin.py:109} INFO - [2022-07-22 21:28:31,477] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:28:31,824] {logging_mixin.py:109} INFO - [2022-07-22 21:28:31,824] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:28:32,254] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:28:32,271] {logging_mixin.py:109} INFO - [2022-07-22 21:28:32,270] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:28:32,285] {logging_mixin.py:109} INFO - [2022-07-22 21:28:32,285] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:28:32.285512+00:00
+[2022-07-22 21:28:32,300] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.828 seconds
+[2022-07-22 21:29:02,487] {processor.py:163} INFO - Started process (PID=19773) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:29:02,489] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:29:02,490] {logging_mixin.py:109} INFO - [2022-07-22 21:29:02,490] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:29:02,903] {logging_mixin.py:109} INFO - [2022-07-22 21:29:02,903] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:29:03,366] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:29:03,385] {logging_mixin.py:109} INFO - [2022-07-22 21:29:03,384] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:29:03,406] {logging_mixin.py:109} INFO - [2022-07-22 21:29:03,405] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:29:03.405588+00:00
+[2022-07-22 21:29:03,423] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.942 seconds
+[2022-07-22 21:29:33,782] {processor.py:163} INFO - Started process (PID=19830) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:29:33,784] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:29:33,784] {logging_mixin.py:109} INFO - [2022-07-22 21:29:33,784] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:29:34,274] {logging_mixin.py:109} INFO - [2022-07-22 21:29:34,273] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:29:34,771] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:29:34,790] {logging_mixin.py:109} INFO - [2022-07-22 21:29:34,790] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:29:34,811] {logging_mixin.py:109} INFO - [2022-07-22 21:29:34,811] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:29:34.811147+00:00
+[2022-07-22 21:29:34,829] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 1.051 seconds
+[2022-07-22 21:30:05,171] {processor.py:163} INFO - Started process (PID=19877) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:30:05,176] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:30:05,177] {logging_mixin.py:109} INFO - [2022-07-22 21:30:05,177] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:30:05,806] {logging_mixin.py:109} INFO - [2022-07-22 21:30:05,806] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:30:06,526] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:30:06,546] {logging_mixin.py:109} INFO - [2022-07-22 21:30:06,545] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:30:06,571] {logging_mixin.py:109} INFO - [2022-07-22 21:30:06,571] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:30:06.570758+00:00
+[2022-07-22 21:30:06,584] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 1.419 seconds
+[2022-07-22 21:30:37,167] {processor.py:163} INFO - Started process (PID=19924) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:30:37,173] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:30:37,174] {logging_mixin.py:109} INFO - [2022-07-22 21:30:37,173] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:30:37,799] {logging_mixin.py:109} INFO - [2022-07-22 21:30:37,799] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:30:38,626] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:30:38,647] {logging_mixin.py:109} INFO - [2022-07-22 21:30:38,646] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:30:38,672] {logging_mixin.py:109} INFO - [2022-07-22 21:30:38,671] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:30:38.671481+00:00
+[2022-07-22 21:30:38,684] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 1.526 seconds
+[2022-07-22 21:31:08,838] {processor.py:163} INFO - Started process (PID=19971) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:31:08,845] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:31:08,845] {logging_mixin.py:109} INFO - [2022-07-22 21:31:08,845] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:31:09,473] {logging_mixin.py:109} INFO - [2022-07-22 21:31:09,473] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:31:10,216] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:31:10,241] {logging_mixin.py:109} INFO - [2022-07-22 21:31:10,240] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:31:10,262] {logging_mixin.py:109} INFO - [2022-07-22 21:31:10,262] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:31:10.261851+00:00
+[2022-07-22 21:31:10,282] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 1.448 seconds
+[2022-07-22 21:31:40,503] {processor.py:163} INFO - Started process (PID=20018) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:31:40,504] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:31:40,505] {logging_mixin.py:109} INFO - [2022-07-22 21:31:40,504] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:31:40,956] {logging_mixin.py:109} INFO - [2022-07-22 21:31:40,955] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:31:41,391] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:31:41,404] {logging_mixin.py:109} INFO - [2022-07-22 21:31:41,403] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:31:41,417] {logging_mixin.py:109} INFO - [2022-07-22 21:31:41,417] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:31:41.417301+00:00
+[2022-07-22 21:31:41,434] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.934 seconds
+[2022-07-22 21:32:11,805] {processor.py:163} INFO - Started process (PID=20075) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:32:11,811] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:32:11,812] {logging_mixin.py:109} INFO - [2022-07-22 21:32:11,812] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:32:12,212] {logging_mixin.py:109} INFO - [2022-07-22 21:32:12,212] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:32:12,786] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:32:12,808] {logging_mixin.py:109} INFO - [2022-07-22 21:32:12,807] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:32:12,826] {logging_mixin.py:109} INFO - [2022-07-22 21:32:12,826] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:32:12.826550+00:00
+[2022-07-22 21:32:12,845] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 1.044 seconds
+[2022-07-22 21:32:43,208] {processor.py:163} INFO - Started process (PID=20123) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:32:43,209] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:32:43,210] {logging_mixin.py:109} INFO - [2022-07-22 21:32:43,210] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:32:43,514] {logging_mixin.py:109} INFO - [2022-07-22 21:32:43,514] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:32:43,863] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:32:43,877] {logging_mixin.py:109} INFO - [2022-07-22 21:32:43,876] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:32:43,890] {logging_mixin.py:109} INFO - [2022-07-22 21:32:43,890] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:32:43.890234+00:00
+[2022-07-22 21:32:43,904] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.699 seconds
+[2022-07-22 21:33:14,736] {processor.py:163} INFO - Started process (PID=20179) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:33:14,737] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:33:14,738] {logging_mixin.py:109} INFO - [2022-07-22 21:33:14,738] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:33:15,104] {logging_mixin.py:109} INFO - [2022-07-22 21:33:15,104] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:33:15,509] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:33:15,526] {logging_mixin.py:109} INFO - [2022-07-22 21:33:15,525] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:33:15,544] {logging_mixin.py:109} INFO - [2022-07-22 21:33:15,543] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:33:15.543452+00:00
+[2022-07-22 21:33:15,563] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.831 seconds
+[2022-07-22 21:33:45,746] {processor.py:163} INFO - Started process (PID=20226) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:33:45,748] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:33:45,748] {logging_mixin.py:109} INFO - [2022-07-22 21:33:45,748] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:33:46,131] {logging_mixin.py:109} INFO - [2022-07-22 21:33:46,131] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:33:46,573] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:33:46,587] {logging_mixin.py:109} INFO - [2022-07-22 21:33:46,586] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:33:46,602] {logging_mixin.py:109} INFO - [2022-07-22 21:33:46,602] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:33:46.602227+00:00
+[2022-07-22 21:33:46,619] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.876 seconds
+[2022-07-22 21:34:16,827] {processor.py:163} INFO - Started process (PID=20282) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:34:16,833] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:34:16,834] {logging_mixin.py:109} INFO - [2022-07-22 21:34:16,833] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:34:17,077] {logging_mixin.py:109} INFO - [2022-07-22 21:34:17,077] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:34:17,366] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:34:17,376] {logging_mixin.py:109} INFO - [2022-07-22 21:34:17,376] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:34:17,387] {logging_mixin.py:109} INFO - [2022-07-22 21:34:17,386] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:34:17.386748+00:00
+[2022-07-22 21:34:17,401] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.576 seconds
+[2022-07-22 21:34:47,614] {processor.py:163} INFO - Started process (PID=20338) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:34:47,615] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:34:47,616] {logging_mixin.py:109} INFO - [2022-07-22 21:34:47,616] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:34:47,851] {logging_mixin.py:109} INFO - [2022-07-22 21:34:47,850] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:34:48,130] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:34:48,140] {logging_mixin.py:109} INFO - [2022-07-22 21:34:48,140] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:34:48,150] {logging_mixin.py:109} INFO - [2022-07-22 21:34:48,150] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:34:48.149989+00:00
+[2022-07-22 21:34:48,158] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.548 seconds
+[2022-07-22 21:35:18,393] {processor.py:163} INFO - Started process (PID=20385) to work on /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:35:18,394] {processor.py:642} INFO - Processing file /opt/airflow/dags/dm_fill_account_turnover.py for tasks to queue
+[2022-07-22 21:35:18,394] {logging_mixin.py:109} INFO - [2022-07-22 21:35:18,394] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:35:18,642] {logging_mixin.py:109} INFO - [2022-07-22 21:35:18,642] {base.py:79} INFO - Using connection to: id: postgres. Host: postgres, Port: 5432, Schema: postgres, Login: airflow, Password: airflow, extra: {}
+[2022-07-22 21:35:18,940] {processor.py:654} INFO - DAG(s) dict_keys(['DM-COUNT-account-turnover']) retrieved from /opt/airflow/dags/dm_fill_account_turnover.py
+[2022-07-22 21:35:18,952] {logging_mixin.py:109} INFO - [2022-07-22 21:35:18,951] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-07-22 21:35:18,964] {logging_mixin.py:109} INFO - [2022-07-22 21:35:18,964] {dag.py:2935} INFO - Setting next_dagrun for DM-COUNT-account-turnover to 2022-07-21T21:35:18.964182+00:00
+[2022-07-22 21:35:18,977] {processor.py:171} INFO - Processing /opt/airflow/dags/dm_fill_account_turnover.py took 0.588 seconds
