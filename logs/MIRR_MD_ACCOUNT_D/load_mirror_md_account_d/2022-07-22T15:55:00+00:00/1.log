@@ -1,0 +1,38 @@
+[2022-07-22 16:03:35,801] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T15:55:00+00:00 [queued]>
+[2022-07-22 16:03:35,809] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T15:55:00+00:00 [queued]>
+[2022-07-22 16:03:35,809] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 16:03:35,809] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-07-22 16:03:35,809] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 16:03:35,817] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): load_mirror_md_account_d> on 2022-07-22 15:55:00+00:00
+[2022-07-22 16:03:35,820] {standard_task_runner.py:52} INFO - Started process 927 to run task
+[2022-07-22 16:03:35,823] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'MIRR_MD_ACCOUNT_D', 'load_mirror_md_account_d', 'scheduled__2022-07-22T15:55:00+00:00', '--job-id', '87', '--raw', '--subdir', 'DAGS_FOLDER/mirror_calc.py', '--cfg-path', '/tmp/tmpxnk_427s', '--error-file', '/tmp/tmp4k9nqo7u']
+[2022-07-22 16:03:35,824] {standard_task_runner.py:77} INFO - Job 87: Subtask load_mirror_md_account_d
+[2022-07-22 16:03:35,899] {logging_mixin.py:109} INFO - Running <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T15:55:00+00:00 [running]> on host 156c91590481
+[2022-07-22 16:03:35,945] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MIRR_MD_ACCOUNT_D
+AIRFLOW_CTX_TASK_ID=load_mirror_md_account_d
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-22T15:55:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-22T15:55:00+00:00
+[2022-07-22 16:03:35,945] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-07-22 16:03:35,946] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"   --master spark://spark:7077 /usr/local/spark/core/test.py']
+[2022-07-22 16:03:35,954] {subprocess.py:85} INFO - Output:
+[2022-07-22 16:03:37,215] {subprocess.py:89} INFO - :: loading settings :: url = jar:file:/usr/local/spark/assembly/target/scala-2.12/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2022-07-22 16:03:37,348] {subprocess.py:89} INFO - Ivy Default Cache set to: /home/***/.ivy2/cache
+[2022-07-22 16:03:37,348] {subprocess.py:89} INFO - The jars for the packages stored in: /home/***/.ivy2/jars
+[2022-07-22 16:03:37,360] {subprocess.py:89} INFO - io.delta#delta-core_2.12 added as a dependency
+[2022-07-22 16:03:37,363] {subprocess.py:89} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-7943e79e-eabe-47c7-8b00-92684892291b;1.0
+[2022-07-22 16:03:37,363] {subprocess.py:89} INFO - 	confs: [default]
+[2022-07-22 16:03:38,295] {subprocess.py:89} INFO - 	found io.delta#delta-core_2.12;1.0.0 in central
+[2022-07-22 16:03:40,417] {subprocess.py:89} INFO - 	found org.antlr#antlr4;4.7 in central
+[2022-07-22 16:03:40,628] {subprocess.py:89} INFO - 	found org.antlr#antlr4-runtime;4.7 in central
+[2022-07-22 16:03:40,892] {local_task_job.py:212} WARNING - State of this instance has been externally set to skipped. Terminating instance.
+[2022-07-22 16:03:40,893] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 927. PIDs of all processes in the group: [936, 927]
+[2022-07-22 16:03:40,893] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 927
+[2022-07-22 16:03:40,894] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-07-22 16:03:40,894] {subprocess.py:99} INFO - Sending SIGTERM signal to process group
+[2022-07-22 16:03:40,920] {process_utils.py:70} INFO - Process psutil.Process(pid=927, status='terminated', exitcode=0, started='16:03:35') (927) terminated with exit code 0
+[2022-07-22 16:03:41,301] {process_utils.py:70} INFO - Process psutil.Process(pid=936, status='terminated', started='16:03:35') (936) terminated with exit code None

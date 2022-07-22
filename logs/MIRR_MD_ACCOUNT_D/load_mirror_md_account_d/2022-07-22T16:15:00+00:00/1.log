@@ -1,0 +1,173 @@
+[2022-07-22 16:20:01,479] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T16:15:00+00:00 [queued]>
+[2022-07-22 16:20:01,488] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T16:15:00+00:00 [queued]>
+[2022-07-22 16:20:01,488] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 16:20:01,488] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-07-22 16:20:01,489] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 16:20:01,497] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): load_mirror_md_account_d> on 2022-07-22 16:15:00+00:00
+[2022-07-22 16:20:01,500] {standard_task_runner.py:52} INFO - Started process 2163 to run task
+[2022-07-22 16:20:01,503] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'MIRR_MD_ACCOUNT_D', 'load_mirror_md_account_d', 'scheduled__2022-07-22T16:15:00+00:00', '--job-id', '96', '--raw', '--subdir', 'DAGS_FOLDER/mirror_calc.py', '--cfg-path', '/tmp/tmp1pmdgi1o', '--error-file', '/tmp/tmpm4kj3tz4']
+[2022-07-22 16:20:01,504] {standard_task_runner.py:77} INFO - Job 96: Subtask load_mirror_md_account_d
+[2022-07-22 16:20:01,588] {logging_mixin.py:109} INFO - Running <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T16:15:00+00:00 [running]> on host 156c91590481
+[2022-07-22 16:20:01,631] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MIRR_MD_ACCOUNT_D
+AIRFLOW_CTX_TASK_ID=load_mirror_md_account_d
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-22T16:15:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-22T16:15:00+00:00
+[2022-07-22 16:20:01,632] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-07-22 16:20:01,632] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"  /opt/***/core/test.py']
+[2022-07-22 16:20:01,640] {subprocess.py:85} INFO - Output:
+[2022-07-22 16:20:02,793] {subprocess.py:89} INFO - :: loading settings :: url = jar:file:/usr/local/spark/assembly/target/scala-2.12/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2022-07-22 16:20:02,852] {subprocess.py:89} INFO - Ivy Default Cache set to: /home/***/.ivy2/cache
+[2022-07-22 16:20:02,852] {subprocess.py:89} INFO - The jars for the packages stored in: /home/***/.ivy2/jars
+[2022-07-22 16:20:02,867] {subprocess.py:89} INFO - io.delta#delta-core_2.12 added as a dependency
+[2022-07-22 16:20:02,869] {subprocess.py:89} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-f3102e9a-c952-4198-83f5-89b6fa67caa3;1.0
+[2022-07-22 16:20:02,869] {subprocess.py:89} INFO - 	confs: [default]
+[2022-07-22 16:20:02,965] {subprocess.py:89} INFO - 	found io.delta#delta-core_2.12;1.0.0 in central
+[2022-07-22 16:20:02,989] {subprocess.py:89} INFO - 	found org.antlr#antlr4;4.7 in central
+[2022-07-22 16:20:03,015] {subprocess.py:89} INFO - 	found org.antlr#antlr4-runtime;4.7 in central
+[2022-07-22 16:20:03,039] {subprocess.py:89} INFO - 	found org.antlr#antlr-runtime;3.5.2 in central
+[2022-07-22 16:20:03,059] {subprocess.py:89} INFO - 	found org.antlr#ST4;4.0.8 in central
+[2022-07-22 16:20:03,076] {subprocess.py:89} INFO - 	found org.abego.treelayout#org.abego.treelayout.core;1.0.3 in central
+[2022-07-22 16:20:03,091] {subprocess.py:89} INFO - 	found org.glassfish#javax.json;1.0.4 in central
+[2022-07-22 16:20:03,103] {subprocess.py:89} INFO - 	found com.ibm.icu#icu4j;58.2 in central
+[2022-07-22 16:20:03,133] {subprocess.py:89} INFO - :: resolution report :: resolve 257ms :: artifacts dl 7ms
+[2022-07-22 16:20:03,133] {subprocess.py:89} INFO - 	:: modules in use:
+[2022-07-22 16:20:03,133] {subprocess.py:89} INFO - 	com.ibm.icu#icu4j;58.2 from central in [default]
+[2022-07-22 16:20:03,134] {subprocess.py:89} INFO - 	io.delta#delta-core_2.12;1.0.0 from central in [default]
+[2022-07-22 16:20:03,134] {subprocess.py:89} INFO - 	org.abego.treelayout#org.abego.treelayout.core;1.0.3 from central in [default]
+[2022-07-22 16:20:03,134] {subprocess.py:89} INFO - 	org.antlr#ST4;4.0.8 from central in [default]
+[2022-07-22 16:20:03,134] {subprocess.py:89} INFO - 	org.antlr#antlr-runtime;3.5.2 from central in [default]
+[2022-07-22 16:20:03,134] {subprocess.py:89} INFO - 	org.antlr#antlr4;4.7 from central in [default]
+[2022-07-22 16:20:03,134] {subprocess.py:89} INFO - 	org.antlr#antlr4-runtime;4.7 from central in [default]
+[2022-07-22 16:20:03,134] {subprocess.py:89} INFO - 	org.glassfish#javax.json;1.0.4 from central in [default]
+[2022-07-22 16:20:03,135] {subprocess.py:89} INFO - 	---------------------------------------------------------------------
+[2022-07-22 16:20:03,135] {subprocess.py:89} INFO - 	|                  |            modules            ||   artifacts   |
+[2022-07-22 16:20:03,135] {subprocess.py:89} INFO - 	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+[2022-07-22 16:20:03,135] {subprocess.py:89} INFO - 	---------------------------------------------------------------------
+[2022-07-22 16:20:03,135] {subprocess.py:89} INFO - 	|      default     |   8   |   0   |   0   |   0   ||   8   |   0   |
+[2022-07-22 16:20:03,135] {subprocess.py:89} INFO - 	---------------------------------------------------------------------
+[2022-07-22 16:20:03,140] {subprocess.py:89} INFO - :: retrieving :: org.apache.spark#spark-submit-parent-f3102e9a-c952-4198-83f5-89b6fa67caa3
+[2022-07-22 16:20:03,140] {subprocess.py:89} INFO - 	confs: [default]
+[2022-07-22 16:20:03,196] {subprocess.py:89} INFO - 	0 artifacts copied, 8 already retrieved (0kB/55ms)
+[2022-07-22 16:20:03,470] {subprocess.py:89} INFO - 22/07/22 16:20:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2022-07-22 16:20:03,796] {subprocess.py:89} INFO - /usr/local/bin/python3
+[2022-07-22 16:20:04,180] {subprocess.py:89} INFO - Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+[2022-07-22 16:20:04,188] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Running Spark version 3.1.2
+[2022-07-22 16:20:04,218] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO ResourceUtils: ==============================================================
+[2022-07-22 16:20:04,219] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2022-07-22 16:20:04,219] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO ResourceUtils: ==============================================================
+[2022-07-22 16:20:04,219] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Submitted application: MyApp
+[2022-07-22 16:20:04,240] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2022-07-22 16:20:04,252] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO ResourceProfile: Limiting resource is cpu
+[2022-07-22 16:20:04,252] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2022-07-22 16:20:04,302] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SecurityManager: Changing view acls to: default
+[2022-07-22 16:20:04,302] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SecurityManager: Changing modify acls to: default
+[2022-07-22 16:20:04,302] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SecurityManager: Changing view acls groups to:
+[2022-07-22 16:20:04,302] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SecurityManager: Changing modify acls groups to:
+[2022-07-22 16:20:04,302] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(default); groups with view permissions: Set(); users  with modify permissions: Set(default); groups with modify permissions: Set()
+[2022-07-22 16:20:04,462] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO Utils: Successfully started service 'sparkDriver' on port 41703.
+[2022-07-22 16:20:04,485] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkEnv: Registering MapOutputTracker
+[2022-07-22 16:20:04,510] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkEnv: Registering BlockManagerMaster
+[2022-07-22 16:20:04,527] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2022-07-22 16:20:04,528] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2022-07-22 16:20:04,531] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2022-07-22 16:20:04,541] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-49ea0fef-40d3-4354-8491-aecafe89f75e
+[2022-07-22 16:20:04,560] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+[2022-07-22 16:20:04,574] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkEnv: Registering OutputCommitCoordinator
+[2022-07-22 16:20:04,822] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2022-07-22 16:20:04,863] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://156c91590481:4040
+[2022-07-22 16:20:04,877] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/io.delta_delta-core_2.12-1.0.0.jar at spark://156c91590481:41703/jars/io.delta_delta-core_2.12-1.0.0.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,877] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/org.antlr_antlr4-4.7.jar at spark://156c91590481:41703/jars/org.antlr_antlr4-4.7.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,877] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/org.antlr_antlr4-runtime-4.7.jar at spark://156c91590481:41703/jars/org.antlr_antlr4-runtime-4.7.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,877] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/org.antlr_antlr-runtime-3.5.2.jar at spark://156c91590481:41703/jars/org.antlr_antlr-runtime-3.5.2.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,877] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/org.antlr_ST4-4.0.8.jar at spark://156c91590481:41703/jars/org.antlr_ST4-4.0.8.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,877] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar at spark://156c91590481:41703/jars/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,877] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/org.glassfish_javax.json-1.0.4.jar at spark://156c91590481:41703/jars/org.glassfish_javax.json-1.0.4.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,877] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added JAR file:///home/***/.ivy2/jars/com.ibm.icu_icu4j-58.2.jar at spark://156c91590481:41703/jars/com.ibm.icu_icu4j-58.2.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,879] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added file file:///home/***/.ivy2/jars/io.delta_delta-core_2.12-1.0.0.jar at file:///home/***/.ivy2/jars/io.delta_delta-core_2.12-1.0.0.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,880] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO Utils: Copying /home/***/.ivy2/jars/io.delta_delta-core_2.12-1.0.0.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/io.delta_delta-core_2.12-1.0.0.jar
+[2022-07-22 16:20:04,888] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added file file:///home/***/.ivy2/jars/org.antlr_antlr4-4.7.jar at file:///home/***/.ivy2/jars/org.antlr_antlr4-4.7.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,888] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO Utils: Copying /home/***/.ivy2/jars/org.antlr_antlr4-4.7.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr4-4.7.jar
+[2022-07-22 16:20:04,891] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added file file:///home/***/.ivy2/jars/org.antlr_antlr4-runtime-4.7.jar at file:///home/***/.ivy2/jars/org.antlr_antlr4-runtime-4.7.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,892] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO Utils: Copying /home/***/.ivy2/jars/org.antlr_antlr4-runtime-4.7.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr4-runtime-4.7.jar
+[2022-07-22 16:20:04,896] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added file file:///home/***/.ivy2/jars/org.antlr_antlr-runtime-3.5.2.jar at file:///home/***/.ivy2/jars/org.antlr_antlr-runtime-3.5.2.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,896] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO Utils: Copying /home/***/.ivy2/jars/org.antlr_antlr-runtime-3.5.2.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr-runtime-3.5.2.jar
+[2022-07-22 16:20:04,899] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added file file:///home/***/.ivy2/jars/org.antlr_ST4-4.0.8.jar at file:///home/***/.ivy2/jars/org.antlr_ST4-4.0.8.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,899] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO Utils: Copying /home/***/.ivy2/jars/org.antlr_ST4-4.0.8.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_ST4-4.0.8.jar
+[2022-07-22 16:20:04,902] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added file file:///home/***/.ivy2/jars/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar at file:///home/***/.ivy2/jars/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,902] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO Utils: Copying /home/***/.ivy2/jars/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar
+[2022-07-22 16:20:04,905] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added file file:///home/***/.ivy2/jars/org.glassfish_javax.json-1.0.4.jar at file:///home/***/.ivy2/jars/org.glassfish_javax.json-1.0.4.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,906] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO Utils: Copying /home/***/.ivy2/jars/org.glassfish_javax.json-1.0.4.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.glassfish_javax.json-1.0.4.jar
+[2022-07-22 16:20:04,908] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO SparkContext: Added file file:///home/***/.ivy2/jars/com.ibm.icu_icu4j-58.2.jar at file:///home/***/.ivy2/jars/com.ibm.icu_icu4j-58.2.jar with timestamp 1658506804179
+[2022-07-22 16:20:04,909] {subprocess.py:89} INFO - 22/07/22 16:20:04 INFO Utils: Copying /home/***/.ivy2/jars/com.ibm.icu_icu4j-58.2.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/com.ibm.icu_icu4j-58.2.jar
+[2022-07-22 16:20:05,050] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Starting executor ID driver on host 156c91590481
+[2022-07-22 16:20:05,077] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching file:///home/***/.ivy2/jars/com.ibm.icu_icu4j-58.2.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,104] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /home/***/.ivy2/jars/com.ibm.icu_icu4j-58.2.jar has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/com.ibm.icu_icu4j-58.2.jar
+[2022-07-22 16:20:05,106] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching file:///home/***/.ivy2/jars/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,107] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /home/***/.ivy2/jars/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar
+[2022-07-22 16:20:05,109] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching file:///home/***/.ivy2/jars/org.antlr_antlr-runtime-3.5.2.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,109] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /home/***/.ivy2/jars/org.antlr_antlr-runtime-3.5.2.jar has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr-runtime-3.5.2.jar
+[2022-07-22 16:20:05,111] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching file:///home/***/.ivy2/jars/org.glassfish_javax.json-1.0.4.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,112] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /home/***/.ivy2/jars/org.glassfish_javax.json-1.0.4.jar has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.glassfish_javax.json-1.0.4.jar
+[2022-07-22 16:20:05,115] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching file:///home/***/.ivy2/jars/org.antlr_antlr4-runtime-4.7.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,115] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /home/***/.ivy2/jars/org.antlr_antlr4-runtime-4.7.jar has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr4-runtime-4.7.jar
+[2022-07-22 16:20:05,118] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching file:///home/***/.ivy2/jars/org.antlr_antlr4-4.7.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,119] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /home/***/.ivy2/jars/org.antlr_antlr4-4.7.jar has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr4-4.7.jar
+[2022-07-22 16:20:05,122] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching file:///home/***/.ivy2/jars/org.antlr_ST4-4.0.8.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,123] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /home/***/.ivy2/jars/org.antlr_ST4-4.0.8.jar has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_ST4-4.0.8.jar
+[2022-07-22 16:20:05,125] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching file:///home/***/.ivy2/jars/io.delta_delta-core_2.12-1.0.0.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,127] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /home/***/.ivy2/jars/io.delta_delta-core_2.12-1.0.0.jar has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/io.delta_delta-core_2.12-1.0.0.jar
+[2022-07-22 16:20:05,132] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching spark://156c91590481:41703/jars/org.antlr_antlr4-runtime-4.7.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,173] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO TransportClientFactory: Successfully created connection to 156c91590481/172.19.0.8:41703 after 32 ms (0 ms spent in bootstraps)
+[2022-07-22 16:20:05,178] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: Fetching spark://156c91590481:41703/jars/org.antlr_antlr4-runtime-4.7.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp2712130980246045419.tmp
+[2022-07-22 16:20:05,195] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp2712130980246045419.tmp has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr4-runtime-4.7.jar
+[2022-07-22 16:20:05,199] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Adding file:/tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr4-runtime-4.7.jar to class loader
+[2022-07-22 16:20:05,199] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching spark://156c91590481:41703/jars/org.antlr_antlr-runtime-3.5.2.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,199] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: Fetching spark://156c91590481:41703/jars/org.antlr_antlr-runtime-3.5.2.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp850973927964318643.tmp
+[2022-07-22 16:20:05,201] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp850973927964318643.tmp has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr-runtime-3.5.2.jar
+[2022-07-22 16:20:05,204] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Adding file:/tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr-runtime-3.5.2.jar to class loader
+[2022-07-22 16:20:05,204] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching spark://156c91590481:41703/jars/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,204] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: Fetching spark://156c91590481:41703/jars/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp7157439877366096844.tmp
+[2022-07-22 16:20:05,206] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp7157439877366096844.tmp has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar
+[2022-07-22 16:20:05,208] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Adding file:/tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.abego.treelayout_org.abego.treelayout.core-1.0.3.jar to class loader
+[2022-07-22 16:20:05,208] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching spark://156c91590481:41703/jars/org.antlr_ST4-4.0.8.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,209] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: Fetching spark://156c91590481:41703/jars/org.antlr_ST4-4.0.8.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp4485037497289319343.tmp
+[2022-07-22 16:20:05,211] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp4485037497289319343.tmp has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_ST4-4.0.8.jar
+[2022-07-22 16:20:05,213] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Adding file:/tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_ST4-4.0.8.jar to class loader
+[2022-07-22 16:20:05,214] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching spark://156c91590481:41703/jars/com.ibm.icu_icu4j-58.2.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,214] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: Fetching spark://156c91590481:41703/jars/com.ibm.icu_icu4j-58.2.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp8501402834183313066.tmp
+[2022-07-22 16:20:05,342] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp8501402834183313066.tmp has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/com.ibm.icu_icu4j-58.2.jar
+[2022-07-22 16:20:05,348] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Adding file:/tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/com.ibm.icu_icu4j-58.2.jar to class loader
+[2022-07-22 16:20:05,348] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching spark://156c91590481:41703/jars/org.glassfish_javax.json-1.0.4.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,349] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: Fetching spark://156c91590481:41703/jars/org.glassfish_javax.json-1.0.4.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp990638221441817030.tmp
+[2022-07-22 16:20:05,350] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp990638221441817030.tmp has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.glassfish_javax.json-1.0.4.jar
+[2022-07-22 16:20:05,356] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Adding file:/tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.glassfish_javax.json-1.0.4.jar to class loader
+[2022-07-22 16:20:05,356] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching spark://156c91590481:41703/jars/org.antlr_antlr4-4.7.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,356] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: Fetching spark://156c91590481:41703/jars/org.antlr_antlr4-4.7.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp4576957582208072954.tmp
+[2022-07-22 16:20:05,372] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp4576957582208072954.tmp has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr4-4.7.jar
+[2022-07-22 16:20:05,396] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Adding file:/tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/org.antlr_antlr4-4.7.jar to class loader
+[2022-07-22 16:20:05,396] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Fetching spark://156c91590481:41703/jars/io.delta_delta-core_2.12-1.0.0.jar with timestamp 1658506804179
+[2022-07-22 16:20:05,397] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: Fetching spark://156c91590481:41703/jars/io.delta_delta-core_2.12-1.0.0.jar to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp6932408867785934629.tmp
+[2022-07-22 16:20:05,412] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/fetchFileTemp6932408867785934629.tmp has been previously copied to /tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/io.delta_delta-core_2.12-1.0.0.jar
+[2022-07-22 16:20:05,434] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Executor: Adding file:/tmp/spark-40e83748-2c0f-4ea2-9bc3-b984fff9e990/userFiles-c5e258da-1b24-4400-9ea6-ba8aa0e4e4dd/io.delta_delta-core_2.12-1.0.0.jar to class loader
+[2022-07-22 16:20:05,482] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35231.
+[2022-07-22 16:20:05,482] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO NettyBlockTransferService: Server created on 156c91590481:35231
+[2022-07-22 16:20:05,485] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2022-07-22 16:20:05,492] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 156c91590481, 35231, None)
+[2022-07-22 16:20:05,497] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO BlockManagerMasterEndpoint: Registering block manager 156c91590481:35231 with 366.3 MiB RAM, BlockManagerId(driver, 156c91590481, 35231, None)
+[2022-07-22 16:20:05,498] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 156c91590481, 35231, None)
+[2022-07-22 16:20:05,499] {subprocess.py:89} INFO - 22/07/22 16:20:05 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 156c91590481, 35231, None)
+[2022-07-22 16:20:06,036] {subprocess.py:89} INFO - 22/07/22 16:20:06 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/tmp/***tmpzia4f7ta/spark-warehouse').
+[2022-07-22 16:20:06,037] {subprocess.py:89} INFO - 22/07/22 16:20:06 INFO SharedState: Warehouse path is 'file:/tmp/***tmpzia4f7ta/spark-warehouse'.
+[2022-07-22 16:20:06,549] {local_task_job.py:212} WARNING - State of this instance has been externally set to skipped. Terminating instance.
+[2022-07-22 16:20:06,552] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 2163. PIDs of all processes in the group: [2164, 2202, 2163]
+[2022-07-22 16:20:06,553] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 2163
+[2022-07-22 16:20:06,553] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-07-22 16:20:06,553] {subprocess.py:99} INFO - Sending SIGTERM signal to process group
+[2022-07-22 16:20:06,558] {process_utils.py:70} INFO - Process psutil.Process(pid=2202, status='terminated', started='16:20:03') (2202) terminated with exit code None
+[2022-07-22 16:20:06,916] {process_utils.py:70} INFO - Process psutil.Process(pid=2163, status='terminated', exitcode=0, started='16:20:01') (2163) terminated with exit code 0
+[2022-07-22 16:20:07,065] {process_utils.py:70} INFO - Process psutil.Process(pid=2164, status='terminated', started='16:20:01') (2164) terminated with exit code None

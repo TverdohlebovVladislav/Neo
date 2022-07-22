@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 import os
-from constants import AIRFLOW_HOME
+from core.constants import AIRFLOW_HOME
 from datetime import datetime
 import pytz
 from delta.tables import DeltaTable

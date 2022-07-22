@@ -5,10 +5,8 @@ USER root
 
 RUN apt-get update -qq && apt-get install vim -qqq
 ENV AIRFLOW_HOME=/opt/airflow
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-# RUN pip install pyspark
-# RUN pip install delta-spark
+# COPY requirements.txt .
+# RUN pip install -r requirements.txt
 
 ARG SPARK_VERSION="3.1.2"
 ARG HADOOP_VERSION="3.2"
@@ -50,3 +48,10 @@ EXPOSE 8080 5555 8793
 
 # set airflow user 
 USER airflow
+
+RUN pip install spark-submit
+RUN pip install pyspark
+RUN pip install delta-spark
+RUN pip install apache-airflow
+RUN pip install apache-airflow-providers-postgres==4.1.0
+RUN pip install apache-airflow-providers-apache-spark

@@ -1,0 +1,44 @@
+[2022-07-22 16:05:01,815] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T16:00:00+00:00 [queued]>
+[2022-07-22 16:05:01,823] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T16:00:00+00:00 [queued]>
+[2022-07-22 16:05:01,823] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 16:05:01,823] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-07-22 16:05:01,823] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 16:05:01,834] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): load_mirror_md_account_d> on 2022-07-22 16:00:00+00:00
+[2022-07-22 16:05:01,838] {standard_task_runner.py:52} INFO - Started process 1077 to run task
+[2022-07-22 16:05:01,840] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'MIRR_MD_ACCOUNT_D', 'load_mirror_md_account_d', 'scheduled__2022-07-22T16:00:00+00:00', '--job-id', '89', '--raw', '--subdir', 'DAGS_FOLDER/mirror_calc.py', '--cfg-path', '/tmp/tmpl_3phyt8', '--error-file', '/tmp/tmpexl8ka3e']
+[2022-07-22 16:05:01,841] {standard_task_runner.py:77} INFO - Job 89: Subtask load_mirror_md_account_d
+[2022-07-22 16:05:01,884] {logging_mixin.py:109} INFO - Running <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T16:00:00+00:00 [running]> on host 156c91590481
+[2022-07-22 16:05:01,932] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MIRR_MD_ACCOUNT_D
+AIRFLOW_CTX_TASK_ID=load_mirror_md_account_d
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-22T16:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-22T16:00:00+00:00
+[2022-07-22 16:05:01,932] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-07-22 16:05:01,933] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"   --master spark://spark:7077 /usr/local/spark/core/test.py']
+[2022-07-22 16:05:01,941] {subprocess.py:85} INFO - Output:
+[2022-07-22 16:05:03,220] {subprocess.py:89} INFO - :: loading settings :: url = jar:file:/usr/local/spark/assembly/target/scala-2.12/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2022-07-22 16:05:03,282] {subprocess.py:89} INFO - Ivy Default Cache set to: /home/***/.ivy2/cache
+[2022-07-22 16:05:03,283] {subprocess.py:89} INFO - The jars for the packages stored in: /home/***/.ivy2/jars
+[2022-07-22 16:05:03,288] {subprocess.py:89} INFO - io.delta#delta-core_2.12 added as a dependency
+[2022-07-22 16:05:03,289] {subprocess.py:89} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-31a98c32-4575-48f9-bf4b-2a2dbe38196a;1.0
+[2022-07-22 16:05:03,289] {subprocess.py:89} INFO - 	confs: [default]
+[2022-07-22 16:05:03,384] {subprocess.py:89} INFO - 	found io.delta#delta-core_2.12;1.0.0 in central
+[2022-07-22 16:05:03,404] {subprocess.py:89} INFO - 	found org.antlr#antlr4;4.7 in central
+[2022-07-22 16:05:03,426] {subprocess.py:89} INFO - 	found org.antlr#antlr4-runtime;4.7 in central
+[2022-07-22 16:05:03,445] {subprocess.py:89} INFO - 	found org.antlr#antlr-runtime;3.5.2 in central
+[2022-07-22 16:05:03,460] {subprocess.py:89} INFO - 	found org.antlr#ST4;4.0.8 in central
+[2022-07-22 16:05:03,477] {subprocess.py:89} INFO - 	found org.abego.treelayout#org.abego.treelayout.core;1.0.3 in central
+[2022-07-22 16:05:03,492] {subprocess.py:89} INFO - 	found org.glassfish#javax.json;1.0.4 in central
+[2022-07-22 16:05:03,504] {subprocess.py:89} INFO - 	found com.ibm.icu#icu4j;58.2 in central
+[2022-07-22 16:05:03,945] {subprocess.py:89} INFO - downloading https://repo1.maven.org/maven2/io/delta/delta-core_2.12/1.0.0/delta-core_2.12-1.0.0.jar ...
+[2022-07-22 16:05:06,903] {local_task_job.py:212} WARNING - State of this instance has been externally set to skipped. Terminating instance.
+[2022-07-22 16:05:06,905] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 1077. PIDs of all processes in the group: [1078, 1077]
+[2022-07-22 16:05:06,905] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 1077
+[2022-07-22 16:05:06,905] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-07-22 16:05:06,905] {subprocess.py:99} INFO - Sending SIGTERM signal to process group
+[2022-07-22 16:05:06,933] {process_utils.py:70} INFO - Process psutil.Process(pid=1077, status='terminated', exitcode=0, started='16:05:01') (1077) terminated with exit code 0
+[2022-07-22 16:05:06,966] {process_utils.py:70} INFO - Process psutil.Process(pid=1078, status='terminated', started='16:05:01') (1078) terminated with exit code None

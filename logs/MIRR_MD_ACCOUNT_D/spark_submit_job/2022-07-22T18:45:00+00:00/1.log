@@ -1,0 +1,74 @@
+[2022-07-22 18:50:01,775] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.spark_submit_job scheduled__2022-07-22T18:45:00+00:00 [queued]>
+[2022-07-22 18:50:01,782] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.spark_submit_job scheduled__2022-07-22T18:45:00+00:00 [queued]>
+[2022-07-22 18:50:01,783] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 18:50:01,783] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-07-22 18:50:01,783] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 18:50:01,791] {taskinstance.py:1259} INFO - Executing <Task(SparkSubmitOperator): spark_submit_job> on 2022-07-22 18:45:00+00:00
+[2022-07-22 18:50:01,795] {standard_task_runner.py:52} INFO - Started process 2938 to run task
+[2022-07-22 18:50:01,797] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'MIRR_MD_ACCOUNT_D', 'spark_submit_job', 'scheduled__2022-07-22T18:45:00+00:00', '--job-id', '123', '--raw', '--subdir', 'DAGS_FOLDER/mirror_calc.py', '--cfg-path', '/tmp/tmpr30ozknk', '--error-file', '/tmp/tmplrkl4ie2']
+[2022-07-22 18:50:01,798] {standard_task_runner.py:77} INFO - Job 123: Subtask spark_submit_job
+[2022-07-22 18:50:01,841] {logging_mixin.py:109} INFO - Running <TaskInstance: MIRR_MD_ACCOUNT_D.spark_submit_job scheduled__2022-07-22T18:45:00+00:00 [running]> on host 1c7b2e19b45f
+[2022-07-22 18:50:01,882] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MIRR_MD_ACCOUNT_D
+AIRFLOW_CTX_TASK_ID=spark_submit_job
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-22T18:45:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-22T18:45:00+00:00
+[2022-07-22 18:50:01,889] {spark_submit.py:204} INFO - Could not load connection string spark_default, defaulting to yarn
+[2022-07-22 18:50:01,890] {spark_submit.py:334} INFO - Spark-Submit cmd: spark-submit --master yarn --packages io.delta:delta-core_2.12:1.0.0 --name arrow-spark /opt/***/core/test.py --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog --conf spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension
+[2022-07-22 18:50:02,812] {spark_submit.py:485} INFO - Exception in thread "main" org.apache.spark.SparkException: When running with master 'yarn' either HADOOP_CONF_DIR or YARN_CONF_DIR must be set in the environment.
+[2022-07-22 18:50:02,812] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmitArguments.error(SparkSubmitArguments.scala:631)
+[2022-07-22 18:50:02,812] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmitArguments.validateSubmitArguments(SparkSubmitArguments.scala:271)
+[2022-07-22 18:50:02,812] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmitArguments.validateArguments(SparkSubmitArguments.scala:234)
+[2022-07-22 18:50:02,812] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmitArguments.<init>(SparkSubmitArguments.scala:119)
+[2022-07-22 18:50:02,812] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2$$anon$3.<init>(SparkSubmit.scala:1022)
+[2022-07-22 18:50:02,812] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.parseArguments(SparkSubmit.scala:1022)
+[2022-07-22 18:50:02,812] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:85)
+[2022-07-22 18:50:02,812] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1039)
+[2022-07-22 18:50:02,812] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1048)
+[2022-07-22 18:50:02,813] {spark_submit.py:485} INFO - at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+[2022-07-22 18:50:02,828] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 157, in execute
+    self._hook.submit(self._application)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 417, in submit
+    f"Cannot execute: {self._mask_cmd(spark_submit_cmd)}. Error code is: {returncode}."
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master yarn --packages io.delta:delta-core_2.12:1.0.0 --name arrow-spark /opt/***/core/test.py --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog --conf spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension. Error code is: 1.
+[2022-07-22 18:50:02,834] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=MIRR_MD_ACCOUNT_D, task_id=spark_submit_job, execution_date=20220722T184500, start_date=20220722T185001, end_date=20220722T185002
+[2022-07-22 18:50:02,850] {standard_task_runner.py:92} ERROR - Failed to execute job 123 for task spark_submit_job
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 157, in execute
+    self._hook.submit(self._application)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 417, in submit
+    f"Cannot execute: {self._mask_cmd(spark_submit_cmd)}. Error code is: {returncode}."
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master yarn --packages io.delta:delta-core_2.12:1.0.0 --name arrow-spark /opt/***/core/test.py --conf spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog --conf spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension. Error code is: 1.
+[2022-07-22 18:50:02,897] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-07-22 18:50:02,928] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

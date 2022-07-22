@@ -1,0 +1,79 @@
+[2022-07-22 16:08:43,787] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d manual__2022-07-22T16:08:42.260048+00:00 [queued]>
+[2022-07-22 16:08:43,795] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d manual__2022-07-22T16:08:42.260048+00:00 [queued]>
+[2022-07-22 16:08:43,796] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 16:08:43,796] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-07-22 16:08:43,796] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 16:08:43,806] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): load_mirror_md_account_d> on 2022-07-22 16:08:42.260048+00:00
+[2022-07-22 16:08:43,809] {standard_task_runner.py:52} INFO - Started process 1323 to run task
+[2022-07-22 16:08:43,813] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'MIRR_MD_ACCOUNT_D', 'load_mirror_md_account_d', 'manual__2022-07-22T16:08:42.260048+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/mirror_calc.py', '--cfg-path', '/tmp/tmp_qsytth3', '--error-file', '/tmp/tmpjdc_4ucn']
+[2022-07-22 16:08:43,813] {standard_task_runner.py:77} INFO - Job 91: Subtask load_mirror_md_account_d
+[2022-07-22 16:08:43,857] {logging_mixin.py:109} INFO - Running <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d manual__2022-07-22T16:08:42.260048+00:00 [running]> on host 156c91590481
+[2022-07-22 16:08:43,904] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MIRR_MD_ACCOUNT_D
+AIRFLOW_CTX_TASK_ID=load_mirror_md_account_d
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-22T16:08:42.260048+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-22T16:08:42.260048+00:00
+[2022-07-22 16:08:43,906] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-07-22 16:08:43,907] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"  /opt/***/core/test.py']
+[2022-07-22 16:08:43,919] {subprocess.py:85} INFO - Output:
+[2022-07-22 16:08:45,532] {subprocess.py:89} INFO - :: loading settings :: url = jar:file:/usr/local/spark/assembly/target/scala-2.12/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2022-07-22 16:08:45,595] {subprocess.py:89} INFO - Ivy Default Cache set to: /home/***/.ivy2/cache
+[2022-07-22 16:08:45,595] {subprocess.py:89} INFO - The jars for the packages stored in: /home/***/.ivy2/jars
+[2022-07-22 16:08:45,603] {subprocess.py:89} INFO - io.delta#delta-core_2.12 added as a dependency
+[2022-07-22 16:08:45,604] {subprocess.py:89} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-3f151afc-674f-4fb4-acad-873b49eaed92;1.0
+[2022-07-22 16:08:45,604] {subprocess.py:89} INFO - 	confs: [default]
+[2022-07-22 16:08:45,695] {subprocess.py:89} INFO - 	found io.delta#delta-core_2.12;1.0.0 in central
+[2022-07-22 16:08:45,716] {subprocess.py:89} INFO - 	found org.antlr#antlr4;4.7 in central
+[2022-07-22 16:08:45,738] {subprocess.py:89} INFO - 	found org.antlr#antlr4-runtime;4.7 in central
+[2022-07-22 16:08:45,758] {subprocess.py:89} INFO - 	found org.antlr#antlr-runtime;3.5.2 in central
+[2022-07-22 16:08:45,773] {subprocess.py:89} INFO - 	found org.antlr#ST4;4.0.8 in central
+[2022-07-22 16:08:45,797] {subprocess.py:89} INFO - 	found org.abego.treelayout#org.abego.treelayout.core;1.0.3 in central
+[2022-07-22 16:08:45,810] {subprocess.py:89} INFO - 	found org.glassfish#javax.json;1.0.4 in central
+[2022-07-22 16:08:45,820] {subprocess.py:89} INFO - 	found com.ibm.icu#icu4j;58.2 in central
+[2022-07-22 16:08:46,305] {subprocess.py:89} INFO - downloading https://repo1.maven.org/maven2/io/delta/delta-core_2.12/1.0.0/delta-core_2.12-1.0.0.jar ...
+[2022-07-22 16:08:46,703] {subprocess.py:89} INFO - 	[SUCCESSFUL ] io.delta#delta-core_2.12;1.0.0!delta-core_2.12.jar (867ms)
+[2022-07-22 16:08:46,762] {subprocess.py:89} INFO - downloading https://repo1.maven.org/maven2/org/antlr/antlr4/4.7/antlr4-4.7.jar ...
+[2022-07-22 16:08:46,895] {subprocess.py:89} INFO - 	[SUCCESSFUL ] org.antlr#antlr4;4.7!antlr4.jar (184ms)
+[2022-07-22 16:08:46,930] {subprocess.py:89} INFO - downloading https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar ...
+[2022-07-22 16:08:46,990] {subprocess.py:89} INFO - 	[SUCCESSFUL ] org.antlr#antlr4-runtime;4.7!antlr4-runtime.jar (94ms)
+[2022-07-22 16:08:47,025] {subprocess.py:89} INFO - downloading https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar ...
+[2022-07-22 16:08:47,079] {subprocess.py:89} INFO - 	[SUCCESSFUL ] org.antlr#antlr-runtime;3.5.2!antlr-runtime.jar (87ms)
+[2022-07-22 16:08:47,113] {subprocess.py:89} INFO - downloading https://repo1.maven.org/maven2/org/antlr/ST4/4.0.8/ST4-4.0.8.jar ...
+[2022-07-22 16:08:47,166] {subprocess.py:89} INFO - 	[SUCCESSFUL ] org.antlr#ST4;4.0.8!ST4.jar (86ms)
+[2022-07-22 16:08:47,198] {subprocess.py:89} INFO - downloading https://repo1.maven.org/maven2/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar ...
+[2022-07-22 16:08:47,231] {subprocess.py:89} INFO - 	[SUCCESSFUL ] org.abego.treelayout#org.abego.treelayout.core;1.0.3!org.abego.treelayout.core.jar(bundle) (63ms)
+[2022-07-22 16:08:47,262] {subprocess.py:89} INFO - downloading https://repo1.maven.org/maven2/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar ...
+[2022-07-22 16:08:47,302] {subprocess.py:89} INFO - 	[SUCCESSFUL ] org.glassfish#javax.json;1.0.4!javax.json.jar(bundle) (71ms)
+[2022-07-22 16:08:47,334] {subprocess.py:89} INFO - downloading https://repo1.maven.org/maven2/com/ibm/icu/icu4j/58.2/icu4j-58.2.jar ...
+[2022-07-22 16:08:48,376] {subprocess.py:89} INFO - 	[SUCCESSFUL ] com.ibm.icu#icu4j;58.2!icu4j.jar (1073ms)
+[2022-07-22 16:08:48,380] {subprocess.py:89} INFO - :: resolution report :: resolve 229ms :: artifacts dl 2544ms
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	:: modules in use:
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	com.ibm.icu#icu4j;58.2 from central in [default]
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	io.delta#delta-core_2.12;1.0.0 from central in [default]
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	org.abego.treelayout#org.abego.treelayout.core;1.0.3 from central in [default]
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	org.antlr#ST4;4.0.8 from central in [default]
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	org.antlr#antlr-runtime;3.5.2 from central in [default]
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	org.antlr#antlr4;4.7 from central in [default]
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	org.antlr#antlr4-runtime;4.7 from central in [default]
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	org.glassfish#javax.json;1.0.4 from central in [default]
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	---------------------------------------------------------------------
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	|                  |            modules            ||   artifacts   |
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	---------------------------------------------------------------------
+[2022-07-22 16:08:48,381] {subprocess.py:89} INFO - 	|      default     |   8   |   0   |   0   |   0   ||   8   |   8   |
+[2022-07-22 16:08:48,382] {subprocess.py:89} INFO - 	---------------------------------------------------------------------
+[2022-07-22 16:08:48,383] {subprocess.py:89} INFO - :: retrieving :: org.apache.spark#spark-submit-parent-3f151afc-674f-4fb4-acad-873b49eaed92
+[2022-07-22 16:08:48,383] {subprocess.py:89} INFO - 	confs: [default]
+[2022-07-22 16:08:48,426] {subprocess.py:89} INFO - 	8 artifacts copied, 0 already retrieved (15452kB/32ms)
+[2022-07-22 16:08:48,645] {subprocess.py:89} INFO - 22/07/22 16:08:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2022-07-22 16:08:48,883] {local_task_job.py:212} WARNING - State of this instance has been externally set to skipped. Terminating instance.
+[2022-07-22 16:08:48,884] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 1323. PIDs of all processes in the group: [1324, 1323]
+[2022-07-22 16:08:48,885] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 1323
+[2022-07-22 16:08:48,885] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-07-22 16:08:48,885] {subprocess.py:99} INFO - Sending SIGTERM signal to process group
+[2022-07-22 16:08:48,911] {process_utils.py:70} INFO - Process psutil.Process(pid=1323, status='terminated', exitcode=0, started='16:08:43') (1323) terminated with exit code 0
+[2022-07-22 16:08:48,964] {process_utils.py:70} INFO - Process psutil.Process(pid=1324, status='terminated', started='16:08:43') (1324) terminated with exit code None

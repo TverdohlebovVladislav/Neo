@@ -1,8 +1,11 @@
-# docker exec -it neo_project_spark_1 spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"   --master spark://spark:7077 /usr/local/spark/core/mirr_md_account_d.py
+# docker exec -it neo_project_spark_1 spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"   --master spark://spark:7077 /usr/local/spark/core/test.py
+# docker exec -it neo_project_airflow-worker_1 spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog"   --master spark://spark:7077 /opt/airflow/core/test.py
 
+# docker exec -it neo_project_spark_1 spark-submit --packages io.delta:delta-core_2.12:1.0.0 --repositories https://maven-central.storage-download.googleapis.com/maven2/ --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" --master spark://spark:7077 /usr/local/spark/core/test.py
+# https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/Y-39TSshYNN6Ew
 import sys
 from os import getenv
-
+import logging
 AIRFLOW_HOME = getenv('AIRFLOW_HOME', '/opt/airflow')
 print(sys.executable)
 
@@ -18,6 +21,14 @@ import pyspark
 import shutil
 
 
+def get_min_max_delta_id(delta_dir):
+    dirs_in_deltas = os.listdir(delta_dir)
+    dirs_in_deltas_int = [int(dirs_in_deltas[i]) for i in range(len(dirs_in_deltas))]
+    first_delt_id_dir = min(dirs_in_deltas_int)
+    last_delt_id_dir = max(dirs_in_deltas_int)
+    return first_delt_id_dir, last_delt_id_dir
+
+
 class Mirror():
 
     def __init__(
@@ -29,28 +40,53 @@ class Mirror():
         source_from_local: str  = None
         ) -> None:
         # self.path_delts = path_delts
+
         self.table_name = table_name
         self.primary_key = primary_key
-        self.delta_dir = f"{AIRFLOW_HOME}/mirrors/{self.table_name}/data_deltas/"
+        self.delta_dir = delta_dir
         self.source_from_postgres = source_from_postgres
         self.source_from_local = source_from_local
 
-        self.log_dir = f"{AIRFLOW_HOME}/logs/mirrors/"
+        self.all_mirrors = f"{AIRFLOW_HOME}/mirrors"
+        self.log_dir = f"{self.all_mirrors}/logs"
         self.final_version_path = f"{AIRFLOW_HOME}/mirrors/{self.table_name}/mirr_{self.table_name}/"
-        # self.spark = (SparkSession
-        #     .builder
-        #     .appName('create_mirror_md_account_d')
-        #     .enableHiveSupport()
-        #     .getOrCreate()
-        # )
-
+    
+        # Создание spark сессии
         builder = pyspark.sql.SparkSession.builder.appName("MyApp") \
         .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
         .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
-
         self.spark = configure_spark_with_delta_pip(builder).getOrCreate()
-        # self.deltaTable = DeltaTable.forPath(self.spark, self.final_version_path)
         
+        # Создание иерархии папок зеркала
+        if not os.path.isdir(f"{self.all_mirrors}/{self.table_name}"):
+            os.umask(0)
+            os.mkdir(f"{self.all_mirrors}/{self.table_name}")
+
+            # ЗЕРКАЛО
+            if not os.path.isdir(self.final_version_path):
+                os.mkdir(self.final_version_path)
+                if not (self.source_from_postgres and self.source_from_local):
+                    min_max = get_min_max_delta_id(self.delta_dir)
+                    # shutil.copy(self.delta_dir + f'{min_max[0]}/{self.table_name}.csv', self.final_version_path)
+                    df = self.spark.read.option("delimiter", ";") \
+                        .option("header", "true") \
+                        .csv(self.delta_dir + f'{min_max[0]}/{self.table_name}.csv')
+                    df.write.format("delta").mode("append").save(self.final_version_path)
+                    
+        # ЛОГИ
+        if not os.path.isdir(self.log_dir):
+            os.umask(0)
+            os.mkdir(self.log_dir)
+            min_max = get_min_max_delta_id(self.delta_dir)
+            schema = ['delta_id', 'time_start', 'time_end', 'table_name']
+            rows = [(min_max[0], 'null', 'null', self.table_name)]
+            logs_table = self.spark.createDataFrame(rows, schema)
+            logs_table.write.format("delta").mode("append").save(self.log_dir)
+
+        # Создание дельт
+        self.deltaTable = DeltaTable.forPath(self.spark, self.final_version_path)
+        self.logTable = DeltaTable.forPath(self.spark, self.log_dir)
+
 
     def save_to_log(self, log_row: tuple) -> None:
         """
@@ -58,71 +94,29 @@ class Mirror():
         создания зеркал в mirrors/logs/{table_name}
         row_to_table - строка с новой записью вида (delta_id, start_time, end_time, table_name)
         """
-        schema = """
-                delta_id INT, 
-                time_start TIMESTAMP, 
-                time_end TIMESTAMP, 
-                table_name STRING
-                """
+        os.umask(0)
         schema = ['delta_id', 'time_start', 'time_end', 'table_name']
-        if not os.path.isdir(self.log_dir):
-            rows = [log_row]
-            logs_table = self.spark.createDataFrame(rows, schema)
-            logs_table.coalesce(1) \
-                .write \
-                .format("csv")\
-                .option("header", True) \
-                .option("sep", ";") \
-                .mode("overwrite") \
-                .save(f"{self.log_dir}/")
-        else:
-            logs_table = self.spark.read.option("delimiter", ";") \
-                .schema(schema) \
-                .option("header", "true") \
-                .csv(self.log_dir)
-            newRow = self.spark.createDataFrame(log_row, schema)
-            appended = logs_table.union(newRow)
-            appended.coalesce(1) \
-                .write \
-                .format("csv")\
-                .option("header", True) \
-                .option("sep", ";") \
-                .mode("overwrite") \
-                .save(f"{self.log_dir}/")
+        logs_table = self.logTable.toDF()
+        newRow = self.spark.createDataFrame([log_row], schema)
 
+        # Генерация словаря для обнавления
+        dict_to_update = dict()
+        for field in newRow.schema.fields:
+            if field.name != 'delta_id':
+                dict_to_update[field.name] = f'upt.{field.name}'
 
-    def create_delta(self):
-        """
-        Сравнивает зеркало и таблицу источник,
-        если есть обновления создает новую дельту
-        и сохраняет в data_deltas
-        """
-        pass
+        # Генерация словаря для вставки 
+        dict_to_insert = dict()
+        for field in newRow.schema.fields:
+            dict_to_insert[field.name] = f'upt.{field.name}'
 
-    def make_final_mirror(self, first_delt_id_dir=None) -> None:
-        """
-        Сохраняет итоговое зеркало по обработанной делтьте.
-        (используется в process_deltas)
-        Если нет первоисточника (с чем сравнивать зеркало),
-        то по умолчанию создается из первой дельты.
-        """
-        if not (self.source_from_postgres and self.source_from_local):
-            if first_delt_id_dir:
-                # shutil.copy(self.delta_dir + f'{first_delt_id_dir}/{self.table_name}.csv', self.final_version_path)
-                # df = self.spark.read.option("delimiter", ";") \
-                #     .option("header", "true") \
-                #     .csv(self.delta_dir + f'{first_delt_id_dir}/{self.table_name}.csv')
-                # df.write.format("delta").mode("overwrite").save(self.final_version_path)
-                self.deltaTable = DeltaTable.forPath(self.spark, self.final_version_path)
-                return None
+        self.logTable.alias("logs").merge(
+            source = newRow.alias("upt"),
+            condition = "logs.delta_id = upt.delta_id") \
+                .whenMatchedUpdate(set=dict_to_update) \
+                .whenNotMatchedInsert(values=dict_to_insert) \
+                .execute()
 
-        self.deltaTable.coalesce(1) \
-                .write.format("csv")\
-                .option("header", True) \
-                .option("sep", ";") \
-                .mode("overwrite") \
-                .save(f"{self.final_version_path}/")
-        
 
     def process_deltas(self) -> None:
         """
@@ -133,12 +127,12 @@ class Mirror():
         
         #  1. Зайти в логи, посмотреть id полследней обработанной дельты 
         try:
-            logs_table = self.spark.read.option("delimiter", ";") \
-                    .option("header", "true") \
-                    .csv(self.log_dir)
-            last_delt_id_logs = logs_table.agg({"delta_id": "max"}).first()[0][0]
+            logs_table = self.logTable.toDF()
+            last_delt_id_logs = logs_table.agg({"delta_id": "max"}).first()[0]
         except Exception as e:
+            print(f"\n\n\n{e}\n\n\n")
             last_delt_id_logs = 0
+        
 
         #  2. Посомтреть id посследней дельты в папке 
         try:
@@ -149,70 +143,77 @@ class Mirror():
             last_delt_id_logs = last_delt_id_logs if last_delt_id_logs else first_delt_id_dir
             last_delt_id_dir = max(dirs_in_deltas_int)
 
-            
-            # if last_delt_id_logs == first_delt_id_dir:
-            #     self.save_to_log()
         except Exception as e:
             print(f"{e}")
             last_delt_id_dir = 0
-        
+
 
         # 3. Если появились новые дельты - обрабатываем их
         if  last_delt_id_logs < last_delt_id_dir:
             for i in range(last_delt_id_logs + 1, last_delt_id_dir + 1):
                 time_start_load = datetime.now(tz_moscow)
                 # Если нет зеркала, то создать на основе первой дельты 
-                if last_delt_id_logs == first_delt_id_dir:
-                    self.make_final_mirror(first_delt_id_dir=i-1)
-                else: 
-                    
+                if last_delt_id_logs:
                     
                     updatesDF = self.spark.read.option("delimiter", ";") \
                         .option("header", "true") \
-                        .csv(f'{self.delta_dir}/{i}/')
-
-                    # Генерация словаря для обнавления
+                        .csv(f'{self.delta_dir}/{i}/{self.table_name}_{str(i)[-1]}.csv')
+                    
+                    # Генерация словарей для обнавления и вставки
                     dict_to_update = dict()
+                    dict_to_insert = dict()
                     for field in updatesDF.schema.fields:
                         if field.name not in self.primary_key:
                             dict_to_update[field.name] = f'deltas.{field.name}'
-
-                    # Генерация словаря для вставки 
-                    dict_to_insert = dict()
-                    for field in updatesDF.schema.fields:
                         dict_to_insert[field.name] = f'deltas.{field.name}'
 
-                    # Обработать дельту + УСЛОВИЕ ПРИВЕСТИ К ОБЩЕМУ ВИДУ
+                    # Обработка дельты
                     self.deltaTable.alias("mirror").merge(
                         source = updatesDF.alias("deltas"),
                         condition = "mirror.ACCOUNT_RK = deltas.ACCOUNT_RK") \
-                        .whenMatchedUpdate(set=dict_to_update) \
-                        .whenNotMatchedInsert(values=dict_to_insert) \
-                        .execute()
+                            .whenMatchedUpdate(set=dict_to_update) \
+                            .whenNotMatchedInsert(values=dict_to_insert) \
+                            .execute()
 
-                    # Обновить зеркало 
-                    self.make_final_mirror()
-                
-                # Записать в логи
+                # Запись в логи
                 time_end_load = datetime.now(tz_moscow)
                 log_row = (i, time_start_load, time_end_load, self.table_name)
                 self.save_to_log(log_row)
+                
+    def create_delta(self):
+        """
+        Сравнивает зеркало и таблицу источник,
+        если есть обновления создает новую дельту
+        и сохраняет в data_deltas
+        """
+        pass
+
+    def save_to_csv(self):
+
+        os.umask(0)
+
+        self.deltaTable.toDF() \
+            .coalesce(1) \
+            .write.format("csv")\
+            .option("header", True) \
+            .option("sep", ";") \
+            .mode("overwrite") \
+            .save(f"{self.all_mirrors}/{self.table_name}/csv/final")
+
+        self.logTable.toDF() \
+            .coalesce(1) \
+            .write.format("csv")\
+            .option("header", True) \
+            .option("sep", ";") \
+            .mode("overwrite") \
+            .save(f"{self.all_mirrors}/{self.table_name}/csv/log")
         
-        print(f"""
-        ----
-
-        {last_delt_id_logs}
-        {last_delt_id_dir}
-        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF!
-
-        ----
-
-        """)
 
 mirr = Mirror(
-    delta_dir=f"{AIRFLOW_HOME}/mirrors/md_account_d/data_deltas/",
+    delta_dir=f"{AIRFLOW_HOME}/mirrors/data_deltas/",
     table_name='md_account_d',
-    primary_key='ACCOUNT_RK'
+    primary_key=['ACCOUNT_RK']
 )
 
 mirr.process_deltas()
+mirr.save_to_csv()

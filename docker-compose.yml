@@ -263,6 +263,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./core:/opt/airflow/core
       - ./mirrors:/opt/airflow/mirrors
+      - spark-dad-volume:/opt/bitnami/spark
       # - ./example:/usr/local/spark/example #Resources folder (Must be the same path in airflow and Spark Cluster)
     ports:
       - "8181:8080"
@@ -289,6 +290,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./core:/opt/airflow/core
       - ./mirrors:/opt/airflow/mirrors
+      - spark-worker-1-volume:/opt/bitnami/spark
       # - ./example:/usr/local/spark/example #Resources folder (Must be the same path in airflow and Spark Cluster)
 
   spark-worker-2:
@@ -312,6 +314,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./core:/opt/airflow/core
       - ./mirrors:/opt/airflow/mirrors
+      - spark-worker-2-volume:/opt/bitnami/spark
       # - ./example:/usr/local/spark/example #Resources folder (Must be the same path in airflow and Spark Cluster)
 
   # spark-worker-3:
@@ -335,3 +338,6 @@ services:
 
 volumes:
   postgres-db-volume:
+  spark-dad-volume:
+  spark-worker-1-volume:
+  spark-worker-2-volume:

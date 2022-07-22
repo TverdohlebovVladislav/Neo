@@ -1,6 +1,5 @@
 apache-airflow-providers-postgres==4.1.0
-sqlalchemy
-pandas
 pyspark
 delta-spark
-# psycopg2
+sqlalchemy
+pandas

@@ -1,0 +1,40 @@
+[2022-07-22 17:30:01,957] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T17:25:00+00:00 [queued]>
+[2022-07-22 17:30:01,978] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T17:25:00+00:00 [queued]>
+[2022-07-22 17:30:01,978] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 17:30:01,979] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-07-22 17:30:01,979] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-22 17:30:02,001] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): load_mirror_md_account_d> on 2022-07-22 17:25:00+00:00
+[2022-07-22 17:30:02,005] {standard_task_runner.py:52} INFO - Started process 436 to run task
+[2022-07-22 17:30:02,025] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'MIRR_MD_ACCOUNT_D', 'load_mirror_md_account_d', 'scheduled__2022-07-22T17:25:00+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/mirror_calc.py', '--cfg-path', '/tmp/tmplduxcmpo', '--error-file', '/tmp/tmpoy2rprxa']
+[2022-07-22 17:30:02,026] {standard_task_runner.py:77} INFO - Job 117: Subtask load_mirror_md_account_d
+[2022-07-22 17:30:02,128] {logging_mixin.py:109} INFO - Running <TaskInstance: MIRR_MD_ACCOUNT_D.load_mirror_md_account_d scheduled__2022-07-22T17:25:00+00:00 [running]> on host 1c7b2e19b45f
+[2022-07-22 17:30:02,227] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=MIRR_MD_ACCOUNT_D
+AIRFLOW_CTX_TASK_ID=load_mirror_md_account_d
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-22T17:25:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-22T17:25:00+00:00
+[2022-07-22 17:30:02,228] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-07-22 17:30:02,228] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'spark-submit --packages io.delta:delta-core_2.12:1.0.0 --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" /opt/***/core/test.py']
+[2022-07-22 17:30:02,249] {subprocess.py:85} INFO - Output:
+[2022-07-22 17:30:05,438] {subprocess.py:89} INFO - :: loading settings :: url = jar:file:/usr/local/spark/assembly/target/scala-2.12/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2022-07-22 17:30:05,601] {subprocess.py:89} INFO - Ivy Default Cache set to: /home/***/.ivy2/cache
+[2022-07-22 17:30:05,601] {subprocess.py:89} INFO - The jars for the packages stored in: /home/***/.ivy2/jars
+[2022-07-22 17:30:05,609] {subprocess.py:89} INFO - io.delta#delta-core_2.12 added as a dependency
+[2022-07-22 17:30:05,610] {subprocess.py:89} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-7b50307d-e7b3-4339-9899-a506eca8567a;1.0
+[2022-07-22 17:30:05,611] {subprocess.py:89} INFO - 	confs: [default]
+[2022-07-22 17:30:05,887] {subprocess.py:89} INFO - 	found io.delta#delta-core_2.12;1.0.0 in central
+[2022-07-22 17:30:06,076] {subprocess.py:89} INFO - 	found org.antlr#antlr4;4.7 in central
+[2022-07-22 17:30:06,286] {subprocess.py:89} INFO - 	found org.antlr#antlr4-runtime;4.7 in central
+[2022-07-22 17:30:06,467] {subprocess.py:89} INFO - 	found org.antlr#antlr-runtime;3.5.2 in central
+[2022-07-22 17:30:06,552] {subprocess.py:89} INFO - 	found org.antlr#ST4;4.0.8 in central
+[2022-07-22 17:30:07,142] {local_task_job.py:212} WARNING - State of this instance has been externally set to skipped. Terminating instance.
+[2022-07-22 17:30:07,144] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 436. PIDs of all processes in the group: [437, 436]
+[2022-07-22 17:30:07,144] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 436
+[2022-07-22 17:30:07,150] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-07-22 17:30:07,150] {subprocess.py:99} INFO - Sending SIGTERM signal to process group
+[2022-07-22 17:30:07,311] {process_utils.py:70} INFO - Process psutil.Process(pid=437, status='terminated', started='17:30:01') (437) terminated with exit code None
+[2022-07-22 17:30:07,314] {process_utils.py:70} INFO - Process psutil.Process(pid=436, status='terminated', exitcode=0, started='17:30:01') (436) terminated with exit code 0
